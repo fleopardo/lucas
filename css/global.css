@@ -145,7 +145,11 @@ body{
 	background: #171717 url(../img/fd_body.jpg) center top repeat-y;
 }
 
-.bg-pattern{
+.fd-degrade-bottom{
+	background: url(../img/fd_degrade-bottom.png) bottom left repeat-x;
+}
+
+.fd-pattern{
 	background:url(../img/fd_pattern.jpg) center top no-repeat;
 }
 
@@ -185,11 +189,11 @@ header nav li a{
 
 /*Footer*/
 
-
-/*Fin Footer*/
-
 footer{
 	overflow: hidden;
+	height: 84px;
+	padding-top: 82px;
+	background: url(../img/fd_footer.png) center top no-repeat;
 }
 
 footer h1 a{
@@ -224,6 +228,10 @@ footer li{
 footer li a{
 	color:#5d5656;
 }
+
+/*Fin Footer*/
+
+
 
 /*Home*/
 
