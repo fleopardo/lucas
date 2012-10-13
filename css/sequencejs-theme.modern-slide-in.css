@@ -221,7 +221,8 @@ Aside from these comments, you may modify and distribute this file as you please
 	/*bottom: -48%;*/
 	bottom: 0;
 	opacity: 0;
-	position: relative;
+	/*position: relative;*/
+	position: absolute;
 	height: auto !important;
 	max-height: 521px !important;
 	width: 100%;
