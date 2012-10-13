@@ -143,6 +143,8 @@ body{
 	font: 11px/14px tahoma, arial, helvetica, sans-serif;
 	color: #9b9b9b;
 	background: #171717 url(../img/fd_body.jpg) center top repeat-y;
+	overflow: hidden;
+	overflow-y:auto;
 }
 
 .fd-degrade-bottom{
