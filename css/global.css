@@ -168,23 +168,44 @@ header h1 a{
 	display:block;
 	width: 220px;
 	height: 63px;
+	margin-right: 80px;
 	background: url(../img/fd_logo-header.png) no-repeat;
 	float: left;
+	margin-top:39px;
 }
 
 header nav{
 	overflow:hidden;
+	float:left;
+}
+
+header nav li{
+	float: left;
+	margin-right:15px;
 }
 
 header nav li a{
-	float:left;
 	text-transform: uppercase;
 	color:#918b8b;
 	font-size: 21px;
 	line-height: 23px;
+	height:38px;
 	display: block;
+	padding-top:64px;
+	text-align: center;
 	font: 21px/23px big_noodle_titling_oblique;
+	
 }
+
+header nav li a.active{
+	background: url(../img/sp_nav.png) no-repeat;
+}
+
+header nav li a.active.home{
+	background-position: 0 0;
+	width: 83px
+}
+
 /*FIN HEADER*/
 
 
@@ -290,3 +311,45 @@ section.content .bloques-cont .twitter img{
 /*FIn Home*/
 
 
+
+
+/*Productos*/
+
+.productos section.content .destacado{
+	height: 368px;
+	position: relative;
+	background: url(../img/fd_producto-destacado.png) center top no-repeat;
+}
+
+.productos section.content .destacado h2,
+.productos section.content .destacado img,
+.productos section.content .destacado p{
+	position: absolute;
+}
+
+.productos section.content .destacado h2{
+	font: 40px/40px big_noodle_titling_oblique;
+	text-transform: uppercase;
+	color:#c02b2b;
+	top: 90px;
+	left:30px;
+}
+
+.productos section.content .destacado h2 span{
+	color:#fff;
+}
+
+.productos section.content .destacado p{
+	font: 24px/26px big_noodle_titling_oblique;
+	text-transform: uppercase;
+	color:#fff;
+	bottom: 28px;
+	left:60px;
+}
+
+.productos section.content .destacado p span{
+	color:#4a0c0e;
+}
+
+
+/*Fin productos*/
