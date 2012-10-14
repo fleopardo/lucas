@@ -177,6 +177,8 @@ header h1 a{
 header nav{
 	overflow:hidden;
 	float:left;
+	position: relative;
+	z-index: 50;
 }
 
 header nav li{
@@ -317,6 +319,7 @@ section.content .bloques-cont .twitter img{
 
 .productos section.content .destacado{
 	height: 368px;
+	margin-top: 48px;
 	position: relative;
 	background: url(../img/fd_producto-destacado.png) center top no-repeat;
 }
@@ -333,6 +336,7 @@ section.content .bloques-cont .twitter img{
 	color:#c02b2b;
 	top: 90px;
 	left:30px;
+	z-index: 50;
 }
 
 .productos section.content .destacado h2 span{
@@ -345,11 +349,25 @@ section.content .bloques-cont .twitter img{
 	color:#fff;
 	bottom: 28px;
 	left:60px;
+	z-index: 50;
 }
 
 .productos section.content .destacado p span{
 	color:#4a0c0e;
 }
 
+.productos section.content .destacado img{
+	z-index: 0;
+	right:0;
+	bottom:20px;
+}
+
+.produtos section.content .bloque{
+	width:;
+}
+
+.produtos section.content .bloque h1{
+	color: #c02b2b;
+}
 
 /*Fin productos*/
