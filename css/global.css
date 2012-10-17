@@ -216,6 +216,7 @@ header nav li a.active.home{
 
 footer{
 	overflow: hidden;
+	clear:both;
 	height: 84px;
 	padding-top: 82px;
 	background: url(../img/fd_footer.png) center top no-repeat;
@@ -264,14 +265,14 @@ section.content .bloques-cont{
 	overflow: hidden;
 }
 
-section.content .bloques-cont .bloque{
+section.content .bloque{
 	float: left;
 	width:301px;
 	margin-right: 60px;
 	position: relative;
 }
 
-section.content .bloques-cont .bloque.twitter{
+section.content .bloque.twitter{
 	margin-right: 0;
 	border-top: 2px solid #00aced;
 	border-bottom: 2px solid #00aced;
@@ -279,32 +280,32 @@ section.content .bloques-cont .bloque.twitter{
 	padding: 10px 0;
 }
 
-section.content .bloques-cont .bloque h1{
+section.content .bloque h1{
 	font: 22px/24px big_noodle_titling_oblique;
 	color: #fff;
 	text-transform: uppercase;
 	margin: 6px 0 10px;
 }
 
-section.content .bloques-cont .twitter h1{
+section.content  .twitter h1{
 	margin: 0 0 5px;
 }
 
-section.content .bloques-cont .bloque p{
+section.content .bloque p{
 	margin-bottom: 10px;
 }
 
-section.content .bloques-cont .bloque a{
+section.content .bloque a{
 	color: #b71a1f;
 	font-weight: bold;
 }
 
-section.content .bloques-cont .twits-container{
+section.content .twits-container{
 	border-bottom: 1px dotted #fff;
 	padding: 5px 0;
 }
 
-section.content .bloques-cont .twitter img{
+section.content .twitter img{
 	position: absolute;
 	bottom:-58px;
 	right: 20px;
@@ -317,20 +318,23 @@ section.content .bloques-cont .twitter img{
 
 /*Productos*/
 
-.productos section.content .destacado{
-	height: 368px;
+.destacado{
 	margin-top: 48px;
 	position: relative;
 	background: url(../img/fd_producto-destacado.png) center top no-repeat;
 }
 
-.productos section.content .destacado h2,
-.productos section.content .destacado img,
-.productos section.content .destacado p{
+.productos .destacado{
+	height: 368px;
+}
+
+.destacado h2,
+.destacado img,
+.destacado p{
 	position: absolute;
 }
 
-.productos section.content .destacado h2{
+.destacado h2{
 	font: 40px/40px big_noodle_titling_oblique;
 	text-transform: uppercase;
 	color:#c02b2b;
@@ -339,11 +343,11 @@ section.content .bloques-cont .twitter img{
 	z-index: 50;
 }
 
-.productos section.content .destacado h2 span{
+.destacado h2 span{
 	color:#fff;
 }
 
-.productos section.content .destacado p{
+.destacado p{
 	font: 24px/26px big_noodle_titling_oblique;
 	text-transform: uppercase;
 	color:#fff;
@@ -352,11 +356,11 @@ section.content .bloques-cont .twitter img{
 	z-index: 50;
 }
 
-.productos section.content .destacado p span{
+.destacado p span{
 	color:#4a0c0e;
 }
 
-.productos section.content .destacado img{
+.destacado img{
 	z-index: 0;
 	right:0;
 	bottom:20px;
@@ -371,3 +375,80 @@ section.content .bloques-cont .twitter img{
 }
 
 /*Fin productos*/
+
+
+
+
+
+/*EMPRESA*/
+
+.empresa .destacado{
+	background: url(../img/fd_empresa-destacado.png) center top no-repeat;
+	height: 290px;
+}
+
+.empresa .destacado img{
+	bottom: -33px;
+}
+
+.empresa section.content .wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.empresa section.content .bloque{
+	min-height: 452px;
+	margin-top: 30px;
+}
+
+.empresa section.content .bloque h1{
+	color: #c02b2b;
+	margin-bottom: 0;
+}
+
+.empresa section.content .bloque h2{
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.empresa section.content .bloque img{
+	position: absolute;
+	left: -30px;
+	top: 0;
+}
+
+.empresa section.content .bloque > div{
+	width:460px;
+	margin-left: 500px;
+}
+
+/*EMPRESA*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
