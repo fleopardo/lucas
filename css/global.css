@@ -156,9 +156,11 @@ body{
 }
 
 .wrapper{
-	width: 1028px;
+	width: 960px;
 	margin: 0 auto;
 }
+
+
 /*Header*/
 header{
 	overflow: hidden;
@@ -261,15 +263,25 @@ footer li a{
 
 /*Home*/
 
+.galeria-cont{
+	position:relative;
+	height: 521px;
+	width:1028px;
+	margin:0 auto;
+}
+
 section.content .bloques-cont{
 	overflow: hidden;
 }
 
 section.content .bloque{
 	float: left;
-	width:301px;
-	margin-right: 60px;
 	position: relative;
+}
+
+.home section.content .bloque{
+	width:301px;
+	margin-right: 28px;
 }
 
 section.content .bloque.twitter{
@@ -281,10 +293,21 @@ section.content .bloque.twitter{
 }
 
 section.content .bloque h1{
-	font: 22px/24px big_noodle_titling_oblique;
-	color: #fff;
+	font-family: big_noodle_titling_oblique;
 	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.home section.content .bloque h1{
 	margin: 6px 0 10px;
+	color: #fff;
+	
+}
+
+section.content .bloque h2{
+	color:#fff;
+	margin-bottom: 20px;
 }
 
 section.content  .twitter h1{
@@ -319,7 +342,8 @@ section.content .twitter img{
 /*Productos*/
 
 .destacado{
-	margin-top: 48px;
+	width: 1028px;
+	margin: 48px auto 0;
 	position: relative;
 	background: url(../img/fd_producto-destacado.png) center top no-repeat;
 }
@@ -366,13 +390,40 @@ section.content .twitter img{
 	bottom:20px;
 }
 
-.produtos section.content .bloque{
-	width:;
+.productos section.content .bloque.absolute{
+	width: 100%;
 }
 
-.produtos section.content .bloque h1{
+.productos section.content .bloque.absolute div{
+	width: 542px;
+}
+
+.productos section.content .bloque.absolute img{
+	/*position: absolute;*/
+}
+
+.productos section.content .bloque.absolute img.right{
+	float: right;
+}
+
+.productos section.content .bloque.absolute img.left{
+	float: left;
+}
+
+.productos section.content .bloque.absolute > .left{
+	float: left;
+	margin-top: 87px;
+}
+
+.productos section.content .bloque.absolute div.right{
+	float: right;
+}	
+
+.productos section.content .bloque h1{
 	color: #c02b2b;
 }
+
+
 
 /*Fin productos*/
 
@@ -389,11 +440,6 @@ section.content .twitter img{
 
 .empresa .destacado img{
 	bottom: -33px;
-}
-
-.empresa section.content .wrapper{
-	width: 960px;
-	margin: 0 auto;
 }
 
 .empresa section.content .bloque{
