@@ -390,6 +390,11 @@ section.content .twitter img{
 	bottom:20px;
 }
 
+
+.productos section.content .bloque{
+	/*width: 462px;*/
+}
+
 .productos section.content .bloque.absolute{
 	width: 100%;
 }
@@ -410,13 +415,14 @@ section.content .twitter img{
 	float: left;
 }
 
-.productos section.content .bloque.absolute > .left{
+.productos section.content .bloque.absolute > div.left{
 	float: left;
 	margin-top: 87px;
 }
 
 .productos section.content .bloque.absolute div.right{
 	float: right;
+	margin-top: 100px;
 }	
 
 .productos section.content .bloque h1{
