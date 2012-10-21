@@ -390,9 +390,27 @@ section.content .twitter img{
 	bottom:20px;
 }
 
+.productos section.content .bloques-cont{
+	overflow: visible;
+}
 
-.productos section.content .bloque{
-	/*width: 462px;*/
+.productos section.content .bloque.bloque3{
+	width: left;
+	width: 462px;
+}
+
+.productos section.content .bloque.bloque4{
+	float: right;
+	width: 462px;
+}
+
+.productos section.content .bloque.bloque4 img{
+	top: 0;
+	position: absolute;
+}
+
+.productos section.content .bloque.bloque4 > div{
+	margin-top: 280px;
 }
 
 .productos section.content .bloque.absolute{
@@ -428,7 +446,6 @@ section.content .twitter img{
 .productos section.content .bloque h1{
 	color: #c02b2b;
 }
-
 
 
 /*Fin productos*/
