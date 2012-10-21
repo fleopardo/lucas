@@ -155,6 +155,8 @@ body{
 	background:url(../img/fd_pattern.jpg) center top no-repeat;
 }
 
+
+
 .wrapper{
 	width: 960px;
 	margin: 0 auto;
@@ -341,6 +343,10 @@ section.content .twitter img{
 
 /*Productos*/
 
+.productos .fd_pattern{
+	background:url(../img/fd_pattern-producto.jpg) center top no-repeat;
+}
+
 .destacado{
 	width: 1028px;
 	margin: 48px auto 0;
@@ -481,8 +487,15 @@ section.content .twitter img{
 }
 
 .productos section.content .bloques-cont.bottom .bloque > div{
-	margin-top: 167px!important;
+	margin-top: 172px;
+	text-align: center;
+	padding: 0 10px;
 }
+
+.productos section.content .bloques-cont.bottom .bloque > div h1{
+	color:#fff;
+}
+
 /*Fin productos*/
 
 
