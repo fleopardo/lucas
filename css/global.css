@@ -447,7 +447,42 @@ section.content .twitter img{
 	color: #c02b2b;
 }
 
+.productos section.content .bloques-cont.separator-content{
+	background: url(../img/fd_productos-separator-bottom) center bottom no-repeat;
+	padding-bottom: 30px;
+}
 
+.productos section.content .bloques-cont.bottom{
+	clear:both;
+}
+
+.productos section.content .bloques-cont.bottom .bloque{
+	width: 220px;
+	height: 248px;
+	float: left;
+	margin-right: 25px;
+}
+
+.productos section.content .bloques-cont.bottom .bloque1{
+	background: url(../img/fd_productos-bloque-bottom1.png) center bottom no-repeat;
+}
+
+.productos section.content .bloques-cont.bottom .bloque2{
+	background: url(../img/fd_productos-bloque-bottom2.png) center bottom no-repeat;
+}
+
+.productos section.content .bloques-cont.bottom .bloque3{
+	background: url(../img/fd_productos-bloque-bottom3.png) center bottom no-repeat;
+}
+
+.productos section.content .bloques-cont.bottom .bloque4{
+	background: url(../img/fd_productos-bloque-bottom4.png) center bottom no-repeat;
+	margin-right: 0;
+}
+
+.productos section.content .bloques-cont.bottom .bloque > div{
+	margin-top: 167px!important;
+}
 /*Fin productos*/
 
 
