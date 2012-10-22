@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 
 http://html5doctor.com/html-5-reset-stylesheet/
@@ -17,7 +17,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -34,7 +34,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
 	display:block;
 }
 
@@ -71,7 +71,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -94,7 +94,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -200,7 +200,7 @@ header nav li a{
 	padding-top:64px;
 	text-align: center;
 	font: 21px/23px big_noodle_titling_oblique;
-	
+
 }
 
 header nav li a.active{
@@ -304,7 +304,7 @@ section.content .bloque h1{
 .home section.content .bloque h1{
 	margin: 6px 0 10px;
 	color: #fff;
-	
+
 }
 
 section.content .bloque h2{
@@ -343,7 +343,7 @@ section.content .twitter img{
 
 /*Productos*/
 
-.productos .fd_pattern{
+.productos .fd-pattern{
 	background:url(../img/fd_pattern-producto.jpg) center top no-repeat;
 }
 
@@ -447,7 +447,7 @@ section.content .twitter img{
 .productos section.content .bloque.absolute div.right{
 	float: right;
 	margin-top: 100px;
-}	
+}
 
 .productos section.content .bloque h1{
 	color: #c02b2b;
