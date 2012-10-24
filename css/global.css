@@ -552,17 +552,35 @@ section.content .twitter img{
 /*EMPRESA*/
 
 
+/*Donde Comprar*/
 
+.donde-comprar .fd-pattern{
+	background: url(../img/fd_pattern-empresa.jpg) center top no-repeat;
+}
 
+.donde-comprar .destacado{
+	background: url(../img/fd_empresa-destacado.png) center top no-repeat;
+	height: 290px;
+}
 
+.donde-comprar section.content .bloque{
+	float: none;
+}
 
+.donde-comprar section.content .bloque img{
+	float: right;
+}
 
+.donde-comprar section.content .bloque > div{
+	float: left;
+	width: 320px;
+}
 
+.donde-comprar section.content .bloque > div h1{
+	color: #c02b2b;
+}
 
-
-
-
-
+/*Fin donde comprar*/
 
 
 
