@@ -504,6 +504,10 @@ section.content .twitter img{
 
 /*EMPRESA*/
 
+.empresa .fd-pattern{
+	background: url(../img/fd_pattern-empresa.jpg) center top no-repeat;
+}
+
 .empresa .destacado{
 	background: url(../img/fd_empresa-destacado.png) center top no-repeat;
 	height: 290px;
@@ -537,6 +541,12 @@ section.content .twitter img{
 .empresa section.content .bloque > div{
 	width:460px;
 	margin-left: 500px;
+}
+
+.empresa section.content .bloque p span{
+	text-transform: uppercase;
+	color: #c02b2b;
+	font-weight: bold;
 }
 
 /*EMPRESA*/
