@@ -561,6 +561,11 @@ section.content .twitter img{
 .donde-comprar .destacado{
 	background: url(../img/fd_empresa-destacado.png) center top no-repeat;
 	height: 290px;
+	margin-bottom: 30px;
+}
+
+.donde-comprar section.content .bloques-cont{
+	overflow: visible
 }
 
 .donde-comprar section.content .bloque{
@@ -579,6 +584,83 @@ section.content .twitter img{
 .donde-comprar section.content .bloque > div h1{
 	color: #c02b2b;
 }
+
+.donde-comprar section.content .bloque > div ul{
+	padding: 14px 0;
+}
+
+.donde-comprar section.content .bloque > div li,
+.donde-comprar section.content .bloque > div li a{
+	color: #fff;
+	font: 40px/40px big_noodle_titling_oblique;
+	text-transform: uppercase;
+	display: block;
+}
+
+.donde-comprar section.content .bloque > div li{
+	padding-left: 33px;
+}
+
+.donde-comprar section.content .bloque > div li.contacto{
+	background: url(../img/fd_donde-comprar-mail.png) left 4px no-repeat;
+}
+
+.donde-comprar section.content .bloque > div li.telefono{
+	background: url(../img/fd_donde-comprar-telefono.png) left 0 no-repeat;
+}
+
+.donde-comprar section.content form,
+.donde-comprar section.content input{
+	position: relative;
+}
+
+.donde-comprar section.content form{
+	background: url(../img/fd_donde-comprar-form.png) 0 0 no-repeat;
+	height: 57px;
+}
+
+.donde-comprar section.content input#tu-mail{
+	width: 61px;
+	background: url(../img/fd_donde-comprar-tu-mail.png) no-repeat;
+	color:#7e7e7e;
+	font-size: 11px;
+	display: inline-block;
+	z-index: 10;
+	height: 37px;
+	padding: 0 5px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+.donde-comprar section.content input#donde-comprar{
+	width: 182px;
+	background: url(../img/fd_donde-comprar-dnd-compra-field.png) no-repeat;
+	color:#7e7e7e;
+	font-size: 11px;
+	display: inline-block;
+	z-index: 10;
+	height: 37px;
+	padding: 0 5px;
+	border: none;
+	margin-top: 8px;
+}
+
+.donde-comprar section.content input#btn-submit{
+	width: 78px;
+	height: 57px;
+	border: none;
+	background: url(../img/fd_donde-comprar-submit.png) no-repeat;
+	display: block;
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	top:0; 
+}
+
+
+
+
 
 /*Fin donde comprar*/
 
