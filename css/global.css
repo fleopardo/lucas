@@ -720,4 +720,8 @@ section.content .twitter img{
 	margin-top: 8px;
 }
 
-
+#map{
+	width: 619px;
+	height: 226px;
+	float: right;
+}
