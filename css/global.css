@@ -725,3 +725,29 @@ section.content .twitter img{
 	height: 226px;
 	float: right;
 }
+
+.contacto section.content ul.social-media{
+	overflow: hidden;
+}
+
+.contacto section.content ul.social-media li{
+	float: left;
+	padding-left: 0;
+	margin-right: 22px;
+}
+
+.contacto section.content ul.social-media a{
+	display: block;
+	height: 34px;
+}
+
+.contacto section.content .bloque a.tw-contact{
+	width: 41px;
+	background: url(../img/fd_contact-tw.png) no-repeat;
+}
+
+.contacto section.content .bloque a.fb-contact{
+	width: 120px;
+	background: url(../img/fd_contact-fb.png) no-repeat;
+}
+

@@ -6,7 +6,7 @@ $(function(){
         center: new google.maps.LatLng(-34.58, -58.47),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 		mapTypeControl: false,
-		navigationControl: false,
+		navigationControl: true,
 		streetViewControl: false
     };
     var map = new google.maps.Map(document.getElementById('map'), options);
@@ -15,7 +15,7 @@ $(function(){
         position: map.getCenter()
         , map: map
         , title: 'Pulsa aquí'
-        , icon: '../img/fd_map-flag.png'
+        , icon: './img/im_map-marker.png'
         , cursor: 'default'
         , draggable: true
     });
