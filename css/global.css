@@ -619,7 +619,7 @@ section.content .twitter img{
 	height: 57px;
 }
 
-.donde-comprar section.content input#tu-mail{
+.donde-comprar section.content input.mail{
 	width: 61px;
 	background: url(../img/fd_donde-comprar-tu-mail.png) no-repeat;
 	color:#7e7e7e;
@@ -633,7 +633,7 @@ section.content .twitter img{
 	margin-right: 5px;
 }
 
-.donde-comprar section.content input#donde-comprar{
+.donde-comprar section.content input.donde-comprar{
 	width: 182px;
 	background: url(../img/fd_donde-comprar-dnd-compra-field.png) no-repeat;
 	color:#7e7e7e;
@@ -646,7 +646,7 @@ section.content .twitter img{
 	margin-top: 8px;
 }
 
-.donde-comprar section.content input#btn-submit{
+.donde-comprar section.content input.btn-submit{
 	width: 78px;
 	height: 57px;
 	border: none;
@@ -659,23 +659,65 @@ section.content .twitter img{
 }
 
 
-
-
-
 /*Fin donde comprar*/
 
 
 
+/* contacto */
 
+.contacto .destacado{
+	background: url(../img/fd_contacto-destacado.png) center top no-repeat;
+	height: 108px;
+	margin-bottom: 30px;
+}
 
+.contacto .destacado h2{
+	top: 38px;
+}
 
+.contacto section.content form{
+	background: url(../img/fd_contacto-form.png) 14px 0 no-repeat;
+	margin-bottom: 30px;
+}
 
+.contacto section.content input.nombre{
+	width: 141px;
+	padding: 0 5px;
+	background: url(../img/fd_contacto-nombre.png) no-repeat;
+	color:#7e7e7e;
+	font-size: 11px;
+	display: inline-block;
+	z-index: 10;
+	height: 37px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 10px;
+}
 
+.contacto section.content input.mail{
+	width: 151px;
+	background: url(../img/fd_contacto-mail.png) no-repeat;
+	color:#7e7e7e;
+	font-size: 11px;
+	display: inline-block;
+	z-index: 10;
+	height: 37px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 10px;
+}
 
-
-
-
-
-
+.contacto section.content input.consulta{
+	width: 561px;
+	padding: 0 5px;
+	background: url(../img/fd_contacto-consulta.png) no-repeat;
+	color:#7e7e7e;
+	font-size: 11px;
+	display: inline-block;
+	z-index: 10;
+	height: 37px;
+	border: none;
+	margin-top: 8px;
+}
 
 
