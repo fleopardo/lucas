@@ -187,7 +187,6 @@ header nav{
 
 header nav li{
 	float: left;
-	margin-right:15px;
 }
 
 header nav li a{
@@ -195,6 +194,7 @@ header nav li a{
 	color:#918b8b;
 	font-size: 21px;
 	line-height: 23px;
+	margin-right:15px;
 	height:38px;
 	display: block;
 	padding-top:64px;
@@ -203,14 +203,35 @@ header nav li a{
 
 }
 
-header nav li a.active{
-	background: url(../img/sp_nav.png) no-repeat;
+header nav li .active span{
+	display: inline-block;
+	margin-left: -5px;
 }
 
 header nav li a.active.home{
-	background-position: 0 0;
+	background: url(../img/fd_nav-home.png) no-repeat;
 	width: 83px
 }
+
+header nav li a.active.empresa{
+	background: url(../img/fd_nav-empresa.png) no-repeat;
+	width: 93px
+}
+
+header nav li a.active.donde-comprar{
+	background: url(../img/fd_nav-dnd-comprar.png) no-repeat;
+	width: 141px
+}
+
+header nav li a.active.contacto,
+header nav li a.active.producto{
+	background: url(../img/fd_nav-contacto.png) no-repeat;
+	width: 103px
+}
+
+
+
+
 
 /*FIN HEADER*/
 
@@ -655,7 +676,8 @@ section.content .twitter img{
 	position: absolute;
 	z-index: 0;
 	right: 0;
-	top:0; 
+	top:0;
+	cursor: pointer;
 }
 
 
@@ -718,6 +740,8 @@ section.content .twitter img{
 	height: 37px;
 	border: none;
 	margin-top: 8px;
+	position: relative;
+	z-index: 10;
 }
 
 #map{
