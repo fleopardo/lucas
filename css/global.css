@@ -290,10 +290,6 @@ footer li a{
 	margin:0 auto;
 }
 
-section.content .bloques-cont{
-	overflow: hidden;
-}
-
 section.content .bloque{
 	float: left;
 	position: relative;
@@ -310,6 +306,7 @@ section.content .bloque.twitter{
 	border-bottom: 2px solid #00aced;
 	margin-top: 29px;
 	padding: 10px 0;
+	height: 183px;
 }
 
 section.content .bloque h1{
@@ -330,7 +327,7 @@ section.content .bloque h2{
 	margin-bottom: 20px;
 }
 
-section.content  .twitter h1{
+section.content .bloque.twitter h1{
 	margin: 0 0 5px;
 }
 
@@ -343,15 +340,15 @@ section.content .bloque a{
 	font-weight: bold;
 }
 
-section.content .twits-container{
-	border-bottom: 1px dotted #fff;
-	padding: 5px 0;
+section.content .bloque.twitter a{
+	color: #00aced;
 }
 
 section.content .twitter img{
 	position: absolute;
 	bottom:-58px;
 	right: 20px;
+	z-index: 10;
 }
 
 /*FIn Home*/
@@ -772,3 +769,55 @@ section.content .twitter img{
 	background: url(../img/fd_contact-fb.png) no-repeat;
 }
 
+
+
+#contentTweeter{
+	height: 100px;
+	width: 100%;
+	position: relative;
+}
+
+.tweets{
+	padding: 0 0;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.tweets li{
+	line-height: 16px;
+	border-bottom: 1px dotted #fff;
+	padding: 5px 0;
+}
+
+.tweets li span.title{
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 11px;
+}
+
+.tweets li span.title a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.title-twit{
+	display: inline-block;
+	margin-top: 16px;
+}
+
+.tweets li span.date{
+	position: absolute;
+	right: 0;
+	font-size: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.tweets li a{
+	color: #fff;
+}

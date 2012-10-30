@@ -1,6 +1,9 @@
 $(function(){
 	
-	
+
+
+	/* MAP */
+
 	var options = {
         zoom: 15,
         center: new google.maps.LatLng(-34.58, -58.47),
@@ -20,21 +23,32 @@ $(function(){
         , draggable: true
     });
 
-     /*PLACEHOLDER CHROME*/
-    
+    /* FIN MAP */
 
-            $('input, textarea').on('focus',function(){
-                if ( $(this).attr('placeholder') ) {
-                    $(this).data('placeholder', $(this).attr('placeholder'))
-                    .removeAttr('placeholder');
-                }
-            }).on('blur', function(){
-                if ( $(this).data('placeholder') ) {
-                    $(this).attr('placeholder', $(this).data('placeholder'))
-                    .removeData('placeholder');
-                }
-            });
 
+
+
+    /*PLACEHOLDER CHROME*/
+
+    $('input, textarea').on('focus',function(){
+        if ( $(this).attr('placeholder') ) {
+            $(this).data('placeholder', $(this).attr('placeholder'))
+            .removeAttr('placeholder');
+        }
+    }).on('blur', function(){
+        if ( $(this).data('placeholder') ) {
+            $(this).attr('placeholder', $(this).data('placeholder'))
+            .removeData('placeholder');
+        }
+    });
+
+   /* FIN PLACEHOLDER CHROME */
+
+
+  
    
+
+
+
 	
 }); 

@@ -17,6 +17,7 @@
     <![endif]-->
     <!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery-tweet-scroll.js"></script>
 	<script type="text/javascript" src="./js/sequence.jquery-min.js"></script>
 	<script type="text/javascript">	
 		
@@ -57,6 +58,9 @@
 					sequence.goTo(sequence.nextFrameID);
 				}
 			});
+
+			$("div.tweets").twitscroller({user: 'jquery'});
+
 		});
 	</script>
 </head>
@@ -109,7 +113,7 @@
 			<section class="content">
 				<div class="wrapper">
 					
-					<div class="bloques-cont">
+					<div class="bloques-cont clearfix">
 						<div class="bloque">
 							<img src="img/im_bloque-formula-exclusiva.png" alt="Formula Exclusiva">
 							<div>
@@ -128,12 +132,12 @@
 						</div>
 						<div class="bloque twitter">
 							<h1>Twitter</h1>
-							<div class="twits-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus dignissim odio at faucibus. http://tinyurl.com/jhasjh - 4 days ago
-							</div>
-							<div class="twits-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus dignissim odio at faucibus. http://tinyurl.com/jhasjh - 4 days ago
-							</div>
 							<img src="img/im_twitter-bloque.png" alt="twitter" class="twitter-logo" />
+							<div id="contentTweeter">
+								<div class="tweets"></div>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 			</section>

@@ -58,10 +58,11 @@ Aside from these comments, you may modify and distribute this file as you please
 }
 
 #nav {
-	bottom: 15px;
+	bottom: 9px;
 	right: 50%;
 	margin-left: -15px;
 	position: absolute;
+	z-index: 100;
 }
 
 #nav li {
