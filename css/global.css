@@ -168,6 +168,14 @@ header{
 	overflow: hidden;
 }
 
+header .wrapper{
+	position: relative;
+}
+
+header h1{
+	
+}
+
 header h1 a{
 	display:block;
 	width: 220px;
@@ -180,9 +188,11 @@ header h1 a{
 
 header nav{
 	overflow:hidden;
-	float:left;
 	position: relative;
 	z-index: 50;
+	position: absolute;
+	left: 300px;
+	top: 0;
 }
 
 header nav li{
@@ -192,7 +202,6 @@ header nav li{
 header nav li a{
 	text-transform: uppercase;
 	color:#918b8b;
-	font-size: 21px;
 	line-height: 23px;
 	margin-right:15px;
 	height:38px;
@@ -200,7 +209,6 @@ header nav li a{
 	padding-top:64px;
 	text-align: center;
 	font: 21px/23px big_noodle_titling_oblique;
-
 }
 
 header nav li .active span{
