@@ -659,6 +659,10 @@ section.content .twitter img{
 	float: left;
 }
 
+.donde-comprar section.content textarea{
+	line-height: 35px;
+}
+
 .donde-comprar section.content input[type=text].error,
 .donde-comprar section.content textarea.error{
 	border-color: #cc0000;
