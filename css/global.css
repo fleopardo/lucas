@@ -152,6 +152,7 @@ body{
 }
 
 .fd-pattern{
+	display: none;
 	background:url(../img/fd_pattern.jpg) center top no-repeat;
 }
 
@@ -173,7 +174,7 @@ header .wrapper{
 }
 
 header h1{
-	
+
 }
 
 header h1 a{
