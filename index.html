@@ -19,12 +19,12 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jquery-tweet-scroll.js"></script>
 	<script type="text/javascript" src="./js/sequence.jquery-min.js"></script>
-	<script type="text/javascript">	
-		
+	<script type="text/javascript">
+
 		/*/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
 		  if (!pageYOffset) window.scrollTo(0, 1);
 		}, 1000);*/
-		
+
 		$(document).ready(function(){
 			var options = {
 				nextButton: true,
@@ -50,7 +50,7 @@
 				$("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) a").removeClass("active");
 				$("#nav li:nth-child("+(sequence.nextFrameID)+") a").addClass("active");
 			}
-			
+
 			$("#nav li").click(function(){
 				if(!sequence.active){
 					$(this).children("a").removeClass("active").children("a").addClass("active");
@@ -63,6 +63,7 @@
 
 		});
 	</script>
+	<script type="text/javascript" src="./js/global.js"></script>
 </head>
 
 <body class="home">
@@ -112,7 +113,7 @@
 
 			<section class="content">
 				<div class="wrapper">
-					
+
 					<div class="bloques-cont clearfix">
 						<div class="bloque">
 							<img src="img/im_bloque-formula-exclusiva.png" alt="Formula Exclusiva">
@@ -137,7 +138,7 @@
 								<div class="tweets"></div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</section>
