@@ -642,31 +642,36 @@ section.content .twitter img{
 	height: 57px;
 }
 
-.donde-comprar section.content input.mail{
-	width: 61px;
-	background: url(../img/fd_donde-comprar-tu-mail.png) no-repeat;
-	color:#7e7e7e;
-	font-size: 11px;
+.donde-comprar section.content input[type=text],
+.donde-comprar section.content textarea{
+	height: 35px;
 	display: inline-block;
-	z-index: 10;
-	height: 37px;
+	font-size: 11px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#7e7e7e;
 	padding: 0 5px;
-	border: none;
 	margin-top: 8px;
+	background: url(../img/fd_inputs.jpg) top repeat-x;
+	float: left;
+}
+
+.donde-comprar section.content input[type=text].error,
+.donde-comprar section.content textarea.error{
+	border-color: #cc0000;
+}
+
+.donde-comprar section.content input.mail{
+	width: 59px;
+	z-index: 10;
 	margin-right: 5px;
 }
 
 .donde-comprar section.content input.donde-comprar{
-	width: 182px;
-	background: url(../img/fd_donde-comprar-dnd-compra-field.png) no-repeat;
-	color:#7e7e7e;
-	font-size: 11px;
-	display: inline-block;
+	width: 180px;
 	z-index: 10;
-	height: 37px;
-	padding: 0 5px;
-	border: none;
-	margin-top: 8px;
 }
 
 .donde-comprar section.content input.btn-submit{
@@ -705,45 +710,24 @@ section.content .twitter img{
 }
 
 .contacto section.content input.nombre{
-	width: 141px;
-	padding: 0 5px;
-	background: url(../img/fd_contacto-nombre.png) no-repeat;
-	color:#7e7e7e;
-	font-size: 11px;
-	display: inline-block;
+	width: 139px;
 	z-index: 10;
-	height: 37px;
-	border: none;
-	margin-top: 8px;
 	margin-right: 10px;
 }
 
 .contacto section.content input.mail{
-	width: 151px;
-	background: url(../img/fd_contacto-mail.png) no-repeat;
-	color:#7e7e7e;
-	font-size: 11px;
-	display: inline-block;
+	width: 149px;
 	z-index: 10;
-	height: 37px;
-	border: none;
-	margin-top: 8px;
 	margin-right: 10px;
 }
 
-.contacto section.content input.consulta{
-	width: 561px;
-	padding: 0 5px;
-	background: url(../img/fd_contacto-consulta.png) no-repeat;
-	color:#7e7e7e;
-	font-size: 11px;
-	display: inline-block;
+.contacto section.content textarea{
+	width: 559px;
 	z-index: 10;
-	height: 37px;
-	border: none;
-	margin-top: 8px;
 	position: relative;
 	z-index: 10;
+	resize:none;
+	overflow: hidden;
 }
 
 #map{
