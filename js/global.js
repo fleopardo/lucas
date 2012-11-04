@@ -4,7 +4,7 @@ $(function(){
 	 * Efecto de fade al cargar y salir de las paginas
 	 */
 	$('.fd-pattern').fadeIn(500);
-	$('a:not([target="_blank"])').click(function(e){
+	$('nav a, footer a').click(function(e){
 		e.preventDefault();
 		var link = this;
 		$('.fd-pattern').fadeOut(200, function(){

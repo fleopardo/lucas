@@ -142,7 +142,7 @@ strong{
 body{
 	font: 11px/14px tahoma, arial, helvetica, sans-serif;
 	color: #9b9b9b;
-	background: #171717 url(../img/fd_body.jpg) center top repeat-y;
+	background: #171717;
 	overflow: hidden;
 	overflow-y:auto;
 }
@@ -165,10 +165,6 @@ body{
 
 
 /*Header*/
-header{
-	overflow: hidden;
-}
-
 header .wrapper{
 	position: relative;
 }
@@ -316,6 +312,7 @@ footer .wrapper > p a{
 	height: 521px;
 	width:1028px;
 	margin:0 auto;
+	z-index: 0;
 }
 
 section.content .bloque{
@@ -334,7 +331,7 @@ section.content .bloque.twitter{
 	border-bottom: 2px solid #00aced;
 	margin-top: 29px;
 	padding: 10px 0;
-	height: 183px;
+	height: 190px;
 }
 
 section.content .bloque h1{
@@ -395,6 +392,7 @@ section.content .twitter img{
 	margin: 48px auto 0;
 	position: relative;
 	background: url(../img/fd_producto-destacado.png) center top no-repeat;
+	z-index: 0;
 }
 
 .productos .destacado{
@@ -510,6 +508,10 @@ section.content .twitter img{
 	height: 248px;
 	float: left;
 	margin-right: 25px;
+}
+
+.productos section.content .bloques-cont.bottom .bloque0{
+	background: url(../img/fd_productos-bloque-bottom0.png) center bottom no-repeat;
 }
 
 .productos section.content .bloques-cont.bottom .bloque1{

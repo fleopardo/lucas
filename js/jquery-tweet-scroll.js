@@ -100,7 +100,7 @@
 
                                 var date = relative_time(val.created_at);
 
-                                var link = "http://twitter.com/vegagirl5/statuses/" + val.id;
+                                var link = "http://twitter.com/"+settings.user+"/status/" + val.id_str;
 
                                 $('<li></li>')
 
