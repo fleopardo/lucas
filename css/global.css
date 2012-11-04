@@ -238,6 +238,15 @@ header nav li a.active.producto{
 	width: 103px
 }
 
+header .bloque-fb{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	padding-top: 30px;
+	background: url(../img/fd_header-fb-like.png) center top no-repeat;
+	width: 120px;
+}
+
 /*FIN HEADER*/
 
 
@@ -278,12 +287,22 @@ footer ul{
 
 footer li{
 	float: left;
-	padding-right: 10px;
+	padding: 0 10px;
 	background: url(../img/fd_footer-separator.jpg) right no-repeat;
 }
 
 footer li a{
 	color:#5d5656;
+}
+
+footer .wrapper > p{
+	float: right;
+	color: #5d5656;
+	font: 11px/35px tahoma, arial, helvetica, sans-serif;
+}
+
+footer .wrapper > p a{
+	color: #b71a1f;
 }
 
 /*Fin Footer*/

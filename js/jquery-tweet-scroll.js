@@ -18,7 +18,7 @@
 
                     user: null,
 
-                    visible: 2,
+                    visible: 3,
 
                     speed: 7000,
 

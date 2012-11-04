@@ -6,7 +6,7 @@
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	//$emailAdmin = "contactenos@foodpro.com.ar";
-	$emailAdmin = "santiagoleopardo@gmail.com";
+	$emailAdmin = "contactanos@foodpro.com.ar";
 
 	//Validations
 	$return['status'] = 'ok';
