@@ -2,14 +2,14 @@ $(function(){
 
 
 	/*
-	 * Form Validation & Submit
+	 * Contacto - Form Validation & Submit
 	 */
 	$('#contact-form').bind('submit', function(event) {
 
 		event.preventDefault();
 		event.stopPropagation();
 
-		$('#contact-form .input').removeClass('error');
+		$('#contact-form input, #contact-form textarea').removeClass('error');
 
 		var name = $('#name');
 		var email = $('#email');
@@ -57,18 +57,6 @@ $(function(){
 
 		//Si hubo errores
 		if( error ){
-
-			/*var mensajeError = '<p id="mensajeError">Los siguientes campos tienen errores: ';
-
-			if(errorName){ mensajeError += 'Nombre. ';}
-			if(errorEmail){ mensajeError += 'Email. ';}
-			if(errorPais){ mensajeError += 'Telefono (Solo numeros). ';}
-			if(errorMessage){ mensajeError += 'Consulta. ';}
-
-			mensajeError += '</p>';
-
-			contentError.append(mensajeError);
-			contentError.fadeIn(1000);*/
 
 		}else{
 

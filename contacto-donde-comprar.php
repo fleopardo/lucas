@@ -1,22 +1,18 @@
 <?php
 
-	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
-	$message = trim($_POST['message']);
-	$emailAdmin = "contactanos@foodpro.com.ar";
+	$barrio = trim($_POST['barrio']);
+	$emailAdmin = "info@foodpro.com.ar";
 
 	//Validations
 	$return['status'] = 'ok';
-	if(empty($name)){
-		$return['errors'][] = 'name';
-	}
 
 	//if(empty($email) || !ereg('^([a-zA-Z0-9\._]+)\@([a-zA-Z0-9\.-]+)\.([a-zA-Z]{2,4})$', $email)){
 	//	$return['errors'][] = 'email';
 	//}
 
-	if(empty($message)){
-		$return['errors'][] = 'message';
+	if(empty($barrio)){
+		$return['errors'][] = 'barrio';
 	}
 
 	if(!empty($return['errors'])){
@@ -33,9 +29,9 @@
 
 		$title = 'Food Pro Web';
 
-		$content = "Nombre: ".$name."\n";
-		$content .= "Email: ".$email."\n";
-		$content .= "Mensaje: \n".$message."\n";
+		$content = "Se han contactado para saber donde comprar.\n\n";
+		$content .= "Email del cliente: ".$email."\n";
+		$content .= "Barrio del cliente: ".$barrio."\n";
 		mail($emailAdmin, $title, $content, $headers);
 
 
@@ -45,11 +41,7 @@
 		$headersCopy .= "From: ".$emailAdmin."\r\n";
 
 		$content = "¡Hola! Tu mensaje fue enviado con éxito a FoodPro. Muchas gracias por contactarte.\n";
-		$content .= "Muy pronto vas a recibir una respuesta.\n";
-		$content .= "(Debajo verás una copia de tu mensaje)\n\n";
-		$content .= "Nombre: ".$name."\n";
-		$content .= "Email: ".$email."\n\n";
-		$content .= "Mensaje: \n".$message."\n\n";
+		$content .= "Muy pronto vas a recibir la respuesta.\n";
 
 		mail($email, $title, $content, $headersCopy);
 	}

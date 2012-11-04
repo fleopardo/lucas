@@ -787,6 +787,20 @@ section.content .twitter img{
 
 
 
+#form-response {
+	color: #05972E;
+	font-size: 12px;
+	font-weight: 700;
+	width: 205px;
+	margin-top: 6px;
+	display: block;
+}
+
+#form-response.error { color: #a90f34; }
+#form-response.exito { color: #05972E; }
+
+
+
 #contentTweeter{
 	height: 100px;
 	width: 100%;
