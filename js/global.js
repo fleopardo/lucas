@@ -6,56 +6,99 @@
 
 ;(function(window){
 
-	var morico = {},
+	/** Caché de Variables **/
 
-		windowHeight = $(window).height();
+	var $html = $("html"),
 
+		$body = $("body"),
 
-	//$("body").css("min-height",windowHeight);
-
-
-	$(window).bind('scroll',function(e){
-
-     	parallaxScroll();
-
-	});
-
-	function parallaxScroll(){
-	    var scrolled = $(window).scrollTop();
-	    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
-	}
+		$windowHeight = $(window).height();
 
 
-    window.morico = morico;
+	/** Remuevo class NO-JS **/
+	$html.removeClass("no-js");
+
+
+	/** Desactivo el scroll **/
+	$($html,$body).css("overflow","hidden");
+
+
+	/** Funcion para actualizar el ACTIVE en los links **/
+	var currentNavigation = function(link){
+
+		$("nav li a").removeClass("active");
+
+		/** Si el link clikeado es del NAV entro.. **/
+
+		if(link.hasClass("linksPrincipales")){
+
+			link.addClass("active");
+
+		/** Si es externo entro aca **/
+		}else{
+
+			$("nav li a").each(function(i,e){
+
+				if( link.attr("data-scroll:anchor") == $(e).attr("href") ){
+
+					$(e).addClass("active");
+
+				}
+
+			})
+
+		}
+	};
+
+
+	/** Scroll To **/
+	(function(){
+
+		$(".scroll-to").on("click",function(event){
+
+			var that = $(this),
+				anchor = that.attr("data-scroll:anchor") || null,
+				speed = that.attr("data-scroll:speed") || 1500,
+				sectionName = that.text();
+
+			if( anchor !== null ){
+
+				event.preventDefault();
+
+				jQuery.scrollTo.window().queue([]).stop();
+				$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
+
+				if(window.history.pushState){
+					window.history.pushState(null, sectionName, anchor);
+				}
+
+				/** actualizo los active **/
+				currentNavigation(that);
+			}
+
+		});
+
+	}());
+
+
+	/** Inicializacion Placeholder fallback **/
+	$('input[placeholder]').placeholder();
 
 })(window);
 
 
 
-var scrollTo = (function (){
 
-	function init(){
 
-		$(".scroll-to").on("click",function(event){
 
-			var anchor = $(this).attr("data-scroll:anchor") || null,
-				speed = $(this).attr("data-scroll:speed") || 1000;
 
-			if( anchor !== null){
-				event.preventDefault();
-				$.scrollTo(anchor,speed,{
-					onAfter: function(){
-						jQuery.scrollTo.window().queue([]).stop();
-					}
-				});
-			}
+$(window).bind('scroll',function(e){
 
-		});
+ 	parallaxScroll();
 
-	}
+});
 
-	return {
-		init:init
-	}
-
-})();
+function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
+}

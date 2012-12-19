@@ -7,7 +7,7 @@
 /*
  * Reset
 */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle;resize:none;outline:0}li{list-style:none}strong{font-weight:bold}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;font-weight: normal;}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle;resize:none;outline:0}li{list-style:none}strong{font-weight:bold}
 
 
 /*
@@ -123,7 +123,7 @@ input.placeholder{ color: #373737; }
 
 .humo-2{
 	/*z-index: 1;*/
-	bottom: 125px;
+	bottom: 140px;
 }
 
 
@@ -138,6 +138,7 @@ input.placeholder{ color: #373737; }
 	line-height: 20px;
 	font-family: "sansationbold";
 	padding: 65px 10px;
+	display: block;
 }
 
 .circulo span{
@@ -160,18 +161,55 @@ section{
 	width: 960px;
 	height: 747px;
 	position: absolute;
+	padding-top: 50px;
+}
+
+.tituloSeccion h2{
+	font-family: "sansationbold";
+	font-size: 40px;
+	color: #a8a8a8;
+	line-height: 45px;
+}
+
+.tituloSeccion h3{
+	font-size: 50px;
+	line-height: 50px;
+	font-family: "bla...";
+	color: #737373;
 }
 
 
 
-#historia{
-	bottom: 1120px;
+/*
+ *Ver datos de contacto
+*/
+
+.ver-datos{
+	text-align: right;
+	font-size: 14px;
+	font-family: "sansationlight";
+	display: block;
+	width: 100px;
+	height: 55px;
+	background: url("./assets/telefono.png") no-repeat top right;
+	padding-right: 85px;
+	color: #737373;
+	line-height: 16px;
+	padding-top: 12px;
+	position: absolute;
+	top: 30px;
+	right: -15px;
+}
+
+.ver-datos span{
+	display: block;
+	font-family: "sansationbold";
 }
 
 
-#delicias{
-	bottom: 2240px;
-}
+
+
+
 
 #fotos{
 	bottom: 3360px;
@@ -187,9 +225,9 @@ section{
 
 
 /*
- * Nav
+ * Menu inferior
 */
-nav{
+.contenedorMenu{
 	background: url("./assets/nav.png") top center;
 	height: 169px;
 	position: fixed;
@@ -199,10 +237,34 @@ nav{
 	z-index: 2;
 }
 
-nav .contenedor{
+.contenedorMenu .contenedor{
 	height: 169px;
 	position: relative;
 }
+
+/*
+ * Logo
+*/
+.contenedorMenu header{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 25px;
+}
+
+.contenedorMenu header h1{
+	width: 115px;
+	height: 108px;
+	background: url("./assets/logo.png") top left;
+	display: inline-block;
+}
+
+
+/*
+ * Nav
+*/
 
 nav ul{
 	position: absolute;
@@ -232,6 +294,11 @@ nav ul > li a{
 	padding-bottom: 30px;
 	display: inline-block;
 }
+
+nav ul > li a.active{
+	background: url("./assets/icon-active.png") bottom center no-repeat;
+}
+
 
 
 
@@ -274,7 +341,6 @@ footer p{
 
 #home{
 	bottom: 0;
-	padding-top: 50px;
 }
 
 #home header {
@@ -357,14 +423,139 @@ footer p{
 	z-index: 2;
 }
 
+#home .contacto{
+	width: 420px;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	color: #737373;
+}
+
+#home .contacto dl{
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+}
+
+#home .contacto dt{
+	font-family: "sansationbold";
+	font-size: 26px;
+	text-transform: uppercase;
+	background: url("./assets/contacto-ar.gif") no-repeat bottom left;
+	padding-bottom: 3px;
+	line-height: 27px;
+	float: left;
+	clear: both;
+	margin-right: 10px;
+}
+
+#home .contacto dt.uy{
+	background: url("./assets/contacto-uy.gif") no-repeat bottom left;
+}
+
+#home .contacto dt,
+#home .contacto dd{
+	margin-bottom: 20px;
+}
+
+#home .contacto dd{
+	font-family: "sansationregular";
+	font-size: 10px;
+	line-height: 12px;
+	float: left;
+}
+
+
+
+
+/*
+ * Historia
+*/
+
+#historia{
+	bottom: 1120px;
+}
+
+#historia .tituloSeccion{
+	margin-top: 110px;
+}
+
+#historia .tituloSeccion h3{
+	margin-left: 55px;
+}
+
+#historia .txt{
+	width: 375px;
+	padding-right: 35px;
+	margin-top: 22px;
+}
+
+#historia .txt p{
+	margin-bottom: 20px;
+}
+
+#historia .reunion{
+	position: absolute;
+	right: -100px;
+	top: 70px;
+	background: url("./assets/background-pida-turno.png") no-repeat top left;
+	width: 730px;
+	height: 675px;
+}
+
+#historia .reunion a{
+	position: absolute;
+	top: 250px;
+	left: 155px;
+}
+
+
+/*
+ * Delicias
+*/
+
+#delicias{
+	bottom: 2240px;
+}
+
+#delicias .contenedorTexto{
+	position: absolute;
+	top: 100px;
+	right: 0;
+	width: 360px;
+}
+
+#delicias .tituloSeccion h3{
+	margin-left: 60px;
+}
+
+#delicias .txt{
+	width: 325px;
+	padding-right: 35px;
+	margin-top: 22px;
+	float: right;
+}
+
+#delicias .txt p{
+	margin-bottom: 20px;
+}
+
+#delicias .galeria{
+	position: absolute;
+	left: -80px;
+	top: 0;
+}
 
 
 /* MediaQuerys */
+@media only screen and (max-height: 850px){
 
-@media only screen and (max-height: 900px){
-/*
-	#home{
-		padding-top: 0;
+	section{
+		padding-top: 20px;
 	}
-*/
+
+	#home .entregasProgramadas{
+		bottom: 140px;
+	}
+
 }
