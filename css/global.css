@@ -48,6 +48,17 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'bickhamscriptpro';
+    src: url('../fonts/bickhamscriptpro.eot');
+    src: url('../fonts/bickhamscriptpro.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bickhamscriptpro.woff') format('woff'),
+         url('../fonts/bickhamscriptpro.ttf') format('truetype'),
+         url('../fonts/bickhamscriptpro.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*
  * End Fonts
 */
@@ -174,7 +185,9 @@ section{
 .tituloSeccion h3{
 	font-size: 50px;
 	line-height: 50px;
-	font-family: "bla...";
+	position: relative;
+	top: -15px;
+	font-family: "bickhamscriptpro";
 	color: #737373;
 }
 
@@ -211,17 +224,6 @@ section{
 
 
 
-#fotos{
-	bottom: 3360px;
-}
-
-#cocina{
-	bottom: 4480px;
-}
-
-#contacto{
-	bottom: 5600px;
-}
 
 
 /*
@@ -341,6 +343,7 @@ footer p{
 
 #home{
 	bottom: 0;
+	background: url("./assets/background-home.png") no-repeat top left;
 }
 
 #home header {
@@ -373,8 +376,8 @@ footer p{
 	position: relative;
 	width: 640px;
 	height: 630px;
-	top: -35px;
-	left: -170px;
+	top: 20px;
+	left: -190px;
 }
 
 #home .galeria article{
@@ -547,6 +550,146 @@ footer p{
 }
 
 
+/*
+ * Fotos
+*/
+
+#fotos{
+	background: url("./assets/background-fotos.png") no-repeat;
+	background-size:  100% auto;
+	bottom: 3360px;
+}
+
+#fotos .tituloSeccion{
+	margin-top: 10px;
+}
+
+#fotos .tituloSeccion h3{
+	margin-left: 80px;
+}
+
+#fotos .galeria{
+	margin-top: 90px;
+}
+
+#fotos .galeria ul{
+	overflow: hidden;
+	margin-left: 25px;
+}
+
+#fotos .galeria li{
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+/*
+ * Cocina
+*/
+
+
+
+#cocina{
+	bottom: 4480px;
+	background: url("./assets/background-fotos.png") no-repeat;
+	background-size:  100% auto;
+}
+
+#cocina .tituloSeccion{
+	margin-top: 10px;
+}
+
+#cocina .tituloSeccion h3{
+	margin-left: 80px;
+}
+
+#cocina .galeria{
+	margin-top: 90px;
+}
+
+#cocina .galeria ul{
+	overflow: hidden;
+	margin-left: 25px;
+}
+
+#cocina .galeria li{
+	float: left;
+	margin-right: 10px;
+}
+
+
+/*
+ * Contacto
+*/
+
+#contacto{
+	bottom: 5600px;
+	background: url("./assets/background-contacto.png") no-repeat top right;
+}
+
+#contacto .txt{
+	width: 420px;
+}
+
+#contacto .tituloSeccion{
+	margin-top: 20px;
+}
+
+#contacto .tituloSeccion h3{
+	margin-left: 50px;
+}
+
+#contacto .intro{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	padding-right: 70px;
+	color: #8f8d8d;
+	background: url("./assets/separador-contacto.png") no-repeat bottom left;
+}
+
+#contacto .contacto{
+	color: #737373;
+}
+
+#contacto .contacto dl{
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+}
+
+#contacto .contacto dt{
+	font-family: "sansationbold";
+	font-size: 26px;
+	text-transform: uppercase;
+	background: url("./assets/contacto-ar.gif") no-repeat bottom left;
+	padding-bottom: 3px;
+	line-height: 27px;
+	float: left;
+	clear: both;
+	margin-right: 10px;
+}
+
+#contacto .contacto dt.uy{
+	background: url("./assets/contacto-uy.gif") no-repeat bottom left;
+}
+
+#contacto .contacto dt,
+#contacto .contacto dd{
+	margin-bottom: 20px;
+}
+
+#contacto .contacto dd{
+	font-family: "sansationregular";
+	font-size: 10px;
+	line-height: 12px;
+	float: left;
+}
+
+
+
+
+
 /* MediaQuerys */
 @media only screen and (max-height: 850px){
 
@@ -554,8 +697,9 @@ footer p{
 		padding-top: 20px;
 	}
 
+	/*
 	#home .entregasProgramadas{
 		bottom: 140px;
-	}
+	}*/
 
 }

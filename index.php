@@ -58,7 +58,7 @@
 			<div class="galeria">
 				<ul>
 					<li>
-						<img src="./img/galeria-home/01.png" width="635" height="631" />
+						<img src="./img/galeria-home/01.png" width="623" height="456" />
 					</li>
 				</ul>
 
@@ -152,19 +152,99 @@
 
 		<section id="fotos">
 
-			sdsaidjsjdojdsaosa
+			<header class="tituloSeccion">
+				<hgroup>
+					<h2>Nuestros</h2>
+					<h3>... platos y manjares</h3>
+				</hgroup>
+			</header>
+
+			<div class="galeria">
+				<ul>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
+					</li>
+				</ul>
+			</div>
+
+			<a href="contacto.php" class="ver-datos scroll-to" data-scroll:anchor="#contacto">Ver datos de <span>contacto</span></a>
 
 		</section>
 
 		<section id="cocina">
 
-			sdsaidjsjdojdsaosa
+			<header class="tituloSeccion">
+				<hgroup>
+					<h2>Nuestras</h2>
+					<h3>... instalaciones</h3>
+				</hgroup>
+			</header>
+
+			<div class="galeria">
+				<ul>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
+					</li>
+				</ul>
+			</div>
+
+			<a href="contacto.php" class="ver-datos scroll-to" data-scroll:anchor="#contacto">Ver datos de <span>contacto</span></a>
 
 		</section>
 
 		<section id="contacto">
 
-			sdsaidjsjdojdsaosa
+			<div class="txt">
+
+				<header class="tituloSeccion">
+					<hgroup>
+						<h2>Contactenos</h2>
+						<h3>... o pida su reunion</h3>
+					</hgroup>
+				</header>
+
+				<p class="intro">Nunc sit amet consequat purus. Sed aliquam pretium varius. Phasellus mollis lacinia enim ac convallis. Donec sed laoreet risus.</p>
+
+				<div class="contacto">
+					<dl>
+						<dt>AR.</dt>
+						<dd>
+							<ul>
+								<li>Fraga 1414, Buenos Aires</li>
+								<li>00 54 11 45 55 61 43</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="uy">UY.</dt>
+						<dd>
+							<ul>
+								<li>Francisco Ros 2757, Punta Carretas</li>
+								<li>00 59 82 712 31 41</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+			</div>
 
 		</section>
 	</div>
