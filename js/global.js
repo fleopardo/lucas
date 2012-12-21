@@ -7,7 +7,6 @@
 ;(function(window){
 
 	/** Caché de Variables **/
-
 	var $html = $("html"),
 
 		$body = $("body"),
@@ -51,7 +50,7 @@
 	};
 
 
-	/** Scroll To **/
+	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	(function(){
 
 		$(".scroll-to").on("click",function(event){
@@ -81,24 +80,66 @@
 	}());
 
 
+	/** Bindeo el parallax **/
+	(function(){
+
+		$(window).bind('scroll',function(e){
+		 	var scrolled = $(window).scrollTop();
+		    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
+		});
+
+	}());
+
+
+	/** Valido el formulario **/
+	$("#envio-consulta").validate({
+		rules: {
+			nombre: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			telefono: {
+				required: false,
+				number: true
+			},
+			consulta: {
+				required: true,
+				minlength: 10
+			}
+		},
+
+		messages: {
+			nombre: {
+				required: "Ingresa tu nombre completo."
+			},
+			email: {
+				required: "Ingresa tu email.",
+				email: "Debe ser email válido"
+			},
+			telefono: {
+				number: "Ingresa solamente números"
+			},
+			consulta: {
+				required: "Ingresa tu consulta",
+				minlength: "Ingresa como mínimo 10 caracteres"
+			}
+		},
+
+		submitHandler: function(form) {
+			// some other code
+			// maybe disabling submit button
+			// then:
+			//$(form).submit();
+			alert("esssssa");
+		}
+	});
+
+
 	/** Inicializacion Placeholder fallback **/
 	$('input[placeholder]').placeholder();
 
+
 })(window);
-
-
-
-
-
-
-
-$(window).bind('scroll',function(e){
-
- 	parallaxScroll();
-
-});
-
-function parallaxScroll(){
-    var scrolled = $(window).scrollTop();
-    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
-}
