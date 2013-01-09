@@ -1,0 +1,46 @@
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+
+li.bjqs-slide{display:none;position:absolute;}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ol.bjqs-markers{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ol.bjqs-markers li{float:left;}
+
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+
+/** Pisando estilos */
+
+ol.bjqs-markers{
+	position: absolute;
+	z-index: 0;
+}
+
+ol.bjqs-markers li{
+	width: 18px;
+	height: 18px;
+	text-indent: -9999px;
+	background: url("./assets/sprite_slider.png") top left no-repeat;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+ol.bjqs-markers li.active-marker{
+	background-position: bottom left;
+}
+
+
+/* Home */
+#home ol.bjqs-markers{
+	left: 480px;
+	bottom: -55px;
+}
+
+/* delicias */
+#delicias ol.bjqs-markers{
+	right: 115px;
+	bottom: 54px;
+}

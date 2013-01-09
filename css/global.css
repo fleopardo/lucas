@@ -107,6 +107,10 @@ body{
 	display: inherit;
 }
 
+a:hover{
+	opacity: .9;
+}
+
 
 /*
  * Placeholders
@@ -237,7 +241,7 @@ section{
 	background: url("./assets/nav.png") top center;
 	height: 169px;
 	position: fixed;
-	bottom: 45px;
+	bottom: 44px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -261,7 +265,7 @@ section{
 }
 
 .contenedorMenu header h1{
-	width: 115px;
+	width: 114px;
 	height: 108px;
 	background: url("./assets/logo.png") top left;
 	display: inline-block;
@@ -391,6 +395,10 @@ footer p{
 	left: 170px;
 }
 
+#home .galeria > ul > li{
+	position: absolute;
+}
+
 
 #home .entregasProgramadas{
 	width: 175px;
@@ -495,6 +503,10 @@ footer p{
 	width: 375px;
 	padding-right: 35px;
 	margin-top: 22px;
+	height: 250px;
+	overflow: auto;
+	position: relative;
+	z-index: 1;
 }
 
 #historia .txt p{
@@ -541,6 +553,8 @@ footer p{
 	padding-right: 35px;
 	margin-top: 22px;
 	float: right;
+	height: 220px;
+	overflow: auto;
 }
 
 #delicias .txt p{
@@ -614,7 +628,8 @@ footer p{
 
 #cocina .galeria ul{
 	overflow: hidden;
-	margin-left: 25px;
+	width: 890px;
+	margin: 0 auto;
 }
 
 #cocina .galeria li{
@@ -654,7 +669,7 @@ footer p{
 
 #contacto .contacto{
 	color: #737373;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #contacto .contacto dl{

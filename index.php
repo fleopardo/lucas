@@ -15,7 +15,9 @@
 	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
 
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
-
+	<link rel="stylesheet" type="text/css" href="css/basic-jquery-slider.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
 </head>
 <body>
 
@@ -55,11 +57,11 @@
 				<a href="delicias.php" class="conoceDelicias scroll-to" data-scroll:anchor="#delicias">Conoc&eacute; nuestras delicias</a>
 			</header>
 
-			<div class="galeria">
-				<ul>
-					<li>
-						<img src="./img/galeria-home/01.png" width="623" height="456" />
-					</li>
+			<div class="galeria" id="slider-home">
+				<ul class="bjqs">
+					<li><img src="./img/galeria-home/01.png" width="623" height="456" /></li>
+					<li><img src="./img/galeria-home/01.png" width="623" height="456" /></li>
+					<li><img src="./img/galeria-home/01.png" width="623" height="456" /></li>
 				</ul>
 
 				<article>
@@ -106,8 +108,10 @@
 				</hgroup>
 			</header>
 
-			<div class="txt">
+			<div class="txt scroll-content">
 				<p>Nunc sit amet consequat purus. Sed aliquam pretium varius. Phasellus mollis lacinia enim ac convallis. Donec sed laoreet risus. Integer adipiscing urna sit amet magna blandit ut egestas nulla tempus. Cras malesuada malesuada nibh, eget tristique urna accumsan condimentum. Ut vehicula nibh ut massa tristique dapibus. Vestibulum sed eros ipsum.</p>
+
+				<p>Integer sem arcu, vulputate non auctor quis, aliquet et felis. Nam porta iaculis massa sit amet dignissim. Suspendisse tristique tortor quis nulla sollicitudin et lobortis velit dignissim. Nulla interdum ligula ac neque hendrerit tempus. Aenean accumsan, ipsum ac ornare viverra, ligula mauris accumsan libero, eu tempus metus leo eget turpis. Donec sit amet neque nulla, non venenatis felis. Mauris vitae augue ut nisl commodo cursus a et orci. Quisque a tempus sapien. Aliquam venenatis, lorem sit amet tristique tincidunt, nunc arcu hendrerit magna, sit amet aliquam libero mi id metus. Nam nec elit lacus. Nulla congue ultrices est, sed suscipit est vehicula vitae. Morbi lorem enim, tempus a lacinia at, posuere vitae quam. Sed volutpat ultricies dictum. Etiam nec mauris ac mi egestas dapibus.</p>
 
 				<p>Integer sem arcu, vulputate non auctor quis, aliquet et felis. Nam porta iaculis massa sit amet dignissim. Suspendisse tristique tortor quis nulla sollicitudin et lobortis velit dignissim. Nulla interdum ligula ac neque hendrerit tempus. Aenean accumsan, ipsum ac ornare viverra, ligula mauris accumsan libero, eu tempus metus leo eget turpis. Donec sit amet neque nulla, non venenatis felis. Mauris vitae augue ut nisl commodo cursus a et orci. Quisque a tempus sapien. Aliquam venenatis, lorem sit amet tristique tincidunt, nunc arcu hendrerit magna, sit amet aliquam libero mi id metus. Nam nec elit lacus. Nulla congue ultrices est, sed suscipit est vehicula vitae. Morbi lorem enim, tempus a lacinia at, posuere vitae quam. Sed volutpat ultricies dictum. Etiam nec mauris ac mi egestas dapibus.</p>
 			</div>
@@ -131,19 +135,21 @@
 					</hgroup>
 				</header>
 
-				<div class="txt">
+				<div class="txt scroll-content">
 					<p>Nunc sit amet consequat purus. Sed aliquam pretium varius. Phasellus mollis lacinia enim ac convallis. Donec sed laoreet risus. Integer adipiscing urna sit amet magna blandit ut egestas nulla tempus. Cras malesuada malesuada nibh, eget tristique urna accumsan condimentum. Ut vehicula nibh ut massa tristique dapibus. Vestibulum sed eros ipsum.</p>
+
+					<p>Integer sem arcu, vulputate non auctor quis, aliquet et felis. Nam porta iaculis massa sit amet dignissim. Suspendisse tristique tortor quis nulla sollicitudin et lobortis velit dignissim. Nulla interdum ligula ac neque hendrerit tempus. Aenean accumsan, ipsum ac ornare viverra, ligula mauris accumsan libero, eu tempus metus leo eget turpis. Donec sit amet neque nulla, non venenatis felis. Mauris vitae augue ut nisl commodo cursus a et orci. Quisque a tempus sapien. Aliquam venenatis, lorem sit amet tristique tincidunt, nunc arcu hendrerit magna, sit amet aliquam libero mi id metus. Nam nec elit lacus. Nulla congue ultrices est, sed suscipit est vehicula vitae. Morbi lorem enim, tempus a lacinia at, posuere vitae quam. Sed volutpat ultricies dictum. Etiam nec mauris ac mi egestas dapibus.</p>
 
 					<p>Integer sem arcu, vulputate non auctor quis, aliquet et felis. Nam porta iaculis massa sit amet dignissim. Suspendisse tristique tortor quis nulla sollicitudin et lobortis velit dignissim. Nulla interdum ligula ac neque hendrerit tempus. Aenean accumsan, ipsum ac ornare viverra, ligula mauris accumsan libero, eu tempus metus leo eget turpis. Donec sit amet neque nulla, non venenatis felis. Mauris vitae augue ut nisl commodo cursus a et orci. Quisque a tempus sapien. Aliquam venenatis, lorem sit amet tristique tincidunt, nunc arcu hendrerit magna, sit amet aliquam libero mi id metus. Nam nec elit lacus. Nulla congue ultrices est, sed suscipit est vehicula vitae. Morbi lorem enim, tempus a lacinia at, posuere vitae quam. Sed volutpat ultricies dictum. Etiam nec mauris ac mi egestas dapibus.</p>
 				</div>
 
 			</div>
 
-			<div class="galeria">
-				<ul>
-					<li>
-						<img src="./img/galeria-delicias/01.png" width="633" height="632" />
-					</li>
+			<div class="galeria" id="galeria-delicias">
+				<ul class="bjqs">
+					<li><img src="./img/galeria-delicias/01.png" width="633" height="632" /></li>
+					<li><img src="./img/galeria-delicias/01.png" width="633" height="632" /></li>
+					<li><img src="./img/galeria-delicias/01.png" width="633" height="632" /></li>
 				</ul>
 			</div>
 
@@ -160,19 +166,15 @@
 			</header>
 
 			<div class="galeria">
-				<ul>
-					<li>
-						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
-					</li>
+				<ul id="galeria-fotos">
+					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
 				</ul>
 			</div>
 
@@ -190,19 +192,15 @@
 			</header>
 
 			<div class="galeria">
-				<ul>
-					<li>
-						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
-					</li>
-					<li>
-						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
-					</li>
+				<ul id="galeria-cocina">
+					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
+					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
 				</ul>
 			</div>
 
@@ -242,8 +240,6 @@
 							</ul>
 						</dd>
 					</dl>
-				</div>
-
 				<form id="envio-consulta">
 					<input type="text" class="text" name="nombre" id="nombre" placeholder="Nombre" />
 					<input type="email" class="text" name="email" id="email" placeholder="Email" />
@@ -263,6 +259,9 @@
 	</footer>
 
 	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/basic-jquery-slider.min.js"></script>
+	<script src="js/libs/jquery.jcarousel.min.js"></script>
+	<script src="js/libs/jquery.jscrollpane.min.js"></script>
 	<script src="js/libs/jquery.placeholder.js"></script>
 	<script src="js/libs/jquery.scrollTo.js"></script>
 	<script src="js/libs/jquery.easing.1.3.js"></script>

@@ -51,48 +51,87 @@
 
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
-	(function(){
+	$(".scroll-to").on("click",function(event){
 
-		$(".scroll-to").on("click",function(event){
+		var that = $(this),
+			anchor = that.attr("data-scroll:anchor") || null,
+			speed = that.attr("data-scroll:speed") || 1500,
+			sectionName = that.text();
 
-			var that = $(this),
-				anchor = that.attr("data-scroll:anchor") || null,
-				speed = that.attr("data-scroll:speed") || 1500,
-				sectionName = that.text();
+		if( anchor !== null ){
 
-			if( anchor !== null ){
+			event.preventDefault();
 
-				event.preventDefault();
+			jQuery.scrollTo.window().queue([]).stop();
+			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
 
-				jQuery.scrollTo.window().queue([]).stop();
-				$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
-
-				if(window.history.pushState){
-					window.history.pushState(null, sectionName, anchor);
-				}
-
-				/** actualizo los active **/
-				currentNavigation(that);
+			if(window.history.pushState){
+				window.history.pushState(null, sectionName, anchor);
 			}
 
-		});
+			/** actualizo los active **/
+			currentNavigation(that);
+		}
 
-	}());
+	});
 
 
 	/** Bindeo el parallax **/
-	(function(){
-
-		$(window).bind('scroll',function(e){
-		 	var scrolled = $(window).scrollTop();
-		    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
-		});
-
-	}());
+	$(window).bind('scroll',function(e){
+	 	var scrolled = $(window).scrollTop();
+	    $('.humo-1 img').css('bottom',(0-(scrolled*.65))+'px');
+	});
 
 
 	/** Inicializacion Placeholder fallback **/
 	$('input[placeholder]').placeholder();
+
+
+	/** Inicialización slider home **/
+	$('#slider-home').bjqs({
+        'width' : 623,
+        'height' : 456,
+        'animationDuration': 700,
+        'showMarkers' : true,
+        'showControls' : false,
+        'centerMarkers' : false,
+        'keyboardNav': true,
+        'animation': "fade"
+    });
+
+
+    /** Inicialización slider home **/
+	$('#galeria-delicias').bjqs({
+        'width' : 633,
+        'height' : 632,
+        'animationDuration': 700,
+        'showMarkers' : true,
+        'showControls' : false,
+        'centerMarkers' : false,
+        'keyboardNav': true,
+        'animation': "fade"
+    });
+
+
+    /** Inicializacion carousel Cocina **/
+    $("#galeria-cocina").jcarousel({
+    	'scroll': 4,
+    	'animate': "fast"
+    });
+
+
+    /** Inicializacion carousel fotos **/
+    $("#galeria-fotos").jcarousel({
+    	'scroll': 4,
+    	'animate': "fast"
+    });
+
+
+    /** Inicializacion scroll personalizado **/
+	$('.scroll-content').jScrollPane({
+		verticalDragMaxHeight : 39,
+		verticalDragMinHeight : 39
+	});
 
 
 	/** Contacto - Form Validation & Submit **/
@@ -195,5 +234,36 @@
 	$('#envio-consulta input, #envio-consulta textarea').bind('focus', function(e){
 		$(this).removeClass('error');
 	});
+
+
+	/** detecto el hash **/
+	(function(){
+
+		var hash = window.location.hash;
+
+		if( hash == "" ){
+
+
+			$.scrollTo("#home", {speed: 2000, easing:'easeInExpo'});
+
+
+		}else{
+
+			$.scrollTo(hash, {speed: 1, easing:'easeOutExpo'});
+
+			$("nav li a").removeClass("active");
+
+			$("nav li a").each(function(i,e){
+
+					if( $(e).attr("data-scroll:anchor") == hash ){
+
+						$(e).addClass("active");
+
+					}
+
+				})
+		}
+
+	}());
 
 })(window);
