@@ -241,10 +241,10 @@
 						</dd>
 					</dl>
 				<form id="envio-consulta">
-					<input type="text" class="text" name="nombre" id="nombre" placeholder="Nombre" />
-					<input type="email" class="text" name="email" id="email" placeholder="Email" />
-					<input type="tel" class="text" name="telefono" id="telefono" placeholder="Telefono" />
-					<textarea name="consulta" id="consulta" placeholder="Consulta"></textarea>
+					<p><span>*</span><input type="text" class="text" name="nombre" id="nombre" placeholder="Nombre" /></p>
+					<p><span>*</span><input type="email" class="text" name="email" id="email" placeholder="Email" /></p>
+					<p><input type="tel" class="text" name="telefono" id="telefono" placeholder="Telefono" /></p>
+					<p><span>*</span><textarea name="consulta" id="consulta" placeholder="Consulta"></textarea></p>
 
 					<input type="submit" class="circulo enviar" name="enviar" id="enviar" />
 				</form>
