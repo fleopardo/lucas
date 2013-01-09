@@ -134,6 +134,7 @@ input.placeholder{ color: #9a9a9a; }
 
 .parallax img{
 	position: relative;
+	margin-left: 17px;
 }
 
 .humo-1{
