@@ -599,6 +599,7 @@ footer p{
 #fotos .galeria li{
 	float: left;
 	margin-right: 10px;
+	position: relative;
 }
 
 
@@ -636,8 +637,44 @@ footer p{
 #cocina .galeria li{
 	float: left;
 	margin-right: 10px;
+	position: relative;
 }
 
+#fotos .galeria li > a,
+#cocina .galeria li > a{
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url("./assets/hover-carousel.png") no-repeat top left;
+	cursor: pointer;
+}
+
+#fotos .galeria li > a span,
+#cocina .galeria li > a span{
+	display: none;
+}
+
+#cocina .kosher{
+	background: url("./assets/kosher.png") no-repeat top left;
+	padding-left: 50px;
+	min-height: 50px;
+	position: relative;
+	top: 40px;
+	left: -25px;
+}
+
+#cocina .kosher h4{
+	color: #d5b26e;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+#cocina .kosher p{
+	color: #545454
+}
 
 /*
  * Contacto
@@ -770,9 +807,26 @@ footer p{
 		padding-top: 20px;
 	}
 
-	/*
+	#home .galeria{
+		top: -50px;
+	}
+
 	#home .entregasProgramadas{
 		bottom: 140px;
-	}*/
+	}
+
+
+	#delicias .galeria{
+		top: -100px;
+	}
+
+	#cocina .kosher{
+		top: 0;
+	}
+
+	#contacto .txt{
+		position: relative;
+		top: -30px;
+	}
 
 }

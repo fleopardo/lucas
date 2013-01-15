@@ -127,6 +127,21 @@
     });
 
 
+    /** hover sobre carousel **/
+    $("#galeria-cocina li,#galeria-fotos li").bind("mouseenter",function(){
+    	$(this).find("a").stop(true,true).fadeIn();
+    });
+
+    $("#galeria-cocina li a,#galeria-fotos li a").bind("mouseout",function(){
+    	$(this).stop(true,true).fadeOut();
+    });
+
+
+    /** Inicializacion lightbox **/
+    $("#galeria-cocina li a[rel=cocina]").lightBox();
+    $("#galeria-fotos li a[rel=fotos]").lightBox();
+
+
     /** Inicializacion scroll personalizado **/
 	$('.scroll-content').jScrollPane({
 		verticalDragMaxHeight : 39,

@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/basic-jquery-slider.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
 	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" />
 </head>
 <body>
 
@@ -167,14 +168,48 @@
 
 			<div class="galeria">
 				<ul id="galeria-fotos">
-					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="fotos">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 
@@ -193,15 +228,48 @@
 
 			<div class="galeria">
 				<ul id="galeria-cocina">
-					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/01.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/02.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/03.png" width="212" height="225" /></li>
-					<li><img src="./img/galeria-fotos/04.png" width="212" height="225" /></li>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/03.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/04.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/01.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
+					<li>
+						<img src="./img/galeria-fotos/02.png" width="212" height="225" />
+						<a href="./img/galeria-fotos/01.png" rel="cocina">
+							<span>Click para ampliar</span>
+						</a>
+					</li>
 				</ul>
+			</div>
+
+			<div class="kosher">
+				<h4>Comida Kosher</h4>
+				<p>Nunc sit amet consequat purus. Sed aliquam pretium varius.</p>
 			</div>
 
 			<a href="contacto.php" class="ver-datos scroll-to" data-scroll:anchor="#contacto">Ver datos de <span>contacto</span></a>
@@ -265,7 +333,7 @@
 	<script src="js/libs/jquery.placeholder.js"></script>
 	<script src="js/libs/jquery.scrollTo.js"></script>
 	<script src="js/libs/jquery.easing.1.3.js"></script>
-	<script src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/libs/jquery.lightbox-0.5.min.js"></script>
 
 	<script src="js/global.js"></script>
 
