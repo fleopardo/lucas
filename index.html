@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<title>Bigan</title>
+
+	<!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="cleartype" content="on">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
+	
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/bjqs.css" />
+
+</head>
+<body class="home">
+	
+	<div class="layout">
+
+		<header>
+			<h1><a href="./home.html" title="Bigan">Bigan</a></h1>
+			<nav>
+				<ul>
+					<li class="active"><a href="./home.html" title="Home">Home</a></li>
+					<li><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a></li>
+					<li><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
+					<li><a href="./productos.html" title="Productos">Productos</a></li>
+					<li class="last"><a href="./contacto.html" title="Contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="content">
+			<div class="carousel">
+				<ul class="bjqs">
+			        <li>
+			        	<div class="product-list">
+			        		<h2>MP3 Mix Player</h2>
+							<span class="price">$149<sup>.99</sup></span>
+							<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+							
+			        	</div>
+			        	<img src="./img/banner01.jpg">
+			        </li>
+			        <li>
+			        	<div class="product-list">
+			        		<h2>MP3 Mshuffle</h2>
+							<span class="price">$209<sup>.99</sup></span>
+							<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+							
+			        	</div>
+			        	<img src="./img/banner02.jpg">
+			        </li>
+			    </ul>
+			</div>
+			
+			<div class="mercadolibre-info">
+				<p><strong>+ 100.000</strong> calificaciones positivas nos convierten en <span>mercadolider</span></p>
+			</div>
+
+			<ul class="product-list">
+				<li>
+					<h2>MP3 Mix Player</h2>
+					<span class="price">$149<sup>.99</sup></span>
+					<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+					<img src="./img/productos/im-home-mp3-mix.png" alt="MP3 Mix" width="160" height="264">
+				</li>
+
+				<li>
+					<h2>Mini Netbook</h2>
+					<span class="price">$949<sup>.99</sup></span>
+					<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+					<img src="./img/productos/im-home-mini-netbook.png" alt="Producto" width="218" height="264">
+				</li>
+
+				<li>
+					<h2>MP3 Shuffle</h2>
+					<span class="price">$49<sup>.99</sup></span>
+					<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+					<img src="./img/productos/im-home-mp3-shuffle.png" alt="Producto" width="218" height="264">
+				</li>
+			</ul>
+			<a href="./productos.html" title="Ver mas productos" class="ir-productos-link">Ver m&aacute;s productos</a>
+		</section>
+
+		<footer>
+			<div class="top right">
+				<p class="left">llamenos al <span>4751-2145</span></p>
+				<p class="right">seguinos en <a href="#" title="Facebook Bigan" class="fb-footer">Facebook Bigan</a></p>
+			</div>
+			<p class="left">Copyright &copy; 2013 &bull; Florencio Varela 36, congreso. Buenos Aires</p>
+			<ul class="right">
+				<li><a href="./home.html" title="Home">Home</a>&bull;</li>
+				<li><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a>&bull;</li>
+				<li><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a>&bull;</li>
+				<li><a href="./productos.html" title="Productos">Productos</a>&bull;</li>
+				<li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/bjqs-1.3.min.js"></script>
+	<script>
+        jQuery(document).ready(function($) {
+
+          $('.carousel').bjqs({
+            height      : 420,
+            width       : 960,
+            responsive  : true
+          });
+
+        });
+    </script>
+</body>
+</html>

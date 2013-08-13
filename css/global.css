@@ -1,0 +1,256 @@
+/*
+ * autors:
+ * Santiago Leopardo @sleopardo
+ * Fernando Leopardo @fer_leopardo
+*/
+
+/*
+ * http://html5doctor.com/html-5-reset-stylesheet/
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,images,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;outline:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}li{list-style:none}strong{font-weight:bold}
+
+strong{
+	font-weight: 700;
+}
+
+a{
+	color: #565656;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+/*
+ * Clearfix
+*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+body{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	color: #525252;
+	font-size: 13px;
+}
+
+.layout{
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+body.home{
+	background: url("./assets/fd-body-home.jpg") center top no-repeat;
+}
+
+header{
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+header h1{
+	float: left;
+}
+
+header h1 a{
+	width: 118px;
+	height: 136px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url("./assets/fd-logo.png") no-repeat; 
+}
+
+header ul{
+	float: right;
+	padding-top: 40px;
+}
+
+header li{
+	float: left;
+	margin-right: 8px;
+}
+
+header nav li a{
+	text-transform: uppercase;
+	background: url("./assets/fd-nav-separator.png") right bottom no-repeat;
+	display: block;
+	line-height: 94px;
+	padding-right: 27px;
+}
+
+header nav li.active a{
+	color: #fff;
+	background-position: right top;
+}
+
+header nav li.last a{
+	background: none;
+	margin-right: 0;
+}
+
+.mercadolibre-info{
+	margin: 20px 0 80px;
+}
+
+.mercadolibre-info p{
+	line-height: 93px;
+	text-align: right;
+	font-size: 17px;
+}
+
+.mercadolibre-info{
+	background: url("./assets/im-mercadolider.png") right no-repeat;
+	padding-right: 272px;
+}
+
+.mercadolibre-info p span{
+	display: none;
+}
+
+.product-list{
+	position: relative;
+}
+
+ul.product-list{
+	overflow: hidden;
+}
+
+.product-list li{
+	position: relative;
+	float: left;
+	height: 264px;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.product-list h2{
+	font-size: 32px;
+	color: #545454;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.product-list img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.product-list .price{
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 52px;
+	display: block;
+	color: #727272;
+	margin-bottom: 30px;
+}
+
+a.ver-detalles{
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 53px;
+	font-weight: 400;
+	background: url("./assets/fd-ver-mas-separator.png") left no-repeat;
+	padding-left: 23px;
+}
+
+a.ir-productos-link{
+	display: inline-block;
+	background: url("./assets/fd-separador-otrosProductos.png") left no-repeat;
+	padding-left: 30px;
+	line-height: 69px;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 20px 0 80px;
+}
+
+
+footer{
+	overflow: hidden;
+}
+
+footer > p{
+	clear: both;
+	font-size: 11px;
+	line-height: 20px;
+	color: #939393;
+	font-weight: 300;
+}
+
+footer .top{
+	margin-bottom: 30px;
+}
+
+footer .top p{
+	color: #6e6e6e;
+	line-height: 69px;
+}
+
+footer .top span,
+footer .top a.fb-footer{
+	display: inline-block;
+	background: url("./assets/sp-footer.png") no-repeat;
+	line-height: 36px;
+}
+
+footer .top span{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 300;
+	padding-right: 42px;
+	margin-left: 4px;
+	background-position: top right;
+	top: 7px;
+	position: relative;
+}
+
+footer .top .left{
+	background: url("./assets/fd-separador-otrosProductos.png") right no-repeat;
+	padding-right: 30px;
+}
+
+footer a.fb-footer{
+	display: inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-position: right bottom;
+	width: 36px;
+	margin-left: 4px;
+}
+
+footer ul{
+	overflow: hidden;
+}
+
+footer li{
+	float: left;
+	margin-right: 5px;
+}
+
+footer li a{
+	font-size: 11px;
+	line-height: 20px;
+	color: #939393;
+	font-weight: 300;
+	margin-right: 5px;
+}
