@@ -341,6 +341,10 @@ body.donde-estamos section.content{
 	overflow: hidden;
 }
 
+body.donde-estamos section.content .destacado{
+	margin-bottom: 95px;
+}
+
 body.donde-estamos section.content .left{
 	width: 295px;
 	background: url("./assets/fd_donde-estamos-left.png") bottom no-repeat;
