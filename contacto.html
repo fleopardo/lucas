@@ -17,9 +17,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.ui.selectmenu.css" />
 
 </head>
-<body class="general donde-estamos">
+<body class="general contacto">
 	
 	<div class="layout">
 
@@ -29,36 +30,45 @@
 				<ul>
 					<li><a href="./index.html" title="Home">Home</a></li>
 					<li><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a></li>
-					<li class="active"><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
+					<li><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
 					<li><a href="./productos.html" title="Productos">Productos</a></li>
-					<li class="last"><a href="./contacto.html" title="Contacto">Contacto</a></li>
+					<li class="active last"><a href="./contacto.html" title="Contacto">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<section class="content">
 			<div class="destacado">
-				<h2>Donde estamos<br /><span>encontranos</span></h2>
+				<h2>Pongase<br /><span>en contacto</span></h2>
 				<a href="#" title="Ampliar mapa">Ampliar mapa</a>
 			</div>
 
-			<div class="left">
-				<dl>
-					<dt>Oficina Comercial</dt>
-					<dd>Direccion</dd>
+			<form action="" method="" class="left clearfix">
+				<fieldset class="">
+					<div class="row select">
+						<select>
+							<option>MP3 Shuffle</option>
+							<option>MP3</option>
+							<option>MP3 Complejo</option>
+						</select>
+					</div>
+				</fieldset>
 
-					<dt>Horario de Atenci&oacute;n:</dt>
-					<dd>De lunes a viernes de 10 a 18hs y los s&aacute;bados de 9 a 12hs.</dd>
+				<fieldset class="">
+					<input type="text" placeholder="Su nombre..." name="" id="">
+					<input type="text" placeholder="su mail..." name="" id="">
+					<textarea></textarea>
+				</fieldset>
 
-					<dt>Como llegar en subte:</dt>
-					<dd>L&iacute;nea D, Tribunales y L&iacute;nea B, Uruguay.</dd>
+				<input type="submit" value="Enviar">
+				
+			</form>
 
-					<dt>Como llegar en colectivo:</dt>
-					<dd>5 - 6 - 7 - 23 - 24 - 26 - 29 - 38 - 39 - 50 - 67 - 75 - 99 - 102 - 109 - 115 - 140 - 146 - 155</dd>
-				</dl>
+			<div class="datosContacto right">
+				<p class="tel">llamenos al<br /> <span>4751-2145</span></p>
+				<p class="mail">escribanos a<br /> <a href="mailto:" title="">info@bigan.com</a></p>
+				<p class="facebook">seguinos en<br /> <a href="http://facebook.com/bigan" title="Facebook Bigan" class="fb-footer">facebook.com/bigan</a></p>
 			</div>
-
-			<div class="right" id="map_canvas"></div>
 			
 
 		</section>
@@ -82,39 +92,19 @@
 
 
 	<script src="js/libs/jquery.js"></script>
-	<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA2k8ZF17dlRBiHUKAJ1PyOexxZoTDHPvo&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-      	var myLatlng = new google.maps.LatLng(-34.531934,-58.550584);
-
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 15,
-          disableDefaultUI: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-
-        var icono = './css/assets/biganMapIcon.png';
-
-         var marker = new google.maps.Marker({
-		      position: myLatlng,
-		      map: map,
-		      title: 'Hello World!',
-		      icon : icono
-		  });
-
-		
-
-      }
-
-      $(document).ready(function(){
-      	initialize();
-      });
-
-    </script>
+	<script src="js/libs/jquery-ui-1.8.12.custom.min.js"></script>
+	<script src="js/libs/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript">
+		$(function(){
+	
+	
+			/*INCIALIZACION DE PLUG IN SELECTMENU*/
+			
+			$('select').selectmenu({
+				transferClasses:true
+			});
+			
+		}); 
+	</script>
 </body>
 </html>
