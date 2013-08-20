@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 
 </head>
-<body class="quienes-somos">
+<body class="donde-estamos">
 	
 	<div class="layout">
 
@@ -28,8 +28,8 @@
 			<nav>
 				<ul>
 					<li><a href="./index.html" title="Home">Home</a></li>
-					<li class="active"><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a></li>
-					<li><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
+					<li><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a></li>
+					<li class="active"><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
 					<li><a href="./productos.html" title="Productos">Productos</a></li>
 					<li class="last"><a href="./contacto.html" title="Contacto">Contacto</a></li>
 				</ul>
@@ -38,12 +38,30 @@
 
 		<section class="content">
 			<div class="destacado">
-				<h2>Mas de 10 a&ntilde;os<br /><span>en Mercadolibre</span></h2>
-				<a href="#" title="Ver E-SHOP">Ver E-SHOP</a>
+				<h2>Donde estamos<br /><span>encontranos</span></h2>
+				<a href="#" title="Ampliar mapa">Ampliar mapa</a>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<div class="left">
+				<dl>
+					<dt>Oficina Comercial</dt>
+					<dd>Direccion</dd>
+
+					<dt>Horario de Atenci&oacute;n:</dt>
+					<dd>De lunes a viernes de 10 a 18hs y los s&aacute;bados de 9 a 12hs.</dd>
+
+					<dt>Como llegar en subte:</dt>
+					<dd>L&iacute;nea D, Tribunales y L&iacute;nea B, Uruguay.</dd>
+
+					<dt>Como llegar en colectivo:</dt>
+					<dd>5 - 6 - 7 - 23 - 24 - 26 - 29 - 38 - 39 - 50 - 67 - 75 - 99 - 102 - 109 - 115 - 140 - 146 - 155</dd>
+				</dl>
+			</div>
+
+			<div class="right">
+				<div id="map_canvas"></div>
+			</div>
+
 		</section>
 
 		<footer>
@@ -65,5 +83,38 @@
 
 
 	<script src="js/libs/jquery.js"></script>
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA2k8ZF17dlRBiHUKAJ1PyOexxZoTDHPvo&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+      	var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 12,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var image = './css/assets/biganMapIcon.png';
+        console.log (image);
+        var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			//title:"Hello World!",
+			icon: image
+		});
+
+		var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+      }
+
+      $(document).ready(function(){
+      	initialize();
+      });
+
+    </script>
 </body>
 </html>

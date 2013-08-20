@@ -61,6 +61,14 @@ section.content{
 	padding:30px 0;
 }
 
+section.content dt{
+	font-weight: 700;
+}
+
+section.content dd{
+	font-weight: 400;
+}
+
 .destacado{
 	padding: 30px 0;
 }
@@ -318,4 +326,34 @@ body.quienes-somos section.content > p{
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 16px;
+}
+
+
+
+
+/*QUIENES SOMOS*/
+
+body.donde-estamos section.content{
+	overflow: hidden;
+}
+
+body.donde-estamos section.content .left{
+	width: 295px;
+}
+
+body.donde-estamos section.content dt{
+	margin-bottom: 5px;
+}
+
+body.donde-estamos section.content dd{
+	margin-bottom: 20px;
+}
+
+#map_canvas{
+	width: 620px;
+	height: 436px;
+	-webkit-box-shadow: 0px 0px 8px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 8px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 8px rgba(50, 50, 50, 0.75);
+	margin-right: 8px;
 }
