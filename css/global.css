@@ -64,10 +64,16 @@ section.content{
 
 section.content dt{
 	font-weight: 700;
+	margin-bottom: 5px;
+	background: url("./assets/fd-descriptionlist.png") left no-repeat;
+	padding-left: 16px;
 }
 
 section.content dd{
 	font-weight: 400;
+	margin-bottom: 20px;
+	margin-left: 16px;
+	line-height: 17px;
 }
 
 .destacado{
@@ -353,18 +359,6 @@ body.general section.content .destacado{
 	margin-bottom: 95px;
 }
 
-body.general section.content dt{
-	margin-bottom: 5px;
-	background: url("./assets/fd-descriptionlist.png") left no-repeat;
-	padding-left: 16px;
-}
-
-body.general section.content dd{
-	margin-bottom: 20px;
-	margin-left: 16px;
-	line-height: 17px;
-}
-
 
 
 
@@ -501,4 +495,20 @@ body.contacto form{
 
 body.productos > div{
 	background: url("./assets/fd-body-productos.jpg") center top no-repeat;
+}
+
+body.productos .destacado{
+	margin-bottom: 180px;
+}
+
+body.productos .destacado h2{
+	color: #545454;
+}
+
+body.productos .destacado h2 span{
+	color: #fff;
+}
+
+body.productos .product-list li > a{
+	display: block;
 }
