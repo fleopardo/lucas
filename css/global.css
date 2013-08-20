@@ -50,6 +50,7 @@ body{
 	font-weight: 400;
 	color: #525252;
 	font-size: 13px;
+	background: url("./assets/fd-body.jpg") center top repeat-y;
 }
 
 .layout{
@@ -101,7 +102,7 @@ section.content dd{
 
 
 
-body.home{
+body.home > div{
 	background: url("./assets/fd-body-home.jpg") center top no-repeat;
 }
 
@@ -234,10 +235,12 @@ a.ir-productos-link{
 
 footer{
 	overflow: hidden;
-	padding: 80px 0 10px 0;
+	height: 128px;
+	padding: 190px 0 10px 0;
+	background: url("./assets/fd-footer.jpg") center top no-repeat;
 }
 
-footer > p{
+footer > .layout > p{
 	clear: both;
 	font-size: 11px;
 	line-height: 20px;
@@ -305,8 +308,10 @@ footer li a{
 
 
 
+
 /*QUIENES SOMOS*/
-body.quienes-somos{
+
+body.quienes-somos > div{
 	background: url("./assets/fd-body-quienes-somos.jpg") center top no-repeat;
 }
 
@@ -328,7 +333,7 @@ body.quienes-somos section.content > p{
 
 /*QUIENES SOMOS - CONTACT*/
 
-body.general{
+body.general > div{
 	background: url("./assets/fd-body-general.jpg") center top no-repeat;
 }
 
@@ -485,4 +490,15 @@ body.contacto form{
 	font-size: 23px;
 	line-height: 28px;
 	font-weight: 300;
+}
+
+
+
+
+
+
+/*** PRODUCTOS ***/
+
+body.productos > div{
+	background: url("./assets/fd-body-productos.jpg") center top no-repeat;
 }

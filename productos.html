@@ -4,7 +4,7 @@
 <!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Bigan | Quienes Somos</title>
+	<title>Bigan</title>
 
 	<!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
 	<meta name="HandheldFriendly" content="True">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 
 </head>
-<body class="general donde-estamos">
+<body class="productos">
 	<div>
 		<div class="layout">
 
@@ -29,41 +29,48 @@
 					<ul>
 						<li><a href="./index.html" title="Home">Home</a></li>
 						<li><a href="./quienes-somos.html" title="Quienes somos">Quienes Somos</a></li>
-						<li class="active"><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
-						<li><a href="./productos.html" title="Productos">Productos</a></li>
+						<li><a href="./donde-estamos.html" title="Donde estamos">Donde estamos</a></li>
+						<li class="active"><a href="./productos.html" title="Productos">Productos</a></li>
 						<li class="last"><a href="./contacto.html" title="Contacto">Contacto</a></li>
 					</ul>
 				</nav>
 			</header>
 
 			<section class="content">
+
 				<div class="destacado">
-					<h2>Donde estamos<br /><span>encontranos</span></h2>
+					<h2>Pongase<br /><span>en contacto</span></h2>
 					<a href="#" title="Ampliar mapa">Ampliar mapa</a>
 				</div>
 
-				<div class="left">
-					<dl>
-						<dt>Oficina Comercial</dt>
-						<dd>Direccion</dd>
+				<ul class="product-list">
+					<li>
+						<h2>MP3 Mix Player</h2>
+						<span class="price">$149<sup>.99</sup></span>
+						<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+						<img src="./img/productos/im-home-mp3-mix.png" alt="MP3 Mix" width="160" height="264">
+					</li>
 
-						<dt>Horario de Atenci&oacute;n:</dt>
-						<dd>De lunes a viernes de 10 a 18hs y los s&aacute;bados de 9 a 12hs.</dd>
+					<li>
+						<h2>Mini Netbook</h2>
+						<span class="price">$949<sup>.99</sup></span>
+						<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+						<img src="./img/productos/im-home-mini-netbook.png" alt="Producto" width="218" height="264">
+					</li>
 
-						<dt>Como llegar en subte:</dt>
-						<dd>L&iacute;nea D, Tribunales y L&iacute;nea B, Uruguay.</dd>
-
-						<dt>Como llegar en colectivo:</dt>
-						<dd>5 - 6 - 7 - 23 - 24 - 26 - 29 - 38 - 39 - 50 - 67 - 75 - 99 - 102 - 109 - 115 - 140 - 146 - 155</dd>
-					</dl>
-				</div>
-
-				<div class="right" id="map_canvas"></div>
-				
-
+					<li>
+						<h2>MP3 Shuffle</h2>
+						<span class="price">$49<sup>.99</sup></span>
+						<a href="#" title="Ver detalles" class="ver-detalles">Ver detalles</a>
+						<img src="./img/productos/im-home-mp3-shuffle.png" alt="Producto" width="218" height="264">
+					</li>
+				</ul>
+				<a href="./productos.html" title="Ver mas productos" class="ir-productos-link">Ver m&aacute;s productos</a>
 			</section>
-		</div>
 
+			
+
+		</div>
 		<footer>
 			<div class="layout">
 				<div class="top right">
@@ -80,43 +87,9 @@
 				</ul>
 			</div>
 		</footer>
-	
+
 	</div>
-
+	
 	<script src="js/libs/jquery.js"></script>
-	<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA2k8ZF17dlRBiHUKAJ1PyOexxZoTDHPvo&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-      	var myLatlng = new google.maps.LatLng(-34.531934,-58.550584);
-
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 15,
-          disableDefaultUI: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-
-        var icono = './css/assets/biganMapIcon.png';
-
-         var marker = new google.maps.Marker({
-		      position: myLatlng,
-		      map: map,
-		      title: 'Hello World!',
-		      icon : icono
-		  });
-
-		
-
-      }
-
-      $(document).ready(function(){
-      	initialize();
-      });
-
-    </script>
 </body>
 </html>
