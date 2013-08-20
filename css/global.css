@@ -59,7 +59,7 @@ body{
 }
 
 section.content{
-	padding:30px 0;
+	padding:30px 0 10px;
 }
 
 section.content dt{
@@ -324,7 +324,7 @@ body.quienes-somos > div{
 .quienes-somos section.content{
 	background: url("./assets/fd-quienes-somos.png") right top no-repeat;
 	padding-right: 500px;
-	min-height: 756px;
+	min-height: 666px;
 }
 
 body.quienes-somos section.content > p{
@@ -384,7 +384,7 @@ body.donde-estamos section.content .left{
 }*/
 
 body.contacto section.content{
-	margin-bottom: 105px;
+	margin-bottom: 30px;
 }
 
 body.contacto form{
