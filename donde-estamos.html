@@ -96,18 +96,19 @@
           disableDefaultUI: true,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-
-        var image = './css/assets/biganMapIcon.png';
-        console.log (image);
-        var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			//title:"Hello World!",
-			icon: image
-		});
-
-		var map = new google.maps.Map(document.getElementById("map_canvas"),
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
             mapOptions);
+
+        var icono = './css/assets/biganMapIcon.png';
+
+         var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Hello World!',
+		      icon : icono
+		  });
+
+		
 
       }
 
