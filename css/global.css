@@ -333,20 +333,30 @@ body.quienes-somos section.content > p{
 
 /*QUIENES SOMOS*/
 
+body.donde-estamos{
+	background: url("./assets/fd-body-general.jpg") center top no-repeat;
+}
+
 body.donde-estamos section.content{
 	overflow: hidden;
 }
 
 body.donde-estamos section.content .left{
 	width: 295px;
+	background: url("./assets/fd_donde-estamos-left.png") bottom no-repeat;
+	padding-bottom: 260px;
 }
 
 body.donde-estamos section.content dt{
 	margin-bottom: 5px;
+	background: url("./assets/fd-descriptionlist.png") left no-repeat;
+	padding-left: 16px;
 }
 
 body.donde-estamos section.content dd{
 	margin-bottom: 20px;
+	margin-left: 16px;
+	line-height: 17px;
 }
 
 #map_canvas{
