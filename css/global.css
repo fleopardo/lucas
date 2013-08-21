@@ -25,6 +25,9 @@ a{
 	float: right;
 }
 
+.center{
+	text-align: center;
+}
 
 /*
  * Clearfix
@@ -220,7 +223,8 @@ ul.product-list{
 	margin-right: 30px;
 }
 
-.product-list li.last{
+.product-list li.last,
+.product-list li:nth-child(3n){
 	margin-right: 0;
 }
 
@@ -327,7 +331,7 @@ footer .top .left{
 	padding-right: 30px;
 }
 
-footer a.fb-footer{
+footer .top a.fb-footer{
 	display: inline-block;
 	text-indent: -9999px;
 	overflow: hidden;
@@ -569,6 +573,63 @@ body.productos .destacado h2 span{
 	color: #fff;
 }
 
-body.productos .product-list li > a{
-	display: block;
+body.productos .product-list{
+	margin-bottom: 30px;
+}
+
+body.productos .product-list li.over{
+	background: url("./assets/fd_product-list-over.png") center top no-repeat;
+}
+
+body.productos .condiciones,
+body.productos .pago{
+	width: 620px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body.productos .condiciones{
+	border-top: 1px solid #c4c4c4;
+	padding-top: 30px;
+}
+
+body.productos .condiciones dd span{
+	font-size: 11px;
+}
+
+body.productos .pago{
+	border-bottom: 1px solid #c4c4c4;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+body.productos .condiciones h3,
+body.productos .pago h3{
+	background: url("./assets/sp-productos-condiciones.png") no-repeat;
+	line-height: 41px;
+	padding-left: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #7a7a7a;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+body.productos .condiciones h3{
+	background-position: left top;
+}
+
+body.productos .pago h3{
+	background-position: left bottom;
+}
+
+body.productos .pago p{
+	background: url("./assets/fd-descriptionlist.png") left no-repeat;
+	padding-left: 16px;
+}
+
+body.productos .center{
+	margin-top: 30px;
+	font-size: 12px;
 }
