@@ -25,6 +25,9 @@ a{
 	float: right;
 }
 
+.center{
+	text-align: center;
+}
 
 /*
  * Clearfix
@@ -619,4 +622,9 @@ body.productos .pago h3{
 body.productos .pago p{
 	background: url("./assets/fd-descriptionlist.png") left no-repeat;
 	padding-left: 16px;
+}
+
+body.productos .center{
+	margin-top: 30px;
+	font-size: 12px;
 }
