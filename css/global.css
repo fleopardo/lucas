@@ -181,6 +181,10 @@ header nav li.last a{
 	padding-top: 0;
 }
 
+.home .carousel a.ver-detalles:hover{
+	color: #fff;
+}
+
 .mercadolibre-info{
 	margin: 20px 0 80px;
 }
@@ -213,7 +217,11 @@ ul.product-list{
 	float: left;
 	height: 264px;
 	width: 300px;
-	margin-right: 20px;
+	margin-right: 30px;
+}
+
+.product-list li.last{
+	margin-right: 0;
 }
 
 .product-list h2{

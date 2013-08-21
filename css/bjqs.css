@@ -13,6 +13,51 @@ ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
 
+
+
+
+ul.bjqs-controls.v-centered li a{
+	background: url(./assets/arrows-slider.png);
+	text-indent: -200px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	width: 50px;
+	height: 75px;
+	left:-10px;
+	background-position: 0px -40px;
+	top: 39% !important;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	width: 86px;
+	height: 160px;
+	right:-10px;
+	background-position: -110px 0px;
+}
+
+
+ol.bjqs-markers{
+	margin-top: 0;
+}
+
+ol.bjqs-markers li{
+	display:inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(./assets/bullets-slider.png) -15px 0px;
+	text-indent: -200px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: 2px;
+}
+
+ol.bjqs-markers li.active-marker{
+	background-position: 0px 0px;
+}
+
 ul.bjqs li img{
 	position: absolute;
 	z-index: 0;
