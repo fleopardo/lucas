@@ -57,7 +57,7 @@
 					<fieldset class="">
 						<input type="text" placeholder="Su nombre..." name="" id="">
 						<input type="text" placeholder="su mail..." name="" id="">
-						<textarea></textarea>
+						<textarea placeholder="Escriba el mensaje"></textarea>
 					</fieldset>
 
 					<input type="submit" value="Enviar">
@@ -97,6 +97,7 @@
 	<script src="js/libs/jquery.js"></script>
 	<script src="js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script src="js/libs/jquery.ui.selectmenu.js"></script>
+	<script src="js/libs/jquery.placeholder.js"></script>
 	<script type="text/javascript">
 		$(function(){
 
@@ -106,6 +107,9 @@
 			$('select').selectmenu({
 				transferClasses:true
 			});
+
+			//Placeholder fallback
+			$('input[placeholder],textarea[placeholder]').placeholder();
 
 		});
 	</script>
