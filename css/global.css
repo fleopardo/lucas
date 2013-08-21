@@ -572,8 +572,8 @@ body.productos .product-list{
 	margin-bottom: 30px;
 }
 
-body.productos .product-list li > a{
-	display: block;
+body.productos .product-list li.over{
+	background: url("./assets/fd_product-list-over.png") center top no-repeat;
 }
 
 body.productos .condiciones,
