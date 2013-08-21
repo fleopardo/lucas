@@ -101,7 +101,17 @@ section.content dd{
 	padding-left: 27px;
 	text-transform: uppercase;
 	font-size: 13px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
+
+.destacado > a:hover{
+	color: #000;
+}
+
 
 /*FIN SETEOS GENERALES*/
 
@@ -127,7 +137,7 @@ header h1 a{
 	display: block;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: url("./assets/fd-logo.png") no-repeat; 
+	background: url("./assets/fd-logo.png") no-repeat;
 }
 
 header ul{
@@ -146,11 +156,20 @@ header nav li a{
 	display: block;
 	line-height: 94px;
 	padding-right: 27px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 header nav li.active a{
 	color: #fff;
 	background-position: right top;
+}
+
+header nav li a:hover{
+	color: #fff;
 }
 
 header nav li.last a{
@@ -226,6 +245,11 @@ a.ver-detalles{
 	font-weight: 400;
 	background: url("./assets/fd-ver-mas-separator.png") left no-repeat;
 	padding-left: 23px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 a.ir-productos-link{
@@ -236,8 +260,17 @@ a.ir-productos-link{
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 20px 0 80px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
+a.ir-productos-link:hover,
+a.ver-detalles:hover{
+	color: #000;
+}
 
 footer{
 	overflow: hidden;
@@ -312,7 +345,17 @@ footer li a{
 	margin-right: 5px;
 }
 
+footer a{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
 
+footer a:hover{
+	color: #fff;
+}
 
 
 /*QUIENES SOMOS*/
@@ -453,6 +496,15 @@ body.contacto input[type=submit]{
 	margin-right: 55px;
 	margin-top: 60px;
 	clear: left;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+body.contacto input[type=submit]:hover{
+	color: #000;
 }
 
 
