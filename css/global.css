@@ -286,7 +286,7 @@ footer .top .left{
 	padding-right: 30px;
 }
 
-footer a.fb-footer{
+footer .top a.fb-footer{
 	display: inline-block;
 	text-indent: -9999px;
 	overflow: hidden;
@@ -511,4 +511,40 @@ body.productos .destacado h2 span{
 
 body.productos .product-list li > a{
 	display: block;
+}
+
+body.productos .condiciones,
+body.productos .pago{
+	width: 640px;
+	margin: 0 auto;
+}
+
+body.productos .condiciones{
+	border-top: 1px solid #c4c4c4;
+	padding-top: 30px;
+}
+
+body.productos .pago{
+	border-bottom: 1px solid #c4c4c4;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+body.productos .condiciones h3,
+body.productos .pago h3{
+	background: url("./assets/sp-productos-condiciones.png") no-repeat;
+	line-height: 41px;
+	padding-left: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #7a7a7a;
+	font-size: 24px;
+}
+
+body.productos .condiciones h3{
+	background-position: left top;
+}
+
+body.productos .pago h3{
+	background-position: left bottom;
 }
