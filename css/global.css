@@ -604,8 +604,8 @@ body.productos .pago{
 	padding-bottom: 30px;
 }
 
-body.productos .condiciones h3,
-body.productos .pago h3{
+body.productos h3,
+body.productos h3{
 	background: url("./assets/sp-productos-condiciones.png") no-repeat;
 	line-height: 41px;
 	padding-left: 48px;
@@ -647,4 +647,19 @@ body.productos.detalle section.content{
 body.productos.detalle .destacado{
 	position: relative;
 	padding: 0 0 30px;
+}
+
+body.productos.detalle h3,
+body.productos.detalle h3 span{
+	background: none;
+}
+
+body.productos.detalle h3{
+	line-height: 28px;
+	font-weight: 300;
+	margin-left: 140px;
+}
+
+body.productos.detalle h3 span{
+	font-weight: 700;
 }
