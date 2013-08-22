@@ -562,7 +562,7 @@ body.productos > div{
 }
 
 body.productos .destacado{
-	margin-bottom: 180px;
+	margin-bottom: 20px;
 }
 
 body.productos .destacado h2{
@@ -640,7 +640,11 @@ body.productos.detalle > div{
 	background: url("./assets/fd-body-productos-detalle.jpg") center top no-repeat;
 }
 
+body.productos.detalle section.content{
+	padding-top: 4px;
+}
+
 body.productos.detalle .destacado{
 	position: relative;
-	padding: 40px 0;
+	padding: 0 0 30px;
 }

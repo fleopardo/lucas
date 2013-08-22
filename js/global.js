@@ -25,11 +25,18 @@ function initialize() {
 
 jQuery(document).ready(function($) {
 
-	if ( $(".carousel").length > 0){
+	if ( $(".home .carousel").length > 0){
 	  $('.carousel').bjqs({
 	    height      : 420,
 	    width       : 960,
 	    responsive  : true
+	  });
+	}
+
+	if ( $(".detalle .carousel").length > 0){
+	  $('.carousel').bjqs({
+	    height      : 514,
+	    width       : 521
 	  });
 	}
 

@@ -83,3 +83,30 @@ ul.bjqs li .product-list .price{
 	line-height: 70px;
 	color: #fff;
 }
+
+
+/***detalle producto***/
+
+.productos.detalle .carousel{
+	margin: 0 auto;
+}
+
+.productos.detalle ul.bjqs-controls.v-centered li a{
+	background: url(./assets/arrows-slider-detalle.png) no-repeat;
+	text-indent: -200px;
+	overflow: hidden;
+	cursor: pointer;
+	width: 28px;
+	height: 53px;
+}
+
+.productos.detalle ul.bjqs-controls.v-centered li.bjqs-prev a{
+	left:-30px;
+	background-position: top left;
+	top: 39% !important;
+}
+
+.productos.detalle ul.bjqs-controls.v-centered li.bjqs-next a{
+	right:-30px;
+	background-position: top right;
+}
