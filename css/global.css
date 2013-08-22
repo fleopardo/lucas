@@ -641,23 +641,6 @@ body.productos.detalle > div{
 }
 
 body.productos.detalle .destacado{
-	text-align: center;
 	position: relative;
-	margin: 0;
-}
-
-body.productos.detalle .destacado h2{
-	color: #7a7a7a;
-	font-weight: 300;
-	font-size: 30px;
-	text-align: right;
-	position: absolute;
-	z-index: 10;
-	right: 0;
-	top: 40px;
-}
-
-body.productos.detalle .destacado h2 span{
-	font-weight: 700;
-	color: #7a7a7a;
+	padding: 40px 0;
 }
