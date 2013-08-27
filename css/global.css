@@ -164,6 +164,8 @@ header nav li a{
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	font-weight: 700;
 }
 
 header nav li.active a{
@@ -287,7 +289,7 @@ a.ver-detalles:hover{
 footer{
 	overflow: hidden;
 	height: 128px;
-	padding: 190px 0 10px 0;
+	padding: 190px 0 40px 0;
 	background: url("./assets/fd-footer.jpg") center top no-repeat;
 }
 
@@ -340,8 +342,9 @@ footer .top a.fb-footer{
 	margin-left: 4px;
 }
 
-footer ul{
+footer ul.nav{
 	overflow: hidden;
+	margin-bottom: 6px;
 }
 
 footer li{
@@ -369,6 +372,10 @@ footer a:hover{
 	color: #fff;
 }
 
+footer .fb-like{
+	clear: both;
+	float: right;
+}
 
 /*QUIENES SOMOS*/
 
