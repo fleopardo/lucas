@@ -3,7 +3,7 @@
  */
 $('body > div').fadeIn(500);
 
-$('a:not(.consultar-link)').click(function(e){
+$('a:not(.consultar-link a)').click(function(e){
 	e.preventDefault();
 	var link = this;
 	$('body > div').fadeOut(200, function(){
@@ -216,7 +216,7 @@ jQuery(document).ready(function($) {
 
 	/* Guardar producto elegido */
 
-	$(".consultar-link").on("click", function(event){
+	$(".consultar-link a").on("click", function(event){
 
 		var value = $(this).data("product-id");
 
