@@ -3,7 +3,7 @@
  */
 $('body > div').fadeIn(500);
 
-$('a').click(function(e){
+$('a:not(.consultar-link)').click(function(e){
 	e.preventDefault();
 	var link = this;
 	$('body > div').fadeOut(200, function(){
@@ -81,6 +81,17 @@ jQuery(document).ready(function($) {
 
 
 	if ( $("body").hasClass("contacto") ){
+
+
+		if( $.cookie('bigan_product') ){
+
+			/* Detectar el producto elegido */
+			$("#producto option[data-product-id='"+$.cookie('bigan_product')+"']").attr("selected","selected");
+
+		}
+
+
+
 
 		/*INCIALIZACION DE PLUG IN SELECTMENU*/
 		$('select').selectmenu({
@@ -172,6 +183,20 @@ jQuery(document).ready(function($) {
 
 		});
 
+
+
 	}
+
+
+
+	/* Guardar producto elegido */
+
+	$(".consultar-link").on("click", function(event){
+
+		var value = $(this).data("product-id");
+
+		$.cookie('bigan_product', value);
+
+	});
 
 });
