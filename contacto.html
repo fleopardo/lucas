@@ -43,24 +43,25 @@
 					<h2>Pongase<br /><span>en contacto</span></h2>
 				</div>
 
-				<form action="" method="" class="left clearfix">
+				<form action="envio-contacto.php" method="" id="form-consulta" class="left clearfix">
 					<fieldset class="">
 						<div class="row select">
-							<select>
-								<option>MP3 Shuffle</option>
-								<option>MP3</option>
-								<option>MP3 Complejo</option>
+							<select name="producto" id="producto">
+								<option value="MP3 shuffle">MP3 Shuffle</option>
+								<option value="MP3">MP3</option>
+								<option value="MP3 Complejo">MP3 Complejo</option>
 							</select>
 						</div>
 					</fieldset>
 
 					<fieldset class="">
-						<input type="text" placeholder="Su nombre..." name="" id="">
-						<input type="text" placeholder="su mail..." name="" id="">
-						<textarea placeholder="Escriba el mensaje"></textarea>
+						<input type="text" placeholder="Su nombre..." name="nombre" id="nombre">
+						<input type="text" placeholder="su mail..." name="email" id="email">
+						<textarea placeholder="Escriba el mensaje" name="consulta" id="consulta"></textarea>
 					</fieldset>
 
 					<input type="submit" value="Enviar">
+					<p id="form-response"></p>
 
 				</form>
 
