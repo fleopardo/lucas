@@ -88,7 +88,22 @@ jQuery(document).ready(function($) {
 			/* Detectar el producto elegido */
 			$("#producto option[data-product-id='"+$.cookie('bigan_product')+"']").attr("selected","selected");
 
+			$(".lista-de-productos div[data-product-id='"+$.cookie('bigan_product')+"']").show();
+
 		}
+
+		/* Cuando cambio el combo */
+
+		$("#producto").on("change", function(){
+
+			/* Grabo el nuevo valor por si actualizo me recuerde el nuevo */
+			var new_value = $(this).find("option:selected").data("product-id");
+			$.cookie('bigan_product', new_value);
+
+			$(".lista-de-productos div").hide();
+			$(".lista-de-productos div[data-product-id='"+new_value+"']").show();
+
+		});
 
 
 
