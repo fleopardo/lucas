@@ -85,10 +85,19 @@ jQuery(document).ready(function($) {
 
 		if( $.cookie('bigan_product') ){
 
-			/* Detectar el producto elegido */
+			/* Seleccionar el producto elegido en el combo */
 			$("#producto option[data-product-id='"+$.cookie('bigan_product')+"']").attr("selected","selected");
 
+			/* Mostrar la imagen del producto abajo del combo */
 			$(".lista-de-productos div[data-product-id='"+$.cookie('bigan_product')+"']").show();
+
+		}else{
+
+			/* Si no existe la cookie, muestro el producto que viene selected por default */
+			var active = $("#producto option:selected").data("product-id");
+
+			$(".lista-de-productos div[data-product-id='"+active+"']").show();
+
 
 		}
 
@@ -96,10 +105,11 @@ jQuery(document).ready(function($) {
 
 		$("#producto").on("change", function(){
 
-			/* Grabo el nuevo valor por si actualizo me recuerde el nuevo */
+			/* Grabo el nuevo valor por si actualizo la pagina me recuerde el nuevo */
 			var new_value = $(this).find("option:selected").data("product-id");
 			$.cookie('bigan_product', new_value);
 
+			/* Muestro el producto elegido */
 			$(".lista-de-productos div").hide();
 			$(".lista-de-productos div[data-product-id='"+new_value+"']").show();
 
