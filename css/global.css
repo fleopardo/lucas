@@ -17,6 +17,11 @@ a{
 	color: #565656;
 }
 
+sup{
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
 .left{
 	float: left;
 }
@@ -108,6 +113,7 @@ section.content dd{
 	padding-left: 27px;
 	text-transform: uppercase;
 	font-size: 13px;
+	font-weight: 700;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -195,18 +201,15 @@ header nav li.last a{
 }
 
 .mercadolibre-info{
-	margin: 20px 0 80px;
+	margin: 40px 0 80px;
+	background: url("./assets/im-mercadolider.png") right no-repeat;
+	padding-right: 272px;
 }
 
 .mercadolibre-info p{
 	line-height: 93px;
 	text-align: right;
 	font-size: 17px;
-}
-
-.mercadolibre-info{
-	background: url("./assets/im-mercadolider.png") right no-repeat;
-	padding-right: 272px;
 }
 
 .mercadolibre-info p span{
@@ -224,9 +227,11 @@ ul.product-list{
 .product-list li{
 	position: relative;
 	float: left;
-	height: 264px;
+	height: 234px;
 	width: 300px;
 	margin-right: 30px;
+	margin-bottom: 10px;
+	padding-top: 30px;
 }
 
 .product-list li.last,
@@ -234,17 +239,26 @@ ul.product-list{
 	margin-right: 0;
 }
 
+.product-list li > a{
+	display: block;
+	height: 100%;
+	cursor: pointer;
+}
+
 .product-list h2{
 	font-size: 32px;
 	color: #545454;
 	font-weight: 700;
 	text-transform: uppercase;
+	position: relative;
+	z-index: 0;
 }
 
 .product-list img{
 	position: absolute;
 	right: 0;
 	top: 0;
+	z-index: 10;
 }
 
 .product-list .price{
@@ -256,11 +270,12 @@ ul.product-list{
 	margin-bottom: 30px;
 }
 
-a.ver-detalles{
+a.ver-detalles,
+span.ver-detalles{
 	display: inline-block;
 	text-transform: uppercase;
 	line-height: 53px;
-	font-weight: 400;
+	font-weight: 700;
 	background: url("./assets/fd-ver-mas-separator.png") left no-repeat;
 	padding-left: 23px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -290,11 +305,14 @@ a.ver-detalles:hover{
 	color: #000;
 }
 
+
 footer{
 	overflow: hidden;
 	height: 128px;
 	padding: 190px 0 40px 0;
-	background: url("./assets/fd-footer.jpg") center top no-repeat;
+	background: url("./assets/fd-footer.png") center top no-repeat;
+	position: relative;
+	margin-top: -60px;
 }
 
 footer > .layout > p{
@@ -387,6 +405,11 @@ body.quienes-somos > div{
 	background: url("./assets/fd-body-quienes-somos.jpg") center top no-repeat;
 }
 
+body.quienes-somos .destacado{
+	margin-bottom: 110px;
+}
+
+
 .quienes-somos section.content{
 	background: url("./assets/fd-quienes-somos.png") right top no-repeat;
 	padding-right: 500px;
@@ -397,7 +420,7 @@ body.quienes-somos section.content > p{
 	margin-bottom: 25px;
 	font-weight: 300;
 	font-size: 13px;
-	line-height: 16px;
+	line-height: 20px;
 }
 
 
@@ -422,7 +445,7 @@ body.general section.content{
 }
 
 body.general section.content .destacado{
-	margin-bottom: 95px;
+	margin-bottom: 130px;
 }
 
 
@@ -453,8 +476,12 @@ body.contacto section.content{
 	margin-bottom: 30px;
 }
 
+body.contacto section.content .destacado{
+	margin-bottom: 200px;
+}
+
 body.contacto form{
-	width: 680px;
+	width: 670px;
 	background: url("./assets/fd-contacto-separator-content.png") right top no-repeat;
 	overflow: hidden;
 }
@@ -516,8 +543,8 @@ body.contacto input[type=submit]{
 	height: 53px;
 	text-transform: uppercase;
 	float: right;
-	margin-right: 55px;
-	margin-top: 60px;
+	margin-right: 16px;
+	margin-top: 40px;
 	clear: left;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -537,28 +564,40 @@ body.contacto form{
 }
 
 .datosContacto p{
+	margin-bottom: 30px;
+	text-align: right;
+}
+
+.datosContacto p span{
+	margin-right: 45px;
+}
+
+.datosContacto p a,
+.datosContacto p span.tel{
 	background: url("./assets/sp-contacto.png") no-repeat;
 	padding-right: 45px;
-	margin-bottom: 8px;
+	display: inline-block;
 }
 
-.datosContacto p.tel{
+.datosContacto p.tel span.tel{
 	background-position: right 0;
+	margin-right: 0;
 }
 
-.datosContacto p.mail{
+.datosContacto p.mail a{
 	background-position: right -48px;
 }
 
-.datosContacto p.facebook{
-	background-position: right -98px;
+.datosContacto p.facebook a{
+	background-position: right -102px;
 }
 
-.datosContacto p span,
+.datosContacto p span.tel,
 .datosContacto p a{
-	font-size: 23px;
-	line-height: 28px;
+	font-size: 26px;
+	line-height: 36px;
 	font-weight: 300;
+	margin-top: -3px;
 }
 
 
@@ -573,7 +612,7 @@ body.productos > div{
 }
 
 body.productos .destacado{
-	margin-bottom: 20px;
+	margin-bottom: 220px;
 }
 
 body.productos .destacado h2{
@@ -665,10 +704,12 @@ body.productos.detalle h3 span{
 	background: none;
 }
 
-body.productos.detalle h3{
-	line-height: 28px;
-	font-weight: 300;
+
+.productos.detalle h3{
+	font-size: 36px;
+	line-height: 40px;
 	margin-left: 140px;
+	font-weight: 300;
 }
 
 body.productos.detalle h3 span{
