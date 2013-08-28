@@ -239,12 +239,6 @@ ul.product-list{
 	margin-right: 0;
 }
 
-.product-list li > a{
-	display: block;
-	height: 100%;
-	cursor: pointer;
-}
-
 .product-list h2{
 	font-size: 32px;
 	color: #545454;
@@ -650,6 +644,12 @@ body.productos .product-list{
 
 body.productos .product-list li.over{
 	background: url("./assets/fd_product-list-over.png") center top no-repeat;
+}
+
+body.productos .product-list li > a{
+	display: block;
+	height: 100%;
+	cursor: pointer;
 }
 
 body.productos .condiciones,
