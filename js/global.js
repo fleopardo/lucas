@@ -154,7 +154,7 @@ jQuery(document).ready(function($) {
 
 				$.ajax({
 					type: 'POST',
-					data: 'name='+nameIngresado+'&email='+emailIngresado+'&consulta='+messageIngresado+'&producto='+destinatarioIngresado,
+					data: 'name='+nameIngresado+'&email='+emailIngresado+'&consulta='+messageIngresado+'&producto='+productoIngresado,
 					dataType: 'json',
 					url: $('#form-consulta').attr("action"),
 					error: function(xhr, ajaxOptions, thrownError){
