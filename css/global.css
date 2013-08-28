@@ -484,6 +484,7 @@ body.contacto form{
 	width: 670px;
 	background: url("./assets/fd-contacto-separator-content.png") right top no-repeat;
 	overflow: hidden;
+	position: relative;
 }
 
 body.contacto fieldset{
@@ -502,6 +503,7 @@ body.contacto textarea{
 	color: #787878;
 	display: block;
 	margin-bottom: 5px;
+	border: 1px solid transparent;
 }
 
 body.contacto input[type=text]{
@@ -555,6 +557,25 @@ body.contacto input[type=submit]{
 
 body.contacto input[type=submit]:hover{
 	color: #000;
+}
+
+.contacto form input[type="text"].error,
+.contacto form textarea.error,
+.contacto .ui-selectmenu.error{
+	border-color: #c00;
+}
+
+.contacto #form-response{
+	clear: both;
+	text-align: center;
+	color: #093;
+	position: absolute;
+	bottom: 19px;
+	left: 0;
+}
+
+.contacto #form-response.error{
+	color: #c00;
 }
 
 
