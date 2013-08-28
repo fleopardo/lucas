@@ -56,6 +56,10 @@ body{
 	background: url("./assets/fd-body.jpg") center top repeat-y;
 }
 
+body > div{
+	display:none;
+}
+
 .layout{
 	width: 960px;
 	margin: 0 auto;
