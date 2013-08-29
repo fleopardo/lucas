@@ -34,6 +34,10 @@ sup{
 	text-align: center;
 }
 
+.DN{
+	display: none;
+}
+
 /*
  * Clearfix
 */
@@ -311,7 +315,6 @@ footer{
 	padding: 190px 0 40px 0;
 	background: url("./assets/fd-footer.png") center top no-repeat;
 	position: relative;
-	margin-top: -60px;
 }
 
 footer > .layout > p{
@@ -745,3 +748,33 @@ body.productos.detalle h3 span{
 body.productos.detalle h3 span{
 	font-weight: 700;
 }
+
+body.productos.detalle .consultar-link{
+	text-align: center;
+	margin-top: 100px;
+}
+
+body.productos.detalle .consultar-link i{
+	display: inline-block;
+	width: 24px;
+	height: 80px;
+	background: url("./assets/bg-consultar-link.png") top left no-repeat;
+	vertical-align: middle;
+}
+
+body.productos.detalle .consultar-link a{
+	padding-left: 60px;
+	padding-right: 60px;
+	display: inline-block;
+	line-height: 84px;
+	font-size: 18px;
+	color: #565656;
+	text-transform: uppercase;
+	vertical-align: middle;
+	max-width: 730px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+}
+

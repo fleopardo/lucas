@@ -3,7 +3,7 @@
  */
 $('body > div').fadeIn(500);
 
-$('a:not(.consultar-link)').click(function(e){
+$('a:not(.consultar-link a)').click(function(e){
 	e.preventDefault();
 	var link = this;
 	$('body > div').fadeOut(200, function(){
@@ -85,10 +85,35 @@ jQuery(document).ready(function($) {
 
 		if( $.cookie('bigan_product') ){
 
-			/* Detectar el producto elegido */
+			/* Seleccionar el producto elegido en el combo */
 			$("#producto option[data-product-id='"+$.cookie('bigan_product')+"']").attr("selected","selected");
 
+			/* Mostrar la imagen del producto abajo del combo */
+			$(".lista-de-productos div[data-product-id='"+$.cookie('bigan_product')+"']").show();
+
+		}else{
+
+			/* Si no existe la cookie, muestro el producto que viene selected por default */
+			var active = $("#producto option:selected").data("product-id");
+
+			$(".lista-de-productos div[data-product-id='"+active+"']").show();
+
+
 		}
+
+		/* Cuando cambio el combo */
+
+		$("#producto").on("change", function(){
+
+			/* Grabo el nuevo valor por si actualizo la pagina me recuerde el nuevo */
+			var new_value = $(this).find("option:selected").data("product-id");
+			$.cookie('bigan_product', new_value);
+
+			/* Muestro el producto elegido */
+			$(".lista-de-productos div").hide();
+			$(".lista-de-productos div[data-product-id='"+new_value+"']").show();
+
+		});
 
 
 
@@ -191,7 +216,7 @@ jQuery(document).ready(function($) {
 
 	/* Guardar producto elegido */
 
-	$(".consultar-link").on("click", function(event){
+	$(".consultar-link a").on("click", function(event){
 
 		var value = $(this).data("product-id");
 
