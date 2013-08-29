@@ -213,7 +213,7 @@ header nav li.last a{
 }
 
 .mercadolibre-info{
-	margin: 40px 0 80px;
+	margin: 40px 0 60px;
 	background: url("./assets/im-mercadolider.png") right no-repeat;
 	padding-right: 272px;
 }
@@ -315,6 +315,10 @@ a.ver-detalles:hover{
 	color: #000;
 }
 
+body.home a.ir-productos-link{
+	margin-bottom: 50px;
+	margin-top: 0;
+}
 
 footer{
 	overflow: hidden;
