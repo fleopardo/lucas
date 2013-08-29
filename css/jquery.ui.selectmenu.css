@@ -10,6 +10,7 @@
     text-decoration: none;
     overflow: hidden;
     zoom: 1;
+    width: 296px !important;
 }
 
 .ui-selectmenu-icon {
@@ -41,6 +42,7 @@
 }
 
 .ui-selectmenu-menu-dropdown {
+	z-index: 50 !important;
 }
 
 .ui-selectmenu-menu li {

@@ -517,6 +517,9 @@ body.contacto textarea{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	height: 140px;
+	font-family: inherit;
+	font-size: 11px;
+
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -575,6 +578,40 @@ body.contacto input[type=submit]:hover{
 	color: #c00;
 }
 
+
+.contacto .product-list{
+	position: relative;
+}
+
+.contacto .product-list:before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #d2d2d2;
+}
+
+.contacto .product-list li{
+	margin-right: 0px;
+	border: 1px solid #d2d2d2;
+	padding: 30px;
+	width: 234px;
+	height: 161px;
+	overflow: hidden;
+}
+
+.contacto .product-list li img{
+	top: 10px;
+}
+
+.contacto .product-list h2,
+.contacto .product-list .price{
+	color: #d2d2d2
+}
 
 .datosContacto,
 body.contacto form{
