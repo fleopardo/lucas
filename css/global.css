@@ -178,13 +178,18 @@ header nav li a{
 	font-weight: 700;
 }
 
+body.home header nav li a,
+body.productos header nav li a{
+	color: #898989;
+}
+
 header nav li.active a{
-	color: #fff;
+	color: #fff!important;
 	background-position: right top;
 }
 
 header nav li a:hover{
-	color: #fff;
+	color: #fff!important;
 }
 
 header nav li.last a{
@@ -502,6 +507,7 @@ body.contacto textarea{
 
 body.contacto input[type=text]{
 	height: 57px;
+	line-height: 57px;
 }
 
 body.contacto select{
@@ -514,6 +520,9 @@ body.contacto textarea{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	height: 140px;
+	color: #787878;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
