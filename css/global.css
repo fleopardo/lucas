@@ -97,17 +97,20 @@ section.content dd{
 }
 
 .destacado h2{
-	font-size: 32px;
-	line-height: 34px;
-	font-weight: 700;
+	font-size: 34px;
+	line-height: 38px;
 	text-transform: uppercase;
 	color: #fff;
+	font-family: 'Paytone One', sans-serif;
+	letter-spacing: -1px;
 }
 
 .destacado h2 span{
 	font-size: 49px;
-	line-height: ;
+	line-height: 51px;
 	font-weight: 300;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: -3px;
 }
 
 .destacado > a{
@@ -182,13 +185,18 @@ header nav li a{
 	font-weight: 700;
 }
 
+body.home header nav li a,
+body.productos header nav li a{
+	color: #898989;
+}
+
 header nav li.active a{
-	color: #fff;
+	color: #fff!important;
 	background-position: right top;
 }
 
 header nav li a:hover{
-	color: #fff;
+	color: #fff!important;
 }
 
 header nav li.last a{
@@ -205,7 +213,7 @@ header nav li.last a{
 }
 
 .mercadolibre-info{
-	margin: 40px 0 80px;
+	margin: 40px 0 60px;
 	background: url("./assets/im-mercadolider.png") right no-repeat;
 	padding-right: 272px;
 }
@@ -246,10 +254,12 @@ ul.product-list{
 .product-list h2{
 	font-size: 32px;
 	color: #545454;
-	font-weight: 700;
+	font-family: 'Paytone One', sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 0;
+	letter-spacing: -1px;
 }
 
 .product-list img{
@@ -266,6 +276,8 @@ ul.product-list{
 	display: block;
 	color: #727272;
 	margin-bottom: 30px;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: -2px;
 }
 
 a.ver-detalles,
@@ -303,6 +315,10 @@ a.ver-detalles:hover{
 	color: #000;
 }
 
+body.home a.ir-productos-link{
+	margin-bottom: 50px;
+	margin-top: 0;
+}
 
 footer{
 	overflow: hidden;
@@ -505,6 +521,7 @@ body.contacto textarea{
 
 body.contacto input[type=text]{
 	height: 57px;
+	line-height: 57px;
 }
 
 body.contacto select{
@@ -519,7 +536,6 @@ body.contacto textarea{
 	height: 140px;
 	font-family: inherit;
 	font-size: 11px;
-
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
