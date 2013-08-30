@@ -13,7 +13,7 @@ $('a:not(.consultar-link a)').click(function(e){
 
 /* Funcion de GMAPS */
 function initialize() {
-	var myLatlng = new google.maps.LatLng(-34.531934,-58.550584);
+	var myLatlng = new google.maps.LatLng(-34.6006944,-58.3887729);
 
 	var mapOptions = {
 	center: myLatlng,
