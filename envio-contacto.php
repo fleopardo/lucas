@@ -5,7 +5,7 @@
 	$consulta = trim($_POST['consulta']);
 	$producto = trim($_POST['producto']);
 
-	$emailAdmin = "santiagoleopardo@gmail.com";
+	$emailAdmin = "lucas@nkinteractivo.com.ar";
 
 	//Validations
 	$return['status'] = 'ok';
@@ -33,7 +33,7 @@
 
 		$content = "Nombre: ".$name."\n";
 		$content .= "Email: ".$email."\n";
-		$content .= "Email: ".$producto."\n";
+		$content .= "Email: ".$producto."\n\n";
 		$content .= "Mensaje: \n".$consulta."\n";
 
 		mail($emailAdmin, $title, $content, $headers);
@@ -49,7 +49,7 @@
 		$content .= "(Debajo verás una copia de tu mensaje)\n\n";
 		$content .= "Nombre: ".$name."\n";
 		$content .= "Email: ".$email."\n";
-		$content .= "Email: ".$producto."\n";
+		$content .= "Email: ".$producto."\n\n";
 		$content .= "Mensaje: \n".$consulta."\n";
 
 		mail($email, $title, $content, $headersCopy);
