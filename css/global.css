@@ -250,6 +250,10 @@ ul.product-list{
 	margin-right: 0;
 }
 
+.product-list li.last{
+	margin-right: 0;
+}
+
 .product-list h2{
 	font-size: 32px;
 	color: #545454;
