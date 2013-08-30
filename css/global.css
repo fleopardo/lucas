@@ -167,7 +167,6 @@ header ul{
 
 header li{
 	float: left;
-	margin-right: 8px;
 }
 
 header nav li a{
@@ -233,7 +232,7 @@ header nav li.last a{
 }
 
 ul.product-list{
-	overflow: hidden;
+
 }
 
 .product-list li{
@@ -264,7 +263,7 @@ ul.product-list{
 
 .product-list img{
 	position: absolute;
-	right: 0;
+	right: -30px;
 	top: 0;
 	z-index: 10;
 }
@@ -316,15 +315,15 @@ a.ver-detalles:hover{
 }
 
 body.home a.ir-productos-link{
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 	margin-top: 0;
 }
 
 footer{
 	overflow: hidden;
 	height: 128px;
-	padding: 190px 0 40px 0;
-	background: url("./assets/fd-footer.png") center top no-repeat;
+	padding: 150px 0 40px 0;
+	background: url("./assets/fd-footer.png") center bottom no-repeat;
 	position: relative;
 }
 
