@@ -44,7 +44,8 @@ jQuery(document).ready(function($) {
 	  $('.carousel').bjqs({
 	    height      : 420,
 	    width       : 960,
-	    responsive  : true
+	    responsive  : true,
+	    keyboardnav : true // enable keyboard navigation
 	  });
 	}
 
