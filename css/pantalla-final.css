@@ -1,3 +1,20 @@
 .pantalla-final {
-
+	background-image: url('./assets/bg-pantalla-final.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: table;
 }
+
+.pantalla-final .logo {
+	display: table-cell;
+	background: url('./assets/logo-pantalla-final.png') no-repeat center center;
+	width: 466px;
+	height: 210px;
+}
+
+.pantalla-final .logo > *{
+	position: absolute;
+	opacity: 0;
+}
+

@@ -15,7 +15,7 @@
 }
 
 .navigation-left a {
-	color: #909090;
+	color: #3e3e3e;
 	display: block;
 	text-transform: uppercase;
 	font-size: 11px;
@@ -24,6 +24,7 @@
 	padding-left: 30px;
 	position: relative;
 	left: -2px;
+	text-shadow: 0 0 28px #999;
 }
 
 .navigation-left a:hover,
