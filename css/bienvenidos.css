@@ -6,18 +6,6 @@
 	padding-top: 100px;
 }
 
-.bienvenidos .logo {
-	width: 246px;
-	height: 89px;
-	margin: 0 auto;
-	background: url('./assets/logo.png') no-repeat;
-}
-
-.bienvenidos .logo span{
-	position: absolute;
-	opacity: 0;
-}
-
 .bienvenidos .slogan {
 	font-size: 25px;
 	line-height: 32px;
