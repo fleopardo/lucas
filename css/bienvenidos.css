@@ -1,0 +1,17 @@
+.bienvenidos {
+	background-image: url('./assets/bg-bienvenidos.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bienvenidos .logo {
+	width: 246px;
+	height: 89px;
+	margin: 120px auto 0 auto;
+	background: url('./assets/logo.png') no-repeat;
+}
+
+.bienvenidos .logo span{
+	position: absolute;
+	opacity: 0;
+}
