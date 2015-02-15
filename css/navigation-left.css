@@ -1,0 +1,26 @@
+.navigation-left {
+	position: fixed;
+	top: 0;
+	left: 30px;
+	bottom: 0;
+	z-index: 10;
+	border-left: 1px solid #8c8c8c;
+}
+
+.navigation-left a {
+	color: #909090;
+	display: block;
+	text-transform: uppercase;
+	font-size: 11px;
+	line-height: 30px;
+	border-left: 3px solid transparent;
+	padding-left: 30px;
+}
+
+.navigation-left a:hover,
+.navigation-left a.active {
+	color: #FFF;
+	font-family: 'museo700';
+	text-decoration: none;
+	border-left: 3px solid #fff;
+}
