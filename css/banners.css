@@ -1,0 +1,18 @@
+.banner {
+	position: relative;
+	z-index: 2;
+	height: 200px;
+}
+
+.banner-experiencia {
+	background: #bfa966 url('assets/banner-experiencia.jpg') no-repeat center top;
+}
+
+.banner-futuro {
+	background: #bfa966 url('assets/banner-futuro.jpg') no-repeat center top;
+}
+
+.banner-ideas-innovadoras{
+	background: #bfa966 url('assets/banner-ideas-innovadoras.jpg') no-repeat center top;
+}
+
