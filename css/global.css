@@ -109,6 +109,18 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.logo {
+	width: 246px;
+	height: 89px;
+	margin: 0 auto;
+	background: url('./assets/logo.png') no-repeat;
+}
+
+.logo span{
+	position: absolute;
+	opacity: 0;
+}
+
 .sections {
     height: 100vh;
     position: relative;
