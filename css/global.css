@@ -112,8 +112,12 @@ body {
 .logo {
 	width: 246px;
 	height: 89px;
-	margin: 0 auto;
+	left: 50%;
+	top:30px;
+	margin-left: -123px;
 	background: url('./assets/logo.png') no-repeat;
+	position: absolute;
+	z-index: 5;
 }
 
 .logo span{
@@ -123,6 +127,7 @@ body {
 
 .sections {
     height: 100vh;
+    min-height: 750px;
     position: relative;
     background-repeat: no-repeat;
 	background-size: cover;

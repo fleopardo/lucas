@@ -1,3 +1,11 @@
 .nuestro-metodo-en-la-teoria {
+	background-image: url(./assets/bg-nuestro-metodo-practica.jpg);
+}
 
+.nuestro-metodo-en-la-teoria .container-text p {
+	color: #525252;
+}
+
+.nuestro-metodo-en-la-teoria .container-text p a {
+	color: #fff;
 }

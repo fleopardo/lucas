@@ -8,6 +8,8 @@
 	background: url('./assets/logo-pantalla-final.png') no-repeat center center;
 	width: 466px;
 	height: 210px;
+	position: static;
+	margin-left: 0;
 }
 
 .pantalla-final .logo > *{
