@@ -1,8 +1,5 @@
 .pantalla-final {
 	background-image: url('./assets/bg-pantalla-final.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	display: table;
 }
 

@@ -124,6 +124,101 @@ body {
 .sections {
     height: 100vh;
     position: relative;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.container {
+	display: table;
+	vertical-align: middle;
+	width: 55%;
+	height: 100%;
+}
+
+.container-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.container-text > div {
+	border: 1px solid #fff;
+	background: rgba(255,255,255,0.2);
+	padding: 55px 50px;
+	position: relative;
+}
+
+.container-text h3 {
+	text-align: center;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+}
+
+.container-text h3 span {
+	display: inline-block;
+	background: #bfa966;
+	padding: 20px 30px;
+	font-family: 'museo700';
+	color: #fff;
+	font-size: 20px;
+}
+
+.container-text p {
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'museo300';
+}
+
+.container-text p span, .container-text p a {
+	font-family: 'museo500';
+}
+.container-text p a {
+	text-decoration: underline;
+}
+
+.link-rombo {
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	padding: 15px;
+	position: relative;
+}
+.link-rombo span{
+	display: block;
+	color: #bfa966;
+	font-family: 'museo700';
+	position: relative;
+	z-index: 10;
+}
+.link-rombo .square{
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+.link-rombo strong{
+	font-family: 'museo700';
+}
+
+.link-rombo:hover .square {
+	-moz-transform: rotate(0);
+	-webkit-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
 }
 
 /* END Globals
