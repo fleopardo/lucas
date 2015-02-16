@@ -186,6 +186,14 @@ body {
 	font-size: 16px;
 	line-height: 26px;
 	font-family: 'museo300';
+	margin-bottom: 10px;
+}
+
+.container-text p:last-shi {
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'museo300';
+	margin-bottom: 10px;
 }
 
 .container-text p span, .container-text p a {
@@ -195,19 +203,31 @@ body {
 	text-decoration: underline;
 }
 
+.links-container {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: -46px;
+}
+
 .link-rombo {
 	display: inline-block;
-	width: 130px;
-	height: 130px;
+	width: 90px;
+	height: 90px;
 	padding: 15px;
 	position: relative;
+	text-align: center;
+	margin: 0 28px;
 }
 .link-rombo span{
 	display: block;
 	color: #bfa966;
-	font-family: 'museo700';
 	position: relative;
 	z-index: 10;
+	vertical-align: middle;
+	text-transform: uppercase;
 }
 .link-rombo .square{
 	background: #fff;
@@ -222,8 +242,6 @@ body {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-
-
 
 .link-rombo strong{
 	font-family: 'museo700';

@@ -2,6 +2,11 @@
 	background-image: url(./assets/bg-nuestro-metodo-practica.jpg);
 }
 
+.nuestro-metodo-en-la-teoria .container-text > div {
+	padding-bottom: 80px;
+	padding-bottom: 80px;
+}
+
 .nuestro-metodo-en-la-teoria .container-text p {
 	color: #525252;
 }
