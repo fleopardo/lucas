@@ -1,3 +1,11 @@
 .hasta-donde-lo-podemos-llegar {
 	background-image: url('./assets/bg-hasta-donde-los-podemos-llevar.jpg');
 }
+
+.hasta-donde-lo-podemos-llegar .container-text p {
+	color: #fff;
+}
+
+.hasta-donde-lo-podemos-llegar .container-text p span {
+	color: #565656;
+}
