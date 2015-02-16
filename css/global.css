@@ -219,9 +219,11 @@ body {
 	text-align: center;
 	margin: 0 28px;
 }
+
 .link-rombo:hover {
 	text-decoration: none;
 }
+
 .link-rombo span{
 	display: block;
 	color: #bfa966;
@@ -230,6 +232,7 @@ body {
 	vertical-align: middle;
 	text-transform: uppercase;
 }
+
 .link-rombo .square{
 	background: #fff;
 	position: absolute;
