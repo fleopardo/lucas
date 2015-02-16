@@ -120,6 +120,17 @@ body {
 	z-index: 5;
 }
 
+.logo-internas {
+    width: 186px;
+    height: 66px;
+    left: 50%;
+    top: 30px;
+    margin-left: -93px;
+    background: url('./assets/logo-internas-black.png') no-repeat;
+    position: absolute;
+    z-index: 5;
+}
+
 .logo span{
 	position: absolute;
 	opacity: 0;
