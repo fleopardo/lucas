@@ -21,3 +21,39 @@
 	display: inline-block;
 	border-bottom: 3px solid #b1a06c;
 }
+
+.bienvenidos .logo-20-years {
+	top: 30px;
+	left: 60px;
+	position: absolute;
+}
+
+.bienvenidos .bid {
+	position: absolute;
+	right: 30px;
+	bottom: 70px;
+	width: 49%;
+}
+
+.bienvenidos .bid img{
+	float: right;
+	width: 240px;
+}
+
+.bienvenidos .bid article{
+	position: absolute;
+	top: 0;
+	right: 240px;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	padding: 20px;
+	text-align: right;
+}
+
+.bienvenidos .bid article p{
+	font-family: 'museo500';
+	color: #b9b9b9;
+	font-size: 12px;
+	line-height: 18px;
+}

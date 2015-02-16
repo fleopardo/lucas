@@ -256,5 +256,102 @@ body {
 	transform: rotate(0);
 }
 
+
+
+@-webkit-keyframes pulsate3 {
+    0% {border-color: #b3b3b3}
+    50% {border-color: #aaa}
+    100% {border-color: #fff}
+}
+@-moz-keyframes pulsate3 {
+    0% {border-color: #b3b3b3}
+    50% {border-color: #aaa}
+    100% {border-color: #fff}
+}
+@keyframes pulsate3 {
+    0% {border-color: #b3b3b3}
+    50% {border-color: #aaa}
+    100% {border-color: #fff}
+}
+
+
+@-webkit-keyframes pulsate2 {
+    0% {border-color: #aaa}
+    50% {border-color: #b3b3b3}
+    100% {border-color: #fff}
+}
+@-moz-keyframes pulsate2 {
+    0% {border-color: #aaa}
+    50% {border-color: #b3b3b3}
+    100% {border-color: #fff}
+}
+@keyframes pulsate2 {
+    0% {border-color: #aaa}
+    50% {border-color: #b3b3b3}
+    100% {border-color: #fff}
+}
+
+
+@-webkit-keyframes pulsate1 {
+    0% {border-color: #fff}
+    50% {border-color: #aaa}
+    100% {border-color: #b3b3b3}
+}
+@-moz-keyframes pulsate1 {
+    0% {border-color: #fff}
+    50% {border-color: #aaa}
+    100% {border-color: #b3b3b3}
+}
+@keyframes pulsate1 {
+    0% {border-color: #fff}
+    50% {border-color: #aaa}
+    100% {border-color: #b3b3b3}
+}
+
+
+
+.icon-to-top {
+    width: 15px;
+    height: 27px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.icon-to-top > div{
+    border-top: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3;
+    width: 11px;
+    height: 11px;
+    margin-top: -3px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-to-top > div.one{
+    -webkit-animation: pulsate1 1s linear infinite;
+    -moz-animation: pulsate1 1s linear infinite;
+    animation: pulsate1 1s linear infinite;
+}
+
+.icon-to-top > div.two{
+    -webkit-animation: pulsate2 1s linear infinite;
+    -moz-animation: pulsate2 1s linear infinite;
+    animation: pulsate2 1s linear infinite;
+}
+
+.icon-to-top > div.three{
+    -webkit-animation: pulsate3 1s linear infinite;
+    -moz-animation: pulsate3 1s linear infinite;
+    animation: pulsate3 1s linear infinite;
+}
+
 /* END Globals
 -------------------------------------------------- */
