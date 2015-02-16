@@ -155,6 +155,7 @@ body {
 .container-text {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 }
 
 .container-text > div {
@@ -186,14 +187,11 @@ body {
 	font-size: 16px;
 	line-height: 26px;
 	font-family: 'museo300';
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
-.container-text p:last-shi {
-	font-size: 16px;
-	line-height: 26px;
-	font-family: 'museo300';
-	margin-bottom: 10px;
+.container-text p:last-child {
+	margin-bottom: 0;
 }
 
 .container-text p span, .container-text p a {
@@ -220,6 +218,9 @@ body {
 	position: relative;
 	text-align: center;
 	margin: 0 28px;
+}
+.link-rombo:hover {
+	text-decoration: none;
 }
 .link-rombo span{
 	display: block;
