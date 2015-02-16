@@ -22,6 +22,12 @@
 	border-bottom: 3px solid #b1a06c;
 }
 
+.bienvenidos .logo-20-years {
+	top: 30px;
+	left: 60px;
+	position: absolute;
+}
+
 .bienvenidos .bid {
 	position: absolute;
 	right: 30px;
