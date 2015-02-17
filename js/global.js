@@ -20,23 +20,24 @@
 	$(".scroll-to").on("click",function(event){
 
 		var that = $(this),
-			anchor = that.attr("data-scroll:anchor") || null,
-			speed = that.attr("data-scroll:speed") || 1500,
+			anchor = '#' + that.attr("data-scroll:anchor") || null,
+			speed = that.attr("data-scroll:speed") || 2600,
 			sectionName = that.text();
 
 		if( anchor !== null ){
 
 			event.preventDefault();
-
+			console.log(anchor);
+			console.log(speed);
 			jQuery.scrollTo.window().queue([]).stop();
 			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
 
-			if(window.history.pushState){
+			/*if(window.history.pushState){
 				window.history.pushState(null, sectionName, anchor);
-			}
+			}*/
 
 			/** actualizo los active **/
-			currentNavigation(that);
+			//currentNavigation(that);
 		}
 
 	});
