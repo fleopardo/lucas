@@ -16,3 +16,45 @@
 	left: -30px;
 	right: auto;
 }
+
+.somos-salazar-bogoya .names {
+	position: absolute;
+	background: #00ff00;
+	line-height: 40px;
+	display:inline-block;
+	padding: 0 30px;
+	background: #fff;
+	color: #bfa966;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.somos-salazar-bogoya .names:hover {
+	text-decoration: none;
+}
+
+.somos-salazar-bogoya .names::before {
+	content: '+';
+	color: #fff;
+	background: #bfa966;
+	position: absolute;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 16px;
+	top: 27px;
+	right: 15px;
+}
+
+.somos-salazar-bogoya .names strong {
+	font-family: "museo700"
+}
+
+.somos-salazar-bogoya .names.alfredo{
+	right: 400px;
+	top: 130px;
+}
+
+.somos-salazar-bogoya .names.nubia{
+	right: 60px;
+	top: 350px;	
+}

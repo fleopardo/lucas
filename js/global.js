@@ -14,5 +14,6 @@
 	    navigation: true,
 	    navigationText : false
 	});
+	
 
 })(window);

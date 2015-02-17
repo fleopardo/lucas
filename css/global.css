@@ -138,7 +138,7 @@ body {
 
 .sections {
     height: 100vh;
-    min-height: 750px;
+    min-height: 700px;
     position: relative;
     background-repeat: no-repeat;
 	background-size: cover;
@@ -203,10 +203,6 @@ body {
 
 .links-container {
 	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	margin-bottom: -46px;
 }
 
@@ -219,9 +215,11 @@ body {
 	text-align: center;
 	margin: 0 28px;
 }
+
 .link-rombo:hover {
 	text-decoration: none;
 }
+
 .link-rombo span{
 	display: block;
 	color: #bfa966;
@@ -230,6 +228,7 @@ body {
 	vertical-align: middle;
 	text-transform: uppercase;
 }
+
 .link-rombo .square{
 	background: #fff;
 	position: absolute;
@@ -237,6 +236,10 @@ body {
 	right: 0;
 	left: 0;
 	bottom: 0;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-o-transform: rotate(45deg);

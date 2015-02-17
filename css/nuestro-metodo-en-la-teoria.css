@@ -14,3 +14,10 @@
 .nuestro-metodo-en-la-teoria .container-text p a {
 	color: #fff;
 }
+
+.nuestro-metodo-en-la-teoria .links-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

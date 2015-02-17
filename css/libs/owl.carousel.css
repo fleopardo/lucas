@@ -28,7 +28,7 @@
 
 /* line 27, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.carousel.scss */
 .owl-carousel .owl-wrapper-outer {
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
   width: 100%; }
 
@@ -62,9 +62,9 @@
 /* fix */
 /* line 63, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.carousel.scss */
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
-  -webkit-backface-visibility: hidden;
+  /*-webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;*/
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0); }
