@@ -40,7 +40,13 @@
 	width: 240px;
 }
 
-.bienvenidos .bid article{
+.bienvenidos .bid .icon-more {
+	position: absolute;
+	bottom: -10px;
+	right: 12px;
+}
+
+.bienvenidos .bid article {
 	position: absolute;
 	top: 0;
 	right: 240px;
@@ -49,6 +55,15 @@
 	background: #fff;
 	padding: 20px;
 	text-align: right;
+	opacity: 0;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.bienvenidos .bid article.open {
+	opacity: 1;
 }
 
 .bienvenidos .bid article p{
@@ -56,4 +71,22 @@
 	color: #b9b9b9;
 	font-size: 12px;
 	line-height: 18px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+
+footer p{
+	float: left;
+	line-height: 46px;
+	padding: 0 20px;
+}
+
+footer p.designedBy{
+	background: #000;
 }
