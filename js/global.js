@@ -16,4 +16,29 @@
 	});
 	
 
+	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
+	$(".scroll-to").on("click",function(event){
+
+		var that = $(this),
+			anchor = that.attr("data-scroll:anchor") || null,
+			speed = that.attr("data-scroll:speed") || 1500,
+			sectionName = that.text();
+
+		if( anchor !== null ){
+
+			event.preventDefault();
+
+			jQuery.scrollTo.window().queue([]).stop();
+			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
+
+			if(window.history.pushState){
+				window.history.pushState(null, sectionName, anchor);
+			}
+
+			/** actualizo los active **/
+			currentNavigation(that);
+		}
+
+	});
+
 })(window);
