@@ -33,16 +33,9 @@
 	text-decoration: none;
 }
 
-.somos-salazar-bogoya .names::before {
-	content: '+';
-	color: #fff;
-	background: #bfa966;
-	position: absolute;
-	padding: 5px;
-	font-size: 16px;
-	line-height: 16px;
+.somos-salazar-bogoya .names .icon-more {
 	top: 27px;
-	right: 15px;
+    right: 15px;
 }
 
 .somos-salazar-bogoya .names strong {
@@ -56,5 +49,5 @@
 
 .somos-salazar-bogoya .names.nubia{
 	right: 60px;
-	top: 350px;	
+	top: 350px;
 }

@@ -14,7 +14,7 @@
 	    navigation: true,
 	    navigationText : false
 	});
-	
+
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	$(".scroll-to").on("click",function(event){
