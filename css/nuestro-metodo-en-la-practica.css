@@ -57,14 +57,18 @@
 .owl-theme .owl-buttons > div::before {
 	content: '';
 	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: #ccc;
-	-moz-transform: rotate(0);
-	-webkit-transform: rotate(0);
-	-o-transform: rotate(0);
-	-ms-transform: rotate(0);
-	transform: rotate(0);
+	background-image: url('./assets/sp-arrows-sliders.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 7px;
+	right: 0;
+	left: 0;
+	bottom: 7px;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .owl-theme .owl-buttons > div:hover {
@@ -80,6 +84,13 @@
 	-ms-transform: rotate(0);
 	transform: rotate(0);
 }
+.owl-theme .owl-buttons > div:hover::before {
+	-moz-transform: rotate(0);
+	-webkit-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
 
 .owl-prev{
 	left: -20px;
@@ -87,4 +98,20 @@
 
 .owl-next{
 	right: -20px;
+}
+
+.owl-prev::before {
+	background-position: 14px -18px;
+}
+
+.owl-next::before{
+	background-position: 16px -57px;
+}
+
+.owl-prev:hover::before {
+	background-position: 14px 2px;
+}
+
+.owl-next:hover::before{
+	background-position: 16px -37px;
 }
