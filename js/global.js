@@ -14,6 +14,14 @@
 	    navigation: true,
 	    navigationText : false
 	});
+
+	$('.navigation-left a').on('click', function() {
+		
+		$('.navigation-left a').removeClass('active');
+		$(this).addClass('active');
+		$(this).nextAll().addClass('active');
+
+	});
 	
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/

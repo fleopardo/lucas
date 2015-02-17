@@ -356,5 +356,23 @@ body {
     animation: pulsate3 1s linear infinite;
 }
 
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+}
+
+footer p{
+	float: left;
+	line-height: 46px;
+	padding: 0 20px;
+}
+
+footer p.designedBy{
+	background: #000;
+}
 /* END Globals
 -------------------------------------------------- */
