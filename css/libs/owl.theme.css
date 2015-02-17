@@ -44,20 +44,22 @@
 /* line 43, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.theme.scss */
 .owl-theme .owl-controls .owl-page span {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   margin: 5px 7px;
-  filter: Alpha(Opacity=50);
+  /*filter: Alpha(Opacity=50);*/
   /*IE7 fix*/
-  opacity: 0.3;
-  border-radius: 20px;
-  background: #000; }
+  /*opacity: 0.3;
+  border-radius: 20px;*/
+  background: #a0a0a0; }
 
 /* line 57, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.theme.scss */
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  filter: Alpha(Opacity=100);
+  /*filter: Alpha(Opacity=100);/*
   /*IE7 fix*/
-  opacity: 1; }
+  /*opacity: 1;*/
+  background: #fff;
+}
 
 /* If PaginationNumbers is true */
 /* line 64, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.theme.scss */
