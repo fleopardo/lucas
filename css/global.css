@@ -201,67 +201,6 @@ body {
 	text-decoration: underline;
 }
 
-/*.links-container {
-	text-align: center;
-	margin-bottom: -46px;
-}
-
-.link-rombo {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	padding: 15px;
-	position: relative;
-	text-align: center;
-	margin: 0 28px;
-}
-
-.link-rombo:hover {
-	text-decoration: none;
-}
-
-.link-rombo span{
-	display: block;
-	color: #bfa966;
-	position: relative;
-	z-index: 10;
-	vertical-align: middle;
-	text-transform: uppercase;
-}
-
-.link-rombo .square{
-	background: #fff;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	-webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.link-rombo strong{
-	font-family: 'museo700';
-}
-
-.link-rombo:hover .square {
-	-moz-transform: rotate(0);
-	-webkit-transform: rotate(0);
-	-o-transform: rotate(0);
-	-ms-transform: rotate(0);
-	transform: rotate(0);
-}*/
-
-
-
-
 .squares-container{
     position: absolute;
     z-index: 5;
