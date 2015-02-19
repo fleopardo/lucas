@@ -25,7 +25,7 @@
 		TweenMax.fromTo(
 			$('.hasta-donde-lo-podemos-llevar .container'),
 			3,
-	        {css:{top: 0}}, {css:{top: 160}}
+	        {css:{top: 0}}, {css:{top: 100}}
 	    ),
 	    500
 	);
