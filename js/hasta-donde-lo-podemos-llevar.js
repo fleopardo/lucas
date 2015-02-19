@@ -30,19 +30,19 @@
 	    500
 	);
 
-	animationController.addTween(
-		'.hasta-donde-lo-podemos-llevar .logo',
-		TweenMax.fromTo(
-			$('.hasta-donde-lo-podemos-llevar .logo'),
-			.5,
-	        {css:{
-	        	top: 30
-       		}},
-       		{css:{
-       			top: 200
-	       	}}
-	    ),
-	    500
-	);
+	// animationController.addTween(
+	// 	'.hasta-donde-lo-podemos-llevar .logo',
+	// 	TweenMax.fromTo(
+	// 		$('.hasta-donde-lo-podemos-llevar .logo'),
+	// 		.5,
+	//         {css:{
+	//         	top: 30
+ //       		}},
+ //       		{css:{
+ //       			top: 200
+	//        	}}
+	//     ),
+	//     500
+	// );
 
 }(window));

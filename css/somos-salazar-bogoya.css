@@ -1,6 +1,7 @@
 .somos-salazar-bogoya {
 	background-image: url('./assets/bg-somos-salazar-bogoya.jpg');
 	background-position: center right;
+	background-attachment: scroll;
 }
 
 .somos-salazar-bogoya .container-text > div {
