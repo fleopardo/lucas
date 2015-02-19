@@ -203,64 +203,65 @@ body {
 	text-decoration: underline;
 }
 
-.links-container {
-	text-align: center;
-	margin-bottom: -46px;
+.squares-container{
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -50px;
 }
 
-.link-rombo {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	padding: 15px;
-	position: relative;
-	text-align: center;
-	margin: 0 28px;
+.link-square {
+    color: #bfa966;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin: 0 28px;
+    font-size: 12px;
 }
 
-.link-rombo:hover {
-	text-decoration: none;
+.link-square:hover {
+    color: #bfa966;
+    text-decoration: none;
 }
 
-.link-rombo span{
-	display: block;
-	color: #bfa966;
-	position: relative;
-	z-index: 10;
-	vertical-align: middle;
-	text-transform: uppercase;
-}
-
-.link-rombo .square{
-	background: #fff;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	-webkit-transition: 0.5s ease-in-out;
+.square-rotate {
+    -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #fff;
+    width: 90px;
+    height: 90px;
 }
 
-.link-rombo strong{
-	font-family: 'museo700';
+.link-square:hover .square-rotate {
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
 }
 
-.link-rombo:hover .square {
-	-moz-transform: rotate(0);
-	-webkit-transform: rotate(0);
-	-o-transform: rotate(0);
-	-ms-transform: rotate(0);
-	transform: rotate(0);
+.link-square span {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 33%;
 }
 
+.link-square strong{
+    font-family: 'museo700';
+}
 
 
 @-webkit-keyframes pulsate3 {
@@ -323,6 +324,7 @@ body {
     left: 50%;
     margin-left: -8px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .icon-to-top > div{

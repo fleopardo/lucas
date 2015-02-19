@@ -1,6 +1,7 @@
 .bienvenidos {
 	background-image: url('./assets/bg-bienvenidos.jpg');
 	padding-top: 80px;
+	overflow-y: hidden;
 }
 
 .bienvenidos .slogan {
@@ -8,12 +9,15 @@
 	line-height: 32px;
 	color: #fff;
 	text-shadow: 0px 0px 15px #000;
-	position: absolute;
+	/*position: absolute;
 	left: 100px;
 	right: 100px;
 	bottom: 200px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;*/
 	text-align: center;
+	padding-top: 250px;
+	z-index: 5;
+	position: relative;
 }
 
 .bienvenidos .slogan span {
@@ -21,11 +25,32 @@
 	display: inline-block;
 	border-bottom: 3px solid #b1a06c;
 }
+.bienvenidos .container {
+	width: 80%;
+}
+.bienvenidos .logo-bienvenido {
+	background: url('./assets/logo-pantalla-final.png') no-repeat center top;
+	/*width: 466px;*/
+	height: 210px;
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	border: none;
+	padding: 0;
+	min-height: 360px;
+}
+
+.bienvenidos .logo-bienvenido > h2,
+.bienvenidos .logo-bienvenido > p{
+	position: absolute;
+	opacity: 0;
+}
 
 .bienvenidos .logo-20-years {
 	top: 30px;
 	left: 60px;
 	position: absolute;
+	z-index: 5;
 }
 
 .bienvenidos .bid {
@@ -33,6 +58,7 @@
 	right: 30px;
 	bottom: 70px;
 	width: 49%;
+	z-index: 5;
 }
 
 .bienvenidos .bid img{
@@ -56,6 +82,7 @@
 	padding: 20px;
 	text-align: right;
 	opacity: 0;
+	z-index: 5;
 	-webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -72,6 +99,89 @@
 	font-size: 12px;
 	line-height: 18px;
 }
+
+.bienvenidos .squares-container{
+    top: -78px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-left: -106px;
+}
+
+.bienvenidos .link-square {
+    color: #fff;
+    font-family: 'museo700';
+}
+
+.bienvenidos .link-square:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bienvenidos .square-rotate {
+    width: 156px;
+    height: 156px;
+    border: 1px solid #828282;
+    background: rgba(0,0,0, 0.6);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.bienvenidos .link-square:hover .square-rotate {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.bienvenidos .square-rotate::before {
+    width: 130px;
+    height: 130px;
+    content: '';
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 13px;
+    left: 13px;
+    background: #bfa966;
+}
+
+.bienvenidos .link-square .icon-to-top {
+    top: 100px;
+}
+
+.bienvenidos .link-square span {
+    position: absolute;
+    top: 110px;
+}
+
+.bienvenidos .video-container {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.bienvenidos video {
+	min-height: 100%;
+	min-width: 100%; 
+	height: auto !important; 
+	width: auto !important; 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+}
+
 
 footer{
 	position: absolute;
