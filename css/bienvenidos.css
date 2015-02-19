@@ -1,6 +1,7 @@
 .bienvenidos {
 	background-image: url('./assets/bg-bienvenidos.jpg');
 	padding-top: 80px;
+	overflow-y: hidden;
 }
 
 .bienvenidos .slogan {
@@ -72,6 +73,76 @@
 	font-size: 12px;
 	line-height: 18px;
 }
+
+
+
+
+.bienvenidos .squares-container{
+    top: -78px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-left: -106px;
+}
+
+.bienvenidos .link-square {
+    color: #fff;
+    font-family: 'museo700';
+}
+
+.bienvenidos .link-square:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bienvenidos .square-rotate {
+    width: 156px;
+    height: 156px;
+    border: 1px solid #828282;
+    background: rgba(0,0,0, 0.6);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.bienvenidos .link-square:hover .square-rotate {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.bienvenidos .square-rotate::before {
+    width: 130px;
+    height: 130px;
+    content: '';
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 13px;
+    left: 13px;
+    background: #bfa966;
+}
+
+.bienvenidos .link-square .icon-to-top {
+    top: 100px;
+}
+
+.bienvenidos .link-square span {
+    position: absolute;
+    top: 110px;
+}
+
+
+
+
 
 footer{
 	position: absolute;
