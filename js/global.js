@@ -4,7 +4,7 @@
  * Fernando Leopardo @fer_leopardo
 */
 
-;(function(window){
+;(function(win){
 
 	$('.content-nav .owl-carousel').owlCarousel({
 
@@ -16,13 +16,13 @@
 	});
 
 	$('.navigation-left a').on('click', function() {
-		
+
 		$('.navigation-left a').removeClass('active');
 		$(this).addClass('active');
 		$(this).nextAll().addClass('active');
 
 	});
-	
+
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	$(".scroll-to").on("click",function(event){
@@ -35,8 +35,6 @@
 		if( anchor !== null ){
 
 			event.preventDefault();
-			console.log(anchor);
-			console.log(speed);
 			jQuery.scrollTo.window().queue([]).stop();
 			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
 
@@ -49,5 +47,13 @@
 		}
 
 	});
+
+	/* Init animations */
+	var animationController = $.superscrollorama({
+		triggerAtCenter: false,
+		playoutAnimations: true
+	});
+
+	win.animationController = animationController;
 
 })(window);
