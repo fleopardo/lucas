@@ -1,5 +1,5 @@
 .bienvenidos {
-	background-image: url('./assets/bg-bienvenidos.jpg');
+	background-color: #EEE;
 	padding-top: 80px;
 	overflow-y: hidden;
 }
@@ -174,12 +174,12 @@
 
 .bienvenidos video {
 	min-height: 100%;
-	min-width: 100%; 
-	height: auto !important; 
-	width: auto !important; 
-	position: absolute; 
-	left: 0; 
-	top: 0; 
+	min-width: 100%;
+	height: auto !important;
+	width: auto !important;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 
