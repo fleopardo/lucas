@@ -9,12 +9,15 @@
 	line-height: 32px;
 	color: #fff;
 	text-shadow: 0px 0px 15px #000;
-	position: absolute;
+	/*position: absolute;
 	left: 100px;
 	right: 100px;
 	bottom: 200px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;*/
 	text-align: center;
+	padding-top: 250px;
+	z-index: 5;
+	position: relative;
 }
 
 .bienvenidos .slogan span {
@@ -22,11 +25,32 @@
 	display: inline-block;
 	border-bottom: 3px solid #b1a06c;
 }
+.bienvenidos .container {
+	width: 80%;
+}
+.bienvenidos .logo-bienvenido {
+	background: url('./assets/logo-pantalla-final.png') no-repeat center top;
+	/*width: 466px;*/
+	height: 210px;
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	border: none;
+	padding: 0;
+	min-height: 360px;
+}
+
+.bienvenidos .logo-bienvenido > h2,
+.bienvenidos .logo-bienvenido > p{
+	position: absolute;
+	opacity: 0;
+}
 
 .bienvenidos .logo-20-years {
 	top: 30px;
 	left: 60px;
 	position: absolute;
+	z-index: 5;
 }
 
 .bienvenidos .bid {
@@ -34,6 +58,7 @@
 	right: 30px;
 	bottom: 70px;
 	width: 49%;
+	z-index: 5;
 }
 
 .bienvenidos .bid img{
@@ -57,6 +82,7 @@
 	padding: 20px;
 	text-align: right;
 	opacity: 0;
+	z-index: 5;
 	-webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -73,9 +99,6 @@
 	font-size: 12px;
 	line-height: 18px;
 }
-
-
-
 
 .bienvenidos .squares-container{
     top: -78px;
@@ -140,13 +163,24 @@
     top: 110px;
 }
 
-
-video {
+.bienvenidos .video-container {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
 	position: absolute;
-	z-index: 10;
-	width: 400px;
 }
 
+.bienvenidos video {
+	min-height: 100%;
+	min-width: 100%; 
+	height: auto !important; 
+	width: auto !important; 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+}
 
 
 footer{
