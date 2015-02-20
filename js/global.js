@@ -34,25 +34,25 @@
 	var scrollSpy = function () {
 		var scrolled = $(window).scrollTop();
 
-		if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top) ) {
+		if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top - 150) ) {
 			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
 
-		} else if ( (scrolled >= $nuestroMetodoEnLaTeoria.offset().top) && (scrolled < $somosSalazarBogoya.offset().top) ) {
+		} else if ( (scrolled >= $nuestroMetodoEnLaTeoria.offset().top - 150) && (scrolled < $somosSalazarBogoya.offset().top - 150) ) {
 			activeLinks($nuestroMetodoEnLaTeoria.attr("id"));
 
-		} else if ( (scrolled >= $somosSalazarBogoya.offset().top) && (scrolled < $hastaDondeLoPodemosLlevar.offset().top) ) {
+		} else if ( (scrolled >= $somosSalazarBogoya.offset().top - 150) && (scrolled < $hastaDondeLoPodemosLlevar.offset().top - 150) ) {
 			activeLinks($somosSalazarBogoya.attr("id"));
 
-		} else if ( (scrolled >= $hastaDondeLoPodemosLlevar.offset().top) && (scrolled < $costosProspecticos.offset().top) ) {
+		} else if ( (scrolled >= $hastaDondeLoPodemosLlevar.offset().top - 150) && (scrolled < $costosProspecticos.offset().top - 150) ) {
 			activeLinks($hastaDondeLoPodemosLlevar.attr("id"));
 
-		} else if ( (scrolled >= $costosProspecticos.offset().top) && (scrolled < $gestionDelConocimiento.offset().top) ) {
+		} else if ( (scrolled >= $costosProspecticos.offset().top - 150) && (scrolled < $gestionDelConocimiento.offset().top - 150) ) {
 			activeLinks($costosProspecticos.attr("id"));
 
-		} else if ( (scrolled >= $gestionDelConocimiento.offset().top) && (scrolled < $bienvenidos.offset().top) ) {
+		} else if ( (scrolled >= $gestionDelConocimiento.offset().top - 150) && (scrolled < $bienvenidos.offset().top -150 ) ) {
 			activeLinks($gestionDelConocimiento.attr("id"));
 
-		} else if (scrolled >= $bienvenidos.offset().top - 10) {
+		} else if (scrolled >= $bienvenidos.offset().top - 150) {
 			activeLinks($bienvenidos.attr("id"));
 		}
 
@@ -100,13 +100,10 @@
 			}
 
 		} else {
-			console.log('entra down');
 
 			if( !$navigationLeft.find('a:last-child').prev().hasClass('active')  ) {
-				console.log('estoy en el ultimo, no baja');
 				return;
 			}else{
-				console.log('no estoy en el ultimo, baja');
 				var that = $(this),
 					anchor = '#' + $navigationLeft.find('a.active').next().attr("data-scroll:anchor") || null,
 					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 1500,

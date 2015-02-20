@@ -1,3 +1,13 @@
-.gestion-del-conocimiento {
+.gestion-del-conocimiento {
+	/*background-image: url('./assets/bg-gestion-del-conocimiento.active.jpg');*/
+	/*background-position: top left;*/
+	background-color: #222;
+}
 
+.gestion-del-conocimiento .container-text {
+	text-align: left;
+}
+
+.gestion-del-conocimiento .container-text h3{
+	text-align: left;
 }

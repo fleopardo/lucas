@@ -1,0 +1,22 @@
+.gestion-costos .container-text > div{
+	background: none;
+	border: none;
+}
+
+.gestion-costos .container-text h3 span {
+	background: #fff;
+	color: #bfa966;
+}
+
+.gestion-costos .container-text p {
+	color: #bfa966;
+}
+
+.gestion-costos .container-text p.bajada {
+	color: #fff;
+}
+
+.gestion-costos .container-text p .dest {
+	color: #fff;
+	font-family: 'museo700';
+}

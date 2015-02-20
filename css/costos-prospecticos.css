@@ -1,3 +1,13 @@
-.costos-prospecticos {
+.costos-prospecticos {
+	/*background-image: url('./assets/bg-gestion-del-conocimiento.active.jpg');*/
+	/*background-position: top left;*/
+	background-color: #333;
+}
 
+.costos-prospecticos .container-text {
+	text-align: right;
+}
+
+.costos-prospecticos .container-text h3 {
+	text-align: right;
 }
