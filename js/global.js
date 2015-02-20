@@ -14,7 +14,7 @@
 		$somosSalazarBogoya = $('.somos-salazar-bogoya'),
 		$nuestroMetodoEnLaTeoria = $('.nuestro-metodo-en-la-teoria'),
 		$nuestroMetodoEnLaPractica = $('.nuestro-metodo-en-la-practica'),
-		$navigationLeft = $('.navigation-left');
+		$navigationLeft = $('.navigation-left > div');
 
 	/*
 	 * Funcion para activar color en lista de navegacion

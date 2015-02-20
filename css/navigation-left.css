@@ -9,12 +9,16 @@
 	border-left: 1px solid #8c8c8c;
 }
 
+.navigation-left > a {
+	position: absolute;
+}
+
 .navigation-left > div {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.navigation-left a {
+.navigation-left > div a {
 	color: #3e3e3e;
 	display: block;
 	text-transform: uppercase;
