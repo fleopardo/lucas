@@ -6,54 +6,91 @@
 
 ;(function(win){
 
-	$('.content-nav .owl-carousel').owlCarousel({
 
-	    //autoPlay: 3000, //Set AutoPlay to 3 seconds
-	    items : 1, // max items shown per page
-	    itemsCustom: [[0, 1], [320, 1], [480, 1], [768, 1]], // [min-screen-width, items-to-show]
-	    navigation: true,
-	    navigationText : false
-	});
+	var $bienvenidos = $(".bienvenidos"),
+		$gestionDelConocimiento = $(".gestion-del-conocimiento"),
+		$costosProspecticos = $(".costos-prospecticos"),
+		$hastaDondeLoPodemosLlevar = $(".hasta-donde-lo-podemos-llevar"),
+		$somosSalazarBogoya = $('.somos-salazar-bogoya'),
+		$nuestroMetodoEnLaTeoria = $('.nuestro-metodo-en-la-teoria'),
+		$nuestroMetodoEnLaPractica = $('.nuestro-metodo-en-la-practica'),
+		$navigationLeft = $('.navigation-left');
 
-	$('.navigation-left a').on('click', function() {
+	/*
+	 * Funcion para activar color en lista de navegacion
+	*/
+	var activeLinks = function (anchor){
+		$navigationLeft.find('a').removeClass('active');
+		$navigationLeft.find('[href="#' + anchor + '"]').addClass('active');
+		$navigationLeft.find('[href="#' + anchor + '"]').nextAll().addClass('active');
+	};
 
-		$('.navigation-left a').removeClass('active');
-		$(this).addClass('active');
-		$(this).nextAll().addClass('active');
+	/*
+	 * Function que escucha cuando una seccion entra en pantalla
+	*/
+	var scrollSpy = function () {
+		var scrolled = $(window).scrollTop();
 
-	});
+		if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top) ) {
+			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
+
+		} else if ( (scrolled >= $nuestroMetodoEnLaTeoria.offset().top) && (scrolled < $somosSalazarBogoya.offset().top) ) {
+			activeLinks($nuestroMetodoEnLaTeoria.attr("id"));
+
+		} else if ( (scrolled >= $somosSalazarBogoya.offset().top) && (scrolled < $hastaDondeLoPodemosLlevar.offset().top) ) {
+			activeLinks($somosSalazarBogoya.attr("id"));
+
+		} else if ( (scrolled >= $hastaDondeLoPodemosLlevar.offset().top) && (scrolled < $costosProspecticos.offset().top) ) {
+			activeLinks($hastaDondeLoPodemosLlevar.attr("id"));
+
+		} else if ( (scrolled >= $costosProspecticos.offset().top) && (scrolled < $gestionDelConocimiento.offset().top) ) {
+			activeLinks($costosProspecticos.attr("id"));
+
+		} else if ( (scrolled >= $gestionDelConocimiento.offset().top) && (scrolled < $bienvenidos.offset().top) ) {
+			activeLinks($gestionDelConocimiento.attr("id"));
+
+		} else if (scrolled >= $bienvenidos.offset().top - 10) {
+			activeLinks($bienvenidos.attr("id"));
+		}
+
+	}
 
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	$(".scroll-to").on("click",function(event){
-
 		var that = $(this),
 			anchor = '#' + that.attr("data-scroll:anchor") || null,
-			speed = that.attr("data-scroll:speed") || 2600,
+			speed = that.attr("data-scroll:speed") || 1500,
 			sectionName = that.text();
 
 		if( anchor !== null ){
-
 			event.preventDefault();
-			jQuery.scrollTo.window().queue([]).stop();
+			$.scrollTo.window().queue([]).stop();
 			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
 
-			/*if(window.history.pushState){
+			if (window.history.pushState){
 				window.history.pushState(null, sectionName, anchor);
-			}*/
-
-			/** actualizo los active **/
-			//currentNavigation(that);
+			}
 		}
-
 	});
 
-	/* Init animations */
+
+	/* ejecuto activa nav al inicio */
+	scrollSpy();
+
+	/* Chequeo el active on scroll cada 100 ms para no matar al browser */
+	$(window).on("scroll",function(){
+		setTimeout(function(){
+			scrollSpy();
+		},100);
+	});
+
+	/* Init animations scrollorama */
+	/* cada modulo va a tener sus animaciones */
 	var animationController = $.superscrollorama({
 		triggerAtCenter: false,
 		playoutAnimations: true
 	});
-
 	win.animationController = animationController;
 
 })(window);

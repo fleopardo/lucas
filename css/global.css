@@ -147,6 +147,13 @@ body {
 	background-position: center center;
 }
 
+.logo-20-years {
+    top: 30px;
+    left: 60px;
+    position: absolute;
+    z-index: 5;
+}
+
 .container {
 	display: table;
 	vertical-align: middle;

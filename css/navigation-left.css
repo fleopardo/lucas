@@ -5,7 +5,7 @@
 	top: 0;
 	left: 40px;
 	bottom: 0;
-	z-index: 1;
+	z-index: 1000;
 	border-left: 1px solid #8c8c8c;
 }
 
@@ -25,6 +25,10 @@
 	position: relative;
 	left: -2px;
 	text-shadow: 0 0 28px #999;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .navigation-left a:hover,

@@ -46,13 +46,6 @@
 	opacity: 0;
 }
 
-.bienvenidos .logo-20-years {
-	top: 30px;
-	left: 60px;
-	position: absolute;
-	z-index: 5;
-}
-
 .bienvenidos .bid {
 	position: absolute;
 	right: 30px;
@@ -122,7 +115,7 @@
     width: 156px;
     height: 156px;
     border: 1px solid #828282;
-    background: rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.2);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
