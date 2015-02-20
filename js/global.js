@@ -14,7 +14,10 @@
 		$somosSalazarBogoya = $('.somos-salazar-bogoya'),
 		$nuestroMetodoEnLaTeoria = $('.nuestro-metodo-en-la-teoria'),
 		$nuestroMetodoEnLaPractica = $('.nuestro-metodo-en-la-practica'),
-		$navigationLeft = $('.navigation-left > div');
+		$navigationLeft = $('.navigation-left > div'),
+		$navigationArrows = $('.navigation-left > .link-square'),
+		$navigationUp = $('.navigation-left .up'),
+		$navigationDown = $('.navigation-left .down');
 
 	/*
 	 * Funcion para activar color en lista de navegacion
@@ -74,6 +77,38 @@
 		}
 	});
 
+	/* Funcionalidad de link subir y bajar de navigation */
+	$navigationArrows.on('click', function(event){
+		event.preventDefault();
+		if ( $(this).hasClass('up') ) {
+			if( !$navigationLeft.find('a:first-child').hasClass('active') ) {
+				var that = $(this),
+					anchor = '#' + $navigationLeft.find('a.active').prev().attr("data-scroll:anchor") || null,
+					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 1500,
+					sectionName = that.text();
+
+				if( anchor !== null ){
+					event.preventDefault();
+					$.scrollTo.window().queue([]).stop();
+					$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
+
+					if (window.history.pushState){
+						window.history.pushState(null, sectionName, anchor);
+					}
+				}
+
+			}
+
+		} else {
+			console.log('entra down');
+			$navigationLeft.find('a').slice(-1).css('background','red');
+			if( !$navigationLeft.find('a').slice(-2).hasClass('active')  ) {
+				console.log( 'baja y baja');
+			}else{
+				console.log('no baja');
+			}
+		}
+	});
 
 	/* ejecuto activa nav al inicio */
 	scrollSpy();
