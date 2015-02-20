@@ -11,6 +11,16 @@
 
 .navigation-left > a {
 	position: absolute;
+	left: -9px;
+}
+
+.navigation-left > a:hover {
+	position: absolute;
+}
+
+.navigation-left > a span{
+	position: absolute;
+	opacity: 0;
 }
 
 .navigation-left > div {
@@ -35,10 +45,42 @@
     transition: 0.5s ease-in-out;
 }
 
-.navigation-left a:hover,
-.navigation-left a.active {
+.navigation-left > div a:hover,
+.navigation-left > div a.active {
 	color: #FFF;
 	font-family: 'museo700';
 	text-decoration: none;
 	border-left: 3px solid #fff;
+}
+
+.navigation-left .link-square {
+	margin: 0;
+}
+
+.navigation-left .square-rotate {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #8c8c8c;
+	background: #d5d5d5;
+	-webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.navigation-left .link-square:hover .square-rotate {
+	-moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #fff;
+}
+
+.navigation-left a.up{
+	top: 15%;
+}
+
+.navigation-left a.down{
+	bottom: 15%;
 }
