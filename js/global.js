@@ -101,11 +101,26 @@
 
 		} else {
 			console.log('entra down');
-			$navigationLeft.find('a').slice(-1).css('background','red');
-			if( !$navigationLeft.find('a').slice(-2).hasClass('active')  ) {
-				console.log( 'baja y baja');
+
+			if( !$navigationLeft.find('a:last-child').prev().hasClass('active')  ) {
+				console.log('estoy en el ultimo, no baja');
+				return;
 			}else{
-				console.log('no baja');
+				console.log('no estoy en el ultimo, baja');
+				var that = $(this),
+					anchor = '#' + $navigationLeft.find('a.active').next().attr("data-scroll:anchor") || null,
+					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 1500,
+					sectionName = that.text();
+
+				if( anchor !== null ){
+					event.preventDefault();
+					$.scrollTo.window().queue([]).stop();
+					$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
+
+					if (window.history.pushState){
+						window.history.pushState(null, sectionName, anchor);
+					}
+				}
 			}
 		}
 	});
