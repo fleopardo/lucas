@@ -220,9 +220,9 @@ footer p{
 	float: left;
 	width: 50%;
 	line-height: 16px;
-	padding: 5px 20px;
+	padding: 0 20px;
 	font-size: 12px;
-	min-height: 40px;
+	line-height: 40px;
 }
 
 footer p.address{
