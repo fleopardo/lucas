@@ -52,3 +52,12 @@
 	right: 60px;
 	top: 350px;
 }
+
+
+.somos-salazar-bogoya .names:hover .icon-more .square{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
