@@ -81,10 +81,10 @@
 	text-align: right;
 	opacity: 0;
 	z-index: 5;
-	-webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bienvenidos .bid article.open {
@@ -111,10 +111,10 @@
     left: 50%;
     margin-left: -78px;
     top: -78px;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bienvenidos .link-square:hover {
@@ -145,10 +145,10 @@
     width: 130px;
     height: 130px;
     content: '';
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     -moz-transform: rotate(0);
     -webkit-transform: rotate(0);
     -o-transform: rotate(0);
@@ -175,6 +175,14 @@
 .bienvenidos .link-square span {
     position: absolute;
     top: 110px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .link-square:hover span {
+    top: 126px;
 }
 
 .bienvenidos .video-container {

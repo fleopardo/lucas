@@ -14,13 +14,15 @@
 	left: -9px;
 }
 
-.navigation-left > a:hover {
-	position: absolute;
-}
-
 .navigation-left > a span{
 	position: absolute;
-	opacity: 0;
+	opacity: 1;
+	background:  url('./assets/sp-arrows-navigator.png') no-repeat;
+	left: 0;
+	right: 0;
+	text-indent: -9999px;
+	height: 6px;
+	display: inline-block;
 }
 
 .navigation-left > div {
@@ -39,10 +41,10 @@
 	position: relative;
 	left: -2px;
 	text-shadow: 0 0 28px #999;
-	-webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .navigation-left > div a:hover,
@@ -61,11 +63,11 @@
 	width: 18px;
 	height: 18px;
 	border: 1px solid #8c8c8c;
-	background: #d5d5d5;
-	-webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
+	background: #fff;
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .navigation-left .link-square:hover .square-rotate {
@@ -74,7 +76,7 @@
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #fff;
+    background: #bfa966;
 }
 
 .navigation-left a.up{
@@ -83,4 +85,20 @@
 
 .navigation-left a.down{
 	bottom: 15%;
+}
+
+.navigation-left a.up span{
+	background-position: 5px -3px;
+}
+
+.navigation-left a.down span{
+	background-position: 5px -21px;
+}
+
+.navigation-left a.up:hover span{
+	background-position: 5px -12px;
+}
+
+.navigation-left a.down:hover span{
+	background-position: 5px -31px;
 }
