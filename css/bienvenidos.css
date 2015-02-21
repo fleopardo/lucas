@@ -20,16 +20,22 @@
 	position: relative;
 }
 
-.bienvenidos .slogan span {
+.bienvenidos .slogan a {
 	font-family: 'museo500';
 	display: inline-block;
+	color: #fff;
 	border-bottom: 3px solid #b1a06c;
 }
+
+.bienvenidos .slogan a:hover {
+	text-decoration: none;
+}
+
 .bienvenidos .container {
 	width: 80%;
 }
 .bienvenidos .logo-bienvenido {
-	background: url('./assets/logo-pantalla-final.png') no-repeat center top;
+	background: url('./assets/logo-pantalla-bienvenida.png') no-repeat center top;
 	/*width: 466px;*/
 	height: 210px;
 	position: relative;
@@ -40,8 +46,7 @@
 	min-height: 360px;
 }
 
-.bienvenidos .logo-bienvenido > h2,
-.bienvenidos .logo-bienvenido > p{
+.bienvenidos .logo-bienvenido > h2 {
 	position: absolute;
 	opacity: 0;
 }
@@ -56,7 +61,7 @@
 
 .bienvenidos .bid img{
 	float: right;
-	width: 240px;
+	width: 238px;
 }
 
 .bienvenidos .bid .icon-more {
@@ -76,10 +81,10 @@
 	text-align: right;
 	opacity: 0;
 	z-index: 5;
-	-webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bienvenidos .bid article.open {
@@ -94,32 +99,36 @@
 }
 
 .bienvenidos .squares-container{
-    top: -78px;
-    left: 50%;
-    right: auto;
+    top: 0;
     bottom: auto;
-    margin-left: -106px;
+    right: 0;
 }
 
 .bienvenidos .link-square {
     color: #fff;
     font-family: 'museo700';
+    position: absolute;
+    left: 50%;
+    margin-left: -78px;
+    top: -78px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bienvenidos .link-square:hover {
     text-decoration: none;
-    color: #fff;
+    color: #bfa966;
+    top: -84px;
+    margin-left: -83px;
 }
 
 .bienvenidos .square-rotate {
     width: 156px;
     height: 156px;
-    border: 1px solid #828282;
-    background: rgba(0,0,0, 0.2);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
+    border: 1px solid #fff;
+    background: rgba(255,255,255, 0.1);
 }
 
 .bienvenidos .link-square:hover .square-rotate {
@@ -128,12 +137,18 @@
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    width: 166px;
+    height: 166px;
 }
 
 .bienvenidos .square-rotate::before {
     width: 130px;
     height: 130px;
     content: '';
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     -moz-transform: rotate(0);
     -webkit-transform: rotate(0);
     -o-transform: rotate(0);
@@ -147,6 +162,12 @@
     background: #bfa966;
 }
 
+.bienvenidos .link-square:hover .square-rotate::before {
+	width: 140px;
+    height: 140px;
+    background: #fff;
+}
+
 .bienvenidos .link-square .icon-to-top {
     top: 100px;
 }
@@ -154,6 +175,14 @@
 .bienvenidos .link-square span {
     position: absolute;
     top: 110px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .link-square:hover span {
+    top: 126px;
 }
 
 .bienvenidos .video-container {
@@ -196,12 +225,12 @@ footer p{
 	min-height: 40px;
 }
 
-footer p.designedBy{
+footer p.address{
 	background: #454545;
 	color: #e4e4e4;
 }
 
-footer p.designedBy span{
+footer p.address span{
 	background: #454545;
 	color: #888;
 }
