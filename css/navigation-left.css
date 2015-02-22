@@ -63,7 +63,6 @@
 	width: 18px;
 	height: 18px;
 	border: 1px solid #8c8c8c;
-	background: #fff;
 	-webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -76,7 +75,6 @@
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #bfa966;
 }
 
 .navigation-left a.up{

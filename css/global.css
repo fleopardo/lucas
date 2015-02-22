@@ -230,7 +230,7 @@ body {
 }
 
 .link-square:hover {
-    color: #bfa966;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -255,6 +255,7 @@ body {
     -o-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
+    background: #bfa966;
 }
 
 .link-square span {

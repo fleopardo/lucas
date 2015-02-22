@@ -35,7 +35,10 @@
 
 .owl-carousel .item{
 	padding: 0 10px;
-	/*height: 300px;*/
+}
+
+.nuestro-metodo-en-la-practica .squares-container{
+	position: static;
 }
 
 .nuestro-metodo-en-la-practica .links-container{
@@ -63,48 +66,51 @@
 	width: 38px;
 	height: 38px;
 	padding: 15px;
-	background: #545454;
-	-webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.owl-theme .owl-buttons > div:hover {
-	-moz-transform: rotate(0);
-	-webkit-transform: rotate(0);
-	-o-transform: rotate(0);
-	-ms-transform: rotate(0);
-	transform: rotate(0);
+	
 }
 
-.owl-theme .owl-buttons > div::before {
-	content: '';
-	display: inline-block;
-	background-image: url('./assets/sp-arrows-sliders.png');
-	background-repeat: no-repeat;
+.owl-theme .owl-buttons .link-square {
 	position: absolute;
-	top: 7px;
-	right: 0;
+	margin: 0;
+	top: 0;
 	left: 0;
-	bottom: 7px;
-	-moz-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	right: 0;
+	bottom: 0;
 }
 
-.owl-theme .owl-buttons > div:hover::before {
-	-moz-transform: rotate(0);
-	-webkit-transform: rotate(0);
-	-o-transform: rotate(0);
-	-ms-transform: rotate(0);
-	transform: rotate(0);
+.owl-theme .owl-buttons .link-square:hover .square-rotate {
+	background: #545454;
+}
+
+.owl-theme .owl-buttons .square-rotate {
+	width: 100%;
+	height: 100%;
+	background: #545454;
+}
+
+.owl-theme .owl-buttons .link-square span {
+    display: block;
+    text-indent: -9999px;
+    background-image: url('./assets/sp-arrows-sliders.png');
+	background-repeat: no-repeat;
+	height: 18px;
+	top: 12px;
+}
+
+.owl-buttons .owl-prev .link-square span {
+	background-position: 14px -23px;
+}
+
+.owl-buttons .owl-next .link-square span{
+	background-position: 16px -62px;
+}
+
+.owl-buttons .owl-prev:hover .link-square span {
+	background-position: 14px -3px;
+}
+
+.owl-buttons .owl-next:hover .link-square span{
+	background-position: 16px -42px;
 }
 
 .owl-prev{
@@ -115,21 +121,7 @@
 	right: -70px;
 }
 
-.owl-prev::before {
-	background-position: 14px -18px;
-}
 
-.owl-next::before{
-	background-position: 16px -57px;
-}
-
-.owl-prev:hover::before {
-	background-position: 14px 2px;
-}
-
-.owl-next:hover::before{
-	background-position: 16px -37px;
-}
 
 .owl-theme .owl-controls .owl-page span {
 	-moz-transform: rotate(45deg);
@@ -140,7 +132,6 @@
 }
 
 .nuestro-metodo-en-la-practica .owl-carousel .owl-wrapper-outer {
-	overflow-x: hidden;
-	overflow-y: visible;
-	min-height: 246px;
+	min-height: 340px;
+	overflow: hidden;
 }

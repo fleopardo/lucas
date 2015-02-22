@@ -139,6 +139,7 @@
     transform: rotate(45deg);
     width: 166px;
     height: 166px;
+    background: rgba(255,255,255, 0.1);
 }
 
 .bienvenidos .square-rotate::before {
