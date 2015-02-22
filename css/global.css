@@ -244,7 +244,7 @@ body {
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #fff; 
+    background: #fff;
     width: 90px;
     height: 90px;
 }
@@ -329,7 +329,7 @@ body {
     width: 15px;
     height: 25px;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     left: 50%;
     margin-left: -8px;
     cursor: pointer;

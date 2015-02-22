@@ -36,24 +36,38 @@
 
 		if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top - 150) ) {
 			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $nuestroMetodoEnLaPractica.attr("id"));
 
 		} else if ( (scrolled >= $nuestroMetodoEnLaTeoria.offset().top - 150) && (scrolled < $somosSalazarBogoya.offset().top - 150) ) {
 			activeLinks($nuestroMetodoEnLaTeoria.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $nuestroMetodoEnLaTeoria.attr("id"));
 
 		} else if ( (scrolled >= $somosSalazarBogoya.offset().top - 150) && (scrolled < $hastaDondeLoPodemosLlevar.offset().top - 150) ) {
 			activeLinks($somosSalazarBogoya.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $somosSalazarBogoya.attr("id"));
 
 		} else if ( (scrolled >= $hastaDondeLoPodemosLlevar.offset().top - 150) && (scrolled < $costosProspecticos.offset().top - 150) ) {
 			activeLinks($hastaDondeLoPodemosLlevar.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $hastaDondeLoPodemosLlevar.attr("id"));
 
 		} else if ( (scrolled >= $costosProspecticos.offset().top - 150) && (scrolled < $gestionDelConocimiento.offset().top - 150) ) {
 			activeLinks($costosProspecticos.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $costosProspecticos.attr("id"));
 
 		} else if ( (scrolled >= $gestionDelConocimiento.offset().top - 150) && (scrolled < $bienvenidos.offset().top -150 ) ) {
 			activeLinks($gestionDelConocimiento.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $gestionDelConocimiento.attr("id"));
 
 		} else if (scrolled >= $bienvenidos.offset().top - 150) {
 			activeLinks($bienvenidos.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $bienvenidos.attr("id"));
 		}
 
 	}
