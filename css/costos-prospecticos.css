@@ -63,7 +63,7 @@
 
 .costos-prospecticos .peter .background {
 	background-image: url('./assets/peter.blur.jpg');
-	background-position: -100px 0px;
+	background-position: 0 0px;
 }
 
 
@@ -93,6 +93,7 @@
 	color: #bfa966;
 	text-align: center;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .costos-prospecticos .peter .content .icon-more {

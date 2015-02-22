@@ -65,7 +65,7 @@
 
 .gestion-del-conocimiento .gary .background {
 	background-image: url('./assets/gary.blur.jpg');
-	background-position: -100px 0px;
+	background-position: 0 0px;
 }
 
 
@@ -95,6 +95,7 @@
 	color: #bfa966;
 	text-align: center;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .gestion-del-conocimiento .gary .content .icon-more {
