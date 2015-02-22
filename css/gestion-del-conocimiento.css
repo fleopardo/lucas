@@ -1,13 +1,123 @@
 .gestion-del-conocimiento {
-	/*background-image: url('./assets/bg-gestion-del-conocimiento.active.jpg');*/
-	/*background-position: top left;*/
-	background-color: #222;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.gestion-del-conocimiento .container-text {
+.gestion-del-conocimiento .gary, .gestion-del-conocimiento .peter {
+	float: left;
+	height: 100vh;
+	position: relative;
+}
+
+.gestion-del-conocimiento .peter{
+	width: 60vw;
+}
+
+.gestion-del-conocimiento .peter .background,
+.gestion-del-conocimiento .peter .background-blur,
+.gestion-del-conocimiento .gary .background{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+.gestion-del-conocimiento .peter .background{
+	z-index: 0;
+	background-image: url('./assets/peter.jpg');
+}
+
+.gestion-del-conocimiento .peter .background-blur {
+	z-index: 1;
+	background-image: url('./assets/peter.blur.jpg');
+	opacity: 0;
+}
+
+.gestion-del-conocimiento .peter .container {
+	display: block;
+	position: relative;
+	z-index: 2;
+	position: relative;
+	left: 120px;
+	top: 160px;
+	width: 70%;
+}
+
+.gestion-del-conocimiento .peter .container-text {
 	text-align: left;
 }
 
-.gestion-del-conocimiento .container-text h3{
+.gestion-del-conocimiento .peter .container-text h3{
 	text-align: left;
+}
+
+
+/* RIGHT */
+
+.gestion-del-conocimiento .gary {
+	width: 40vw;
+}
+
+.gestion-del-conocimiento .gary .background {
+	background-image: url('./assets/gary.blur.jpg');
+	background-position: -100px 0px;
+}
+
+
+.gestion-del-conocimiento .gary .content {
+	position: relative;
+	z-index: 2;
+	top: 130px;
+	margin: 0 auto;
+	width: 70%;
+	min-width: 300px;
+}
+
+.gestion-del-conocimiento .gary .content a:hover {
+	text-decoration: none;
+}
+
+/*.gestion-del-conocimiento .gary h3 {
+
+}*/
+
+.gestion-del-conocimiento .gary h3 span {
+	display: block;
+	padding: 20px 30px;
+	font-family: 'museo700';
+	font-size: 20px;
+	background: #fff;
+	color: #bfa966;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.gestion-del-conocimiento .gary .content .icon-more {
+	top: 50px;
+	left: 29px;
+}
+
+.gestion-del-conocimiento .gary .content a:hover .icon-more .square {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #bfa966;
+}
+
+.gestion-del-conocimiento .gary .content a:hover .icon-more .text{
+    color: #fff;
+}
+
+.gestion-del-conocimiento .gary .content .name{
+	font-family: 'museo700';
+	font-size: 14px;
+	color: #fff;
+	text-align: right;
+	margin-top: 5px;
 }
