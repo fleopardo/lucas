@@ -54,6 +54,10 @@
 	margin-bottom: 0;
 }
 
+.nuestro-metodo-en-la-practica .link-square span{
+	top: 40%;
+}
+
 .owl-theme .owl-pagination,
 .owl-theme .owl-buttons > div {
 	position: absolute;
