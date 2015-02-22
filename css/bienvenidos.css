@@ -36,7 +36,6 @@
 }
 .bienvenidos .logo-bienvenido {
 	background: url('./assets/logo-pantalla-bienvenida.png') no-repeat center top;
-	/*width: 466px;*/
 	height: 210px;
 	position: relative;
 	z-index: 5;
@@ -59,7 +58,7 @@
 	z-index: 5;
 }
 
-.bienvenidos .bid a:hover .icon-more .square{
+.bienvenidos .bid a:hover .icon-more .square {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -72,9 +71,14 @@
     color: #fff;
 }
 
-.bienvenidos .bid img{
+.bienvenidos .bid img {
 	float: right;
 	width: 238px;
+	opacity: 0.6;
+}
+
+.bienvenidos .bid a:hover img {
+	opacity: 1
 }
 
 .bienvenidos .bid .icon-more {
@@ -155,7 +159,7 @@
     background: rgba(255,255,255, 0.1);
 }
 
-.bienvenidos .square-rotate::before {
+.bienvenidos .square-rotate:before {
     width: 130px;
     height: 130px;
     content: '';
