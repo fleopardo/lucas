@@ -1,8 +1,8 @@
 ;(function (win) {
 	animationController.addTween(
-		'.hasta-donde-lo-podemos-llevar',
+		'.gestion-del-conocimiento',
 	    TweenMax.to(
-	    	$('.hasta-donde-lo-podemos-llevar .container'),
+	    	$('.gestion-del-conocimiento .container'),
 	    	.5,
 	    	{css: {opacity:0.5}}, {css: {opacity:1}}
 	    ),
@@ -10,9 +10,9 @@
 	);
 
 	animationController.addTween(
-		'.hasta-donde-lo-podemos-llevar',
+		'.gestion-del-conocimiento',
 	    TweenMax.to(
-	    	$('.hasta-donde-lo-podemos-llevar .container'),
+	    	$('.gestion-del-conocimiento .container'),
 	    	.5,
 	    	{css: {transform: 'scale(0.9)'}}, {css: {transform: 'scale(1)'}}
 	    ),
@@ -20,9 +20,9 @@
 	);
 
 	animationController.addTween(
-		'.hasta-donde-lo-podemos-llevar',
+		'.gestion-del-conocimiento',
 		TweenMax.fromTo(
-			$('.hasta-donde-lo-podemos-llevar .container'),
+			$('.gestion-del-conocimiento .container'),
 			3,
 	        {css:{top: 0}}, {css:{top: 100}}
 	    ),
