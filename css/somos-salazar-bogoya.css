@@ -45,14 +45,13 @@
 
 .somos-salazar-bogoya .names.alfredo{
 	right: 400px;
-	top: 130px;
+	top: 168px;
 }
 
 .somos-salazar-bogoya .names.nubia{
-	right: 60px;
-	top: 350px;
+	right: 40px;
+	top: 340px;
 }
-
 
 .somos-salazar-bogoya .names:hover .icon-more .square{
     -moz-transform: rotate(45deg);
@@ -60,4 +59,21 @@
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.somos-salazar-bogoya canvas {
+	position: absolute;
+	z-index: 0;
+	width: 150px;
+}
+
+canvas#canvasSalazar {
+	right: 0;
+	top:290px;
+}
+
+canvas#canvasBogoya {
+	top: 85px;
+	right: 388px;
+	width: 175px;
 }

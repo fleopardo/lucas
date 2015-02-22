@@ -9,7 +9,6 @@
 	});
 
 	setTimeout(function(){
-		console.log('timeout');
 		iconFooterTrigger.removeClass('open');
 		footerContent.fadeOut();
 	},4000);
