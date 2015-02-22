@@ -33,12 +33,17 @@
 	text-transform: uppercase;
 }
 
-.owl-carousel .item{
+.owl-carousel .item {
 	padding: 0 10px;
+}
+
+.owl-carousel .item p{
+	margin-bottom: 15px;
 }
 
 .nuestro-metodo-en-la-practica .squares-container{
 	position: static;
+	margin-top: 15px;
 }
 
 .nuestro-metodo-en-la-practica .links-container{
