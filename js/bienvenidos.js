@@ -3,7 +3,7 @@
 	var iconFooterTrigger = $('footer a.ver-mas-footer'),
 		footerContent = $('footer > div');
 
-	$('.bienvenidos .bid .icon-more').on('click', function (event) {
+	$('.bienvenidos .bid a').on('click', function (event) {
 		event.preventDefault();
 		$('.bienvenidos .bid article').toggleClass('open');
 	});

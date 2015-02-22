@@ -61,6 +61,11 @@
   background: #fff;
 }
 
+.owl-theme .owl-controls .owl-page.active span {
+  background: transparent;
+  border: 1px solid #000;
+}
+
 /* If PaginationNumbers is true */
 /* line 64, /Users/sleopardo/workspace/bc/ypf-editorial/sass/components/owl.theme.scss */
 .owl-theme .owl-controls .owl-page span.owl-numbers {

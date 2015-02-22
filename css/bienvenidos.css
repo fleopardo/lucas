@@ -9,11 +9,6 @@
 	line-height: 32px;
 	color: #fff;
 	text-shadow: 0px 0px 15px #000;
-	/*position: absolute;
-	left: 100px;
-	right: 100px;
-	bottom: 200px;
-	margin: 0 auto 0 auto;*/
 	text-align: center;
 	padding-top: 250px;
 	z-index: 5;
@@ -21,6 +16,10 @@
 }
 
 .bienvenidos .slogan a {
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 	font-family: 'museo500';
 	display: inline-block;
 	color: #fff;
@@ -28,6 +27,7 @@
 }
 
 .bienvenidos .slogan a:hover {
+	border-color: #fff;
 	text-decoration: none;
 }
 
@@ -57,6 +57,19 @@
 	bottom: 70px;
 	width: 49%;
 	z-index: 5;
+}
+
+.bienvenidos .bid a:hover .icon-more .square{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #bfa966;
+}
+
+.bienvenidos .bid a:hover .icon-more .text{
+    color: #fff;
 }
 
 .bienvenidos .bid img{
