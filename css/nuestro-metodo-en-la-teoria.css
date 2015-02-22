@@ -2,6 +2,10 @@
 	background-image: url(./assets/bg-nuestro-metodo-teoria.jpg);
 }
 
+.nuestro-metodo-en-la-teoria .container {
+	position: relative;
+}
+
 .nuestro-metodo-en-la-teoria .container-text > div {
 	padding-bottom: 80px;
 	padding-bottom: 80px;

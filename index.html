@@ -27,10 +27,14 @@
 	<link rel="stylesheet" type="text/css" href="css/gestion-del-conocimiento.css" />
 	<link rel="stylesheet" href="css/libs/owl.carousel.css">
     <link rel="stylesheet" href="css/libs/owl.theme.css">
+    <link rel="stylesheet" href="css/libs/please-wait.css">
+
+
 </head>
 
 <body class="container-fluid">
-	<div class="row">
+
+	<div class="row inner">
 
 		<!-- Navigation-left -->
 		<nav class="navigation-left">
@@ -420,40 +424,64 @@
 
 	</div>
 
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/jquery.scrollTo.js"></script>
-	<script src="js/libs/jquery.easing.1.3.js"></script>
-	<script src="js/libs/fastclick.js"></script>
-	<script src="js/libs/owl.carousel.min.js"></script>
-	<script src="js/libs/modernizr.custom.js"></script>
-	<script src="js/libs/classie.js"></script>
+	<!-- <script type="./js/libs/please-wait.min.js"></script> -->
 
-	<script src="js/libs/TweenMax.min.js"></script>
-	<script src="js/libs/jquery.superscrollorama.js"></script>
 
-	<script src="js/global.js"></script>
-	<script src="js/navigation-mobile.js"></script>
-	<script src="js/animations.js"></script>
+	<script type="text/javascript">
 
-	<script src="js/bienvenidos.js"></script>
-	<script src="js/hasta-donde-lo-podemos-llevar.js"></script>
-	<script src="js/nuestro-metodo-en-la-practica.js"></script>
-	<script src="js/somos-salazar.js"></script>
-	<script src="js/gestion-del-conocimiento.js"></script>
-	<script src="js/costos-prospecticos.js"></script>
+		/**
+		* Please Wait
+		* Display a nice loading screen while your app loads
+		*/
+		;!function(a,b){"object"==typeof exports?b(exports):"function"==typeof define&&define.amd?define(["exports"],b):b(a)}(this,function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o;f=document.createElement("fakeelement"),d=!1,l=!1,c="animationend",k=null,e="Webkit Moz O ms".split(" "),j={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd",msTransition:"MSTransitionEnd",transition:"transitionend"};for(g in j)if(m=j[g],null!=f.style[g]){k=m,l=!0;break}if(null!=f.style.animationName&&(d=!0),!d)for(n=0,o=e.length;o>n;n++)if(h=e[n],null!=f.style[""+h+"AnimationName"]){switch(h){case"Webkit":c="webkitAnimationEnd";break;case"Moz":c="animationend";break;case"O":c="oanimationend";break;case"ms":c="MSAnimationEnd"}d=!0;break}return b=function(){function a(a){var b,e,f,g;b=this.constructor._defaultOptions,this.options={};for(e in b)g=b[e],this.options[e]=null!=a[e]?a[e]:g;this._loadingElem=document.createElement("div"),this._loadingHtmlToDisplay=[],this._loadingElem.className="pg-loading-screen",null!=this.options.backgroundColor&&(this._loadingElem.style.backgroundColor=this.options.backgroundColor),this._loadingElem.innerHTML=this.options.template,this._loadingHtmlElem=this._loadingElem.getElementsByClassName("pg-loading-html")[0],null!=this._loadingHtmlElem&&(this._loadingHtmlElem.innerHTML=this.options.loadingHtml),this._readyToShowLoadingHtml=!1,this._logoElem=this._loadingElem.getElementsByClassName("pg-loading-logo")[0],null!=this._logoElem&&(this._logoElem.src=this.options.logo),document.body.className+=" pg-loading",document.body.appendChild(this._loadingElem),this._loadingElem.className+=" pg-loading",f=function(a){return function(){return a._readyToShowLoadingHtml=!0,a._loadingHtmlElem.className+=" pg-loaded",d&&a._loadingHtmlElem.removeEventListener(c,f),a._loadingHtmlToDisplay.length>0?a._changeLoadingHtml():void 0}}(this),null!=this._loadingHtmlElem&&(d?this._loadingHtmlElem.addEventListener(c,f):f(),this._loadingHtmlListener=function(a){return function(){return a._readyToShowLoadingHtml=!0,a._loadingHtmlElem.className=a._loadingHtmlElem.className.replace(" pg-loading ",""),l&&a._loadingHtmlElem.removeEventListener(k,a._loadingHtmlListener),a._loadingHtmlToDisplay.length>0?a._changeLoadingHtml():void 0}}(this),this._removingHtmlListener=function(a){return function(){return a._loadingHtmlElem.innerHTML=a._loadingHtmlToDisplay.shift(),a._loadingHtmlElem.className=a._loadingHtmlElem.className.replace(" pg-removing "," pg-loading "),l?(a._loadingHtmlElem.removeEventListener(k,a._removingHtmlListener),a._loadingHtmlElem.addEventListener(k,a._loadingHtmlListener)):a._loadingHtmlListener()}}(this))}return a._defaultOptions={backgroundColor:null,logo:null,loadingHtml:null,template:"<div class='pg-loading-inner'>\n  <div class='pg-loading-center-outer'>\n    <div class='pg-loading-center-middle'>\n      <h1 class='pg-loading-logo-header'>\n        <img class='pg-loading-logo'></img>\n      </h1>\n      <div class='pg-loading-html'>\n      </div>\n    </div>\n  </div>\n</div>"},a.prototype.finish=function(){var a;if(null!=this._loadingElem)return a=function(b){return function(){return document.body.removeChild(b._loadingElem),document.body.className=document.body.className.replace("pg-loading","pg-loaded"),d&&b._loadingElem.removeEventListener(c,a),b._loadingElem=null}}(this),d?(this._loadingElem.className+=" pg-loaded",this._loadingElem.addEventListener(c,a)):a()},a.prototype.updateOption=function(a,b){switch(a){case"backgroundColor":return this._loadingElem.style.backgroundColor=b;case"logo":return this._logoElem.src=b;case"loadingHtml":return this.updateLoadingHtml(b);default:throw new Error("Unknown option '"+a+"'")}},a.prototype.updateOptions=function(a){var b,c,d;null==a&&(a={}),d=[];for(b in a)c=a[b],d.push(this.updateOption(b,c));return d},a.prototype.updateLoadingHtml=function(a,b){if(null==b&&(b=!1),null==this._loadingHtmlElem)throw new Error("The loading template does not have an element of class 'pg-loading-html'");return b?(this._loadingHtmlToDisplay=[a],this._readyToShowLoadingHtml=!0):this._loadingHtmlToDisplay.push(a),this._readyToShowLoadingHtml?this._changeLoadingHtml():void 0},a.prototype._changeLoadingHtml=function(){return this._readyToShowLoadingHtml=!1,this._loadingHtmlElem.removeEventListener(k,this._loadingHtmlListener),this._loadingHtmlElem.removeEventListener(k,this._removingHtmlListener),this._loadingHtmlElem.className=this._loadingHtmlElem.className.replace(" pg-loading ","").replace(" pg-removing ",""),l?(this._loadingHtmlElem.className+=" pg-removing ",this._loadingHtmlElem.addEventListener(k,this._removingHtmlListener)):this._removingHtmlListener()},a}(),i=function(a){return null==a&&(a={}),new b(a)},a.pleaseWait=i,i});
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		window.loading_screen = window.pleaseWait({
+	        logo: "./css/assets/logo-pantalla-bienvenida.png",
+	        backgroundColor: '#bfa966',
+	        loadingHtml: "<p class='loading-message'></p><div class='sk-spinner sk-spinner-rotating-plane'><div class='sk-rect1'></div><div class='sk-rect2'></div><div class='sk-rect3'></div><div class='sk-rect4'></div><div class='sk-rect5'></div></div>"
+	      });
 
-	  ga('create', 'UA-59958094-1', 'auto');
-	  ga('send', 'pageview');
+		/**
+		 * Google analytics
+		 */
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		  ga('create', 'UA-59958094-1', 'auto');
+		  ga('send', 'pageview');
+
+		/* scr.js 0B 0.1.4 - 14/10/2011 - Little tiny loader for javascript sources. */
+		(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
+
+		scr.js("js/libs/jquery.min.js", function() {
+
+	    	scr.js(["js/libs/jquery.scrollTo.js",
+	    			"js/libs/jquery.easing.1.3.js",
+	    			"js/libs/fastclick.js",
+	    			"js/libs/owl.carousel.min.js",
+	    			"js/libs/modernizr.custom.js",
+	    			"js/libs/classie.js",
+	    			"js/libs/TweenMax.min.js",
+	    			"js/libs/jquery.superscrollorama.js"], function() {
+
+			    	scr.js(["js/global.js",
+			    			"js/navigation-mobile.js",
+			    			"js/animations.js",
+							"js/bienvenidos.js",
+							"js/hasta-donde-lo-podemos-llevar.js",
+							"js/nuestro-metodo-en-la-teoria.js",
+							"js/nuestro-metodo-en-la-practica.js",
+							"js/gestion-del-conocimiento.js",
+							"js/costos-prospecticos.js",
+							"js/somos-salazar-bogoya.js"], function() {
+								$.scrollTo($("#bienvenidos"), {speed: 0});
+								window.loading_screen.finish();
+							});
+			});
+		});
 	</script>
-
-
 
 </body>
 </html>

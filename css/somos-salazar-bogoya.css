@@ -4,6 +4,10 @@
 	background-attachment: scroll;
 }
 
+.somos-salazar-bogoya .container-text {
+	position: relative;
+}
+
 .somos-salazar-bogoya .container-text > div {
 	border: none;
 	border-left: 1px solid #a0a0a0;

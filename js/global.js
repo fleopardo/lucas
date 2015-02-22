@@ -70,7 +70,7 @@
 			$navigationLeft.addClass('nav-' + $bienvenidos.attr("id"));
 		}
 
-	}
+	};
 
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
