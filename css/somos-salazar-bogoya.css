@@ -44,7 +44,7 @@
 }
 
 .somos-salazar-bogoya .names.alfredo{
-	right: 400px;
+	right: 340px;
 	top: 168px;
 }
 
@@ -69,11 +69,11 @@
 
 canvas#canvasSalazar {
 	right: 0;
-	top:290px;
+	top: 290px;
 }
 
 canvas#canvasBogoya {
 	top: 85px;
-	right: 388px;
+	right: 358px;
 	width: 175px;
 }

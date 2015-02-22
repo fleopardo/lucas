@@ -49,7 +49,7 @@
 
 .navigation-left > div a:hover,
 .navigation-left > div a.active {
-	color: #FFF;
+	color: #fff;
 	font-family: 'museo700';
 	text-decoration: none;
 	border-left: 3px solid #fff;
@@ -99,4 +99,17 @@
 
 .navigation-left a.down:hover span{
 	background-position: 5px -31px;
+}
+
+/* color especifico para secciones */
+.navigation-left > div.nav-gestion-del-conocimiento a,
+.navigation-left > div.nav-somos-salazar-bogoya a {
+	color: #afafaf;
+}
+
+.navigation-left > div.nav-gestion-del-conocimiento a.active,
+.navigation-left > div.nav-somos-salazar-bogoya a:hover,
+.navigation-left > div.nav-gestion-del-conocimiento a.active,
+.navigation-left > div.nav-somos-salazar-bogoya a:hover {
+	color: #fff;
 }
