@@ -3,7 +3,6 @@ var canvasSalazar = document.getElementById("canvasSalazar"),
 	cxtSalazar = canvasSalazar.getContext("2d");
 	cxtBogoya = canvasBogoya.getContext("2d");
 
-console.log('a ver gabriel')
 cxtSalazar.moveTo(15,0);
 cxtSalazar.lineTo(110,100);
 cxtSalazar.lineWidth = 1;
