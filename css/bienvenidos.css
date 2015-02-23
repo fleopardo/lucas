@@ -252,9 +252,13 @@ footer{
 	min-height: 40px;
 }
 
+footer > div {
+	background: #fff;
+}
+
 footer p{
 	float: left;
-	width: 50%;
+	max-width: 50%;
 	line-height: 16px;
 	padding: 0 20px;
 	font-size: 12px;
