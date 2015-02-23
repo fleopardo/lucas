@@ -144,22 +144,28 @@
 .overlay ul li a {
 	font-size: 17px;
 	text-transform: uppercase;
-	font-family: 'museo500';
+	font-family: 'museo300';
 	color: #c0ab69;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
 	position: relative;
 	display: inline-block;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #454545;
+	color: #7f7f7f;
 	text-decoration: none;
 }
 
+.overlay ul li a.active,
+.overlay ul li a.hover {
+	font-family: 'museo700';
+	color: #c0ab69;
+}
+
 .overlay ul li .line {
-	height: 2px;
+	height: 1px;
 	width: 200px;
 	background: #dbdbdb;
 	margin: 22px auto;

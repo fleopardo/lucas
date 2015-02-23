@@ -71,14 +71,26 @@
     color: #fff;
 }
 
-.bienvenidos .bid img {
+.bienvenidos .bid .bid-image-wrapper {
 	float: right;
 	width: 238px;
-	opacity: 0.6;
+	background: rgba(255,255,255,0.5);
+	height: 90px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #fff;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
-.bienvenidos .bid a:hover img {
-	opacity: 1
+.bienvenidos .bid img {
+	margin-top: 28px;
+}
+
+.bienvenidos .bid a:hover .bid-image-wrapper {
+	background: rgba(255,255,255,0.8);
 }
 
 .bienvenidos .bid .icon-more {
@@ -144,7 +156,7 @@
 .bienvenidos .square-rotate {
     width: 156px;
     height: 156px;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255,255,255, 0.5);
     background: rgba(255,255,255, 0.1);
 }
 
@@ -181,8 +193,8 @@
 }
 
 .bienvenidos .link-square:hover .square-rotate::before {
-	width: 140px;
-    height: 140px;
+	width: 136px;
+    height: 136px;
     background: #fff;
 }
 
@@ -212,6 +224,11 @@
 	right: 0;
 	overflow: hidden;
 	position: absolute;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .bienvenidos video {

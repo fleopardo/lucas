@@ -15,6 +15,7 @@
 		$nuestroMetodoEnLaTeoria = $('.nuestro-metodo-en-la-teoria'),
 		$nuestroMetodoEnLaPractica = $('.nuestro-metodo-en-la-practica'),
 		$navigationLeft = $('.navigation-left > div'),
+		$navigationMobile = $('.navigation-mobile > nav'),
 		$navigationArrows = $('.navigation-left > .link-square'),
 		$navigationUp = $('.navigation-left .up'),
 		$navigationDown = $('.navigation-left .down');
@@ -24,8 +25,12 @@
 	*/
 	var activeLinks = function (anchor){
 		$navigationLeft.find('a').removeClass('active');
+		$navigationMobile.find('a').removeClass('active');
+
 		$navigationLeft.find('[href="#' + anchor + '"]').addClass('active');
 		$navigationLeft.find('[href="#' + anchor + '"]').nextAll().addClass('active');
+
+		$navigationMobile.find('[href="#' + anchor + '"]').addClass('active');
 	};
 
 	/*

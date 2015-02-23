@@ -63,7 +63,7 @@
 
 .owl-theme .owl-controls .owl-page.active span {
   background: transparent;
-  border: 1px solid #000;
+  border: 1px solid #545454;
 }
 
 /* If PaginationNumbers is true */
