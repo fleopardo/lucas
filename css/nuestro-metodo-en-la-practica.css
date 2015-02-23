@@ -40,6 +40,7 @@
 
 .owl-carousel .item {
 	padding: 0 10px;
+	height: 220px;
 }
 
 .owl-carousel .item p{
@@ -47,8 +48,10 @@
 }
 
 .nuestro-metodo-en-la-practica .squares-container{
-	position: static;
-	margin-top: 15px;
+	/*position: static;
+	margin-top: 15px;*/
+	position: absolute;
+	bottom: -104px;
 }
 
 .nuestro-metodo-en-la-practica .links-container{
@@ -62,6 +65,38 @@
 .nuestro-metodo-en-la-practica .link-square span{
 	top: 40%;
 }
+
+.nuestro-metodo-en-la-practica .hospital-san-rafael img,
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img,
+.nuestro-metodo-en-la-practica .fundacion-universitaria img,
+.nuestro-metodo-en-la-practica .cruz-roja-colombiana img,
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+}
+
+.nuestro-metodo-en-la-practica .hospital-san-rafael img {
+	margin-top: -26px;
+	margin-left: -48px;
+}
+
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img {
+	margin-top: -36px;
+	margin-left: -27px;
+}
+
+.nuestro-metodo-en-la-practica .fundacion-universitaria img {
+	margin-top: -33px;
+	margin-left: -32px;
+}
+
+.nuestro-metodo-en-la-practica .cruz-roja-colombiana img {
+	margin-top: -34px;
+	margin-left: -31px;
+}
+
 
 .owl-theme .owl-pagination,
 .owl-theme .owl-buttons > div {
