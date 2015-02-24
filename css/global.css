@@ -67,7 +67,7 @@ a:focus {
 .DN { display: none;}
 .left { float: left; }
 .right {float: right;}
-
+strong{ font-family: 'museo700';}
 
 /* End Utils
 -------------------------------------------------- */
@@ -278,10 +278,6 @@ body {
     right: 0;
     top: 33%;
     line-height: 16px;
-}
-
-.link-square strong{
-    font-family: 'museo700';
 }
 
 
