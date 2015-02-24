@@ -7,7 +7,7 @@
 ;(function(win){
 
 
-	var $bienvenidos = $(".bienvenidos"),
+	var $bienvenidos = $(".bienvenidos:not(.pantalla-final)"),
 		$gestionDelConocimiento = $(".gestion-del-conocimiento"),
 		$costosProspecticos = $(".costos-prospecticos"),
 		$hastaDondeLoPodemosLlevar = $(".hasta-donde-lo-podemos-llevar"),
@@ -39,7 +39,12 @@
 	var scrollSpy = function () {
 		var scrolled = $(window).scrollTop();
 
-		if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top - 150) ) {
+		if ( scrolled >= 0 && scrolled < $nuestroMetodoEnLaPractica.offset().top) {
+			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
+			$navigationLeft.removeClass();
+			$navigationLeft.addClass('nav-' + $nuestroMetodoEnLaPractica.attr("id"));
+
+		} else if ( (scrolled >= $nuestroMetodoEnLaPractica.offset().top) && (scrolled < $nuestroMetodoEnLaTeoria.offset().top - 150) ) {
 			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
 			$navigationLeft.removeClass();
 			$navigationLeft.addClass('nav-' + $nuestroMetodoEnLaPractica.attr("id"));
@@ -150,6 +155,29 @@
 			scrollSpy();
 		},100);
 	});
+
+	/* Pantalla final links para volver a empezar */
+	$('.pantalla-final .link-square').on('click', function(event) {
+		event.preventDefault();
+		window.showLoading();
+		setTimeout(function(){
+			$.scrollTo($("#gestion-del-conocimiento"), {speed: 0});
+			document.location.hash = "#gestion-del-conocimiento";
+			window.loading_screen.finish();
+		}, 2000);
+	});
+
+	$('.pantalla-final .slogan a').on('click', function(event) {
+		event.preventDefault();
+		var anchor = $(this).attr('href');
+		window.showLoading();
+		setTimeout(function(){
+			$.scrollTo($(anchor), {speed: 0});
+			document.location.hash = anchor;
+			window.loading_screen.finish();
+		}, 2000);
+	});
+
 
 	/* Init animations scrollorama */
 	/* cada modulo va a tener sus animaciones */
