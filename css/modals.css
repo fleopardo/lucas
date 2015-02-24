@@ -8,7 +8,7 @@
  *   http://www.opensource.org/licenses/mit-license.php
  */
 
-.basic-modal-content {
+.modal-rotate {
 	display:none;
 }
 
@@ -58,9 +58,10 @@
 #simplemodal-container h3 {
 	font-family: 'museo300';
 	font-size: 25px;
-	line-height: 28px;
+	line-height: 26px;
 	color:#bfa966;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 #simplemodal-container p {

@@ -179,9 +179,10 @@
 	});
 
 	/*MODALES*/
-	$('#openModal').on('click',function (event) {
+	$('a.openModal').on('click',function (event) {
 		event.preventDefault();
-		$('#basic-modal-content').modal({
+		var href = 'Modal' + $(this).attr('id');
+		$('#' + href).modal({
 			opacity : 70,
 			overlayClose : true,
 			closeHTML : '<a href="#"class="link-square"><div class="square-rotate"><span></span></div></a>'
