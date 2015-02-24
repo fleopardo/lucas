@@ -179,15 +179,24 @@
 	});
 
 	/*MODALES*/
-	$('a.openModal').on('click',function (event) {
-		event.preventDefault();
-		var href = 'Modal' + $(this).attr('id');
-		$('#' + href).modal({
-			opacity : 70,
-			overlayClose : true,
-			closeHTML : '<a href="#"class="link-square"><div class="square-rotate"><span></span></div></a>'
-		});
+	$('.openModal').on('click',function (event) {
+	 	event.preventDefault();
+	 	var modalId = 'Modal' + $(this).attr('id');
+	 	$("#" + modalId).fadeIn();
+	 	$(".modal-overlay").fadeIn();
+
+	 	$("#" + modalId).find('.icon-more').one('click', function () {
+	 		$("#" + modalId).fadeOut();
+	 		$(".modal-overlay").fadeOut();
+	 	});
+
+	 	$(".modal-overlay").one('click', function () {
+	 		$("#" + modalId).fadeOut();
+	 		$(".modal-overlay").fadeOut();
+	 	});
 	});
+
+
 	/* Init animations scrollorama */
 	/* cada modulo va a tener sus animaciones */
 	var animationController = $.superscrollorama({

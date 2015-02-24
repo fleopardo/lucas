@@ -42,7 +42,7 @@
 	        loadingHtml: "<p class='loading-message'></p><div class='sk-spinner sk-spinner-rotating-plane'><div class='sk-rect1'></div><div class='sk-rect2'></div><div class='sk-rect3'></div><div class='sk-rect4'></div><div class='sk-rect5'></div></div>"
 	     });
 	};
-	window.showLoading();
+	// window.showLoading();
 	</script>
 
 	<div class="row inner">
@@ -175,7 +175,7 @@
 									<p>En diciembre de 2012, la Institución se encontraba en una delicada situación de riesgo financiero.</p>
 									<p>Con nuestra metodología identificamos los puntos críticos y generamos un plan estratégico con metas a 3 años cuya efectividad se ve en la recuperación de la viabilidad financiera y la confianza de sus empleados y proveedores.</p>
 									<div class="squares-container">
-										<a href="#" title="" class="link-square">
+										<a href="#" class="link-square openModal">
 											<div class="square-rotate"></div>
 											<span>Saber <strong>más</strong></span>
 										</a>
@@ -264,6 +264,57 @@
 				<div class="two"></div>
 				<div class="three"></div>
 			</a>
+
+			<!-- modals -->
+			<div class="modals modal-teoria" id="ModalEscenarioHoy">
+				<div class="bg"></div>
+
+				<div class="icon-more">
+						<span class="square"></span>
+						<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3>El <br>escenario<br> <strong>hoy</strong></h3>
+					<p>Situación actual y real en la cual se encuentran las finanzas, los procesos y los productos generados en la empresa.</p>
+				</div>
+			</div>
+
+			<div class="modals modal-teoria" id="ModalEscenarioManana">
+				<div class="bg"></div>
+				<div class="icon-more">
+						<span class="square"></span>
+						<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3>El <br>escenario<br> <strong>mañana</strong></h3>
+					<p>Detección de atascamientos, re-prcesos, demoras y problemas de servicio en cada proceso.</p>
+				</div>
+			</div>
+
+			<div class="modals modal-teoria" id="ModalEscenarioFuturo">
+				<div class="bg"></div>
+				<div class="icon-more">
+						<span class="square"></span>
+						<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3>El <br>escenario<br> <strong>futuro</strong></h3>
+					<p>Define situaciones futuras de crisis para crear planes de acción y contingencia, cuya implementación aumenta la estabilidad y rentabilidad de la empresa en el tiempo.</p>
+				</div>
+			</div>
+
+			<div class="modals modal-teoria modal-teoria-dorado" id="ModalCostPerform">
+				<div class="bg"></div>
+				<div class="icon-more white">
+						<span class="square"></span>
+						<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3><strong>QPR</strong><br>COSTCONTROL</h3>
+					<p>La tecnología de nuestros aliados QPR CostControl de Holanda y QPR software de Finlandia nos permite convertir, en corto tiempos, los datos empresariales en conocimiento y establecer con alta precisión: la magnitud, el impacto, la temporalidad y el riesgo de flujo de dinero necesario para conquistar sus objetivos estratégicos.</p>
+				</div>
+			</div>
+			<!-- /modals -->
 
 		</section>
 		<!-- /Nuestro-metodo-en-la-teoria -->
@@ -497,32 +548,8 @@
 
 	<!-- modales -- >
 	<!-- modal content -->
-	<div class="hide">
-		<div class="basic-modal-content" id="ModalEscenarioHoy">
-			<h3>El <br>escenario<br> <strong>hoy</strong></h3>
-			<p>Situación actual y real en la cual se encuentran las finanzas, los procesos y los productos generados en la empresa.</p>
-		</div>
-	</div>
+	<div class="modal-overlay"></div>
 
-	<div class="hide">
-		<div class="basic-modal-content" id="ModalEscenarioManana">
-			<h3>El <br>escenario<br> <strong>mañana</strong></h3>
-			<p>Detección de atascamientos, re-prcesos, demoras y problemas de servicio en cada proceso.</p>
-		</div>
-	</div>
-
-	<div class="hide">
-		<div class="basic-modal-content" id="ModalEscenarioFuturo">
-			<h3>El <br>escenario<br> <strong>futuro</strong></h3>
-			<p>Define situaciones futuras de crisis para crear planes de acción y contingencia, cuya implementación aumenta la estabilidad y rentabilidad de la empresa en el tiempo.</p>
-		</div>
-	</div>
-	<div class="hide">
-		<div class="basic-modal-content" id="ModalCostPerform">
-			<h3><strong>QPR</strong><br>COSTCONTROL</h3>
-			<p>La tecnología de nuestros aliados QPR CostControl de Holanda y QPR software de Finlandia nos permite convertir, en corto tiempos, los datos empresariales en conocimiento y establecer con alta precisión: la magnitud, el impacto, la temporalidad y el riesgo de flujo de dinero necesario para conquistar sus objetivos estratégicos.</p>
-		</div>
-	</div>
 
 	<script type="text/javascript">
 		/**
@@ -548,8 +575,7 @@
 	    			"js/libs/modernizr.custom.js",
 	    			"js/libs/classie.js",
 	    			"js/libs/TweenMax.min.js",
-	    			"js/libs/jquery.superscrollorama.js",
-	    			"js/libs/jquery.simplemodal.js"], function() {
+	    			"js/libs/jquery.superscrollorama.js"], function() {
 
 			    	scr.js(["js/global.js",
 			    			"js/navigation-mobile.js",
@@ -568,7 +594,7 @@
 								document.location.hash = "#bienvenidos";
 
 								setTimeout(function() {
-									window.loading_screen.finish();
+									// window.loading_screen.finish();
 
 									setTimeout(function(){
 										var iconFooterTrigger = $('footer a.ver-mas-footer'),
