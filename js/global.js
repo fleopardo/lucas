@@ -178,6 +178,12 @@
 		}, 2000);
 	});
 
+	/*MODALES*/
+	$('#openModal').on('click',function (event) {
+		event.preventDefault();
+		$('#basic-modal-content').modal();
+	});
+
 
 	/* Init animations scrollorama */
 	/* cada modulo va a tener sus animaciones */

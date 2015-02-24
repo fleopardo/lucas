@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="css/gestion-costos.css" />
 	<link rel="stylesheet" type="text/css" href="css/costos-prospecticos.css" />
 	<link rel="stylesheet" type="text/css" href="css/gestion-del-conocimiento.css" />
+	<link rel="stylesheet" type="text/css" href="css/modals.css" />
 	<link rel="stylesheet" href="css/libs/owl.carousel.css">
     <link rel="stylesheet" href="css/libs/owl.theme.css">
     <link rel="stylesheet" href="css/libs/please-wait.css">
@@ -33,7 +34,7 @@
 </head>
 
 <body class="container-fluid">
-	<script>
+	<!--script>
 	window.showLoading = function () {
 		window.loading_screen = window.pleaseWait({
 	        logo: "./css/assets/logo-pantalla-bienvenida.png",
@@ -42,7 +43,7 @@
 	     });
 	};
 	window.showLoading();
-	</script>
+	</script-->
 
 	<div class="row inner">
 
@@ -232,7 +233,7 @@
 						<p>La información recolecta	da es procesadagracias al software
 						<a href="#" title="">QPR CostPerform</a>, uno de los mejores del mundo, el cual identifica de forma rápida, precisa, estadística y gráfica los siguientes escenarios:</p>
 						<div class="squares-container">
-							<a href="#" title="" class="link-square">
+							<a href="#" title="" class="link-square" id="openModal">
 								<div class="square-rotate"></div>
 								<span>El escenario <strong>hoy</strong></span>
 							</a>
@@ -481,6 +482,15 @@
 
 	</div>
 
+	<!-- modales -- >
+	<!-- modal content -->
+	<div class="basic-modal-content" id="basic-modal-content">
+		<div class="modal-text-container">
+			<h3>El <br>escenario<br> <strong>hoy</strong></h3>
+			<p>Situación actual y real en la cual se encuentran las finanzas, los procesos y los productos generados en la empresa.</p>
+		</div>
+	</div>
+
 	<script type="text/javascript">
 		/**
 		 * Google analytics
@@ -505,7 +515,8 @@
 	    			"js/libs/modernizr.custom.js",
 	    			"js/libs/classie.js",
 	    			"js/libs/TweenMax.min.js",
-	    			"js/libs/jquery.superscrollorama.js"], function() {
+	    			"js/libs/jquery.superscrollorama.js",
+	    			"js/libs/jquery.simplemodal"], function() {
 
 			    	scr.js(["js/global.js",
 			    			"js/navigation-mobile.js",
