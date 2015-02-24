@@ -184,7 +184,7 @@
 		$('#basic-modal-content').modal({
 			opacity : 70,
 			overlayClose : true,
-			closeHTML : '<a href="#"class="link-square"><div class="square-rotate"></div></a>'
+			closeHTML : '<a href="#"class="link-square"><div class="square-rotate"><span></span></div></a>'
 		});
 	});
 
