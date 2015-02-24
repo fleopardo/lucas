@@ -1,40 +1,21 @@
 .costos-prospecticos {
 	padding-left: 0;
 	padding-right: 0;
+	min-height: 300px;
 }
 
 .costos-prospecticos .peter, .costos-prospecticos .gary {
 	float: left;
 	height: 100vh;
-	position: relative;
-}
-
-.costos-prospecticos .gary{
-	width: 60vw;
-}
-
-.costos-prospecticos .gary .background,
-.costos-prospecticos .gary .background-blur,
-.costos-prospecticos .peter .background{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
 }
 
-.costos-prospecticos .gary .background{
+.costos-prospecticos .gary{
+	width: 60vw;
 	z-index: 0;
 	background-image: url('./assets/gary.jpg');
-}
-
-.costos-prospecticos .gary .background-blur {
-	z-index: 1;
-	background-image: url('./assets/gary.blur.jpg');
-	opacity: 0;
 }
 
 .costos-prospecticos .gary .container {
@@ -59,9 +40,6 @@
 
 .costos-prospecticos .peter {
 	width: 40vw;
-}
-
-.costos-prospecticos .peter .background {
 	background-image: url('./assets/peter.blur.jpg');
 	background-position: 0 0px;
 }

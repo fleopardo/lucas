@@ -1,42 +1,22 @@
-
 .gestion-del-conocimiento {
 	padding-left: 0;
 	padding-right: 0;
+	min-height: 300px;
 }
 
 .gestion-del-conocimiento .gary,
 .gestion-del-conocimiento .peter {
 	float: left;
 	height: 100vh;
-	position: relative;
-}
-
-.gestion-del-conocimiento .peter{
-	width: 60vw;
-}
-
-.gestion-del-conocimiento .peter .background,
-.gestion-del-conocimiento .peter .background-blur,
-.gestion-del-conocimiento .gary .background{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
 }
 
-.gestion-del-conocimiento .peter .background{
+.gestion-del-conocimiento .peter {
 	z-index: 0;
+	width: 60vw;
 	background-image: url('./assets/peter.jpg');
-}
-
-.gestion-del-conocimiento .peter .background-blur {
-	z-index: 1;
-	background-image: url('./assets/peter.blur.jpg');
-	opacity: 0;
 }
 
 .gestion-del-conocimiento .peter .container {
@@ -62,9 +42,6 @@
 
 .gestion-del-conocimiento .gary {
 	width: 40vw;
-}
-
-.gestion-del-conocimiento .gary .background {
 	background-image: url('./assets/gary.blur.jpg');
 	background-position: 0 0px;
 }
@@ -82,10 +59,6 @@
 .gestion-del-conocimiento .gary .content a:hover {
 	text-decoration: none;
 }
-
-/*.gestion-del-conocimiento .gary h3 {
-
-}*/
 
 .gestion-del-conocimiento .gary h3 span {
 	display: block;
