@@ -188,8 +188,6 @@
 			closeHTML : '<a href="#"class="link-square"><div class="square-rotate"><span></span></div></a>'
 		});
 	});
-
-
 	/* Init animations scrollorama */
 	/* cada modulo va a tener sus animaciones */
 	var animationController = $.superscrollorama({
