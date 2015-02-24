@@ -224,11 +224,6 @@
 	right: 0;
 	overflow: hidden;
 	position: absolute;
-	-moz-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
 }
 
 .bienvenidos video {
@@ -239,6 +234,11 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 
