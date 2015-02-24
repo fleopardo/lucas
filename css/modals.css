@@ -68,3 +68,8 @@
 	line-height: 20px;
 	color: #3f3f3f;
 }
+
+#simplemodal-container .square-rotate{
+	width: 20px;
+	height: 30px;
+}
