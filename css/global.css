@@ -443,3 +443,9 @@ body {
 
 /* END Globals
 -------------------------------------------------- */
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+}

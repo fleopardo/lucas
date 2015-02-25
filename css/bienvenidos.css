@@ -313,25 +313,12 @@ footer a.ver-mas-footer.open::after{
 }
 
 
-/* Pantalla final */
-/*
-.bienvenidos.pantalla-final .squares-container {
-	top: auto;
-	bottom: 0;
-	right: 0;
-}
+@media (max-width: 1100px) {
+	.bid {
+		display: none;
+	}
 
-.bienvenidos.pantalla-final .link-square .icon-to-top {
-	bottom: 95px;
-	top: auto;
-	-moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+	footer p{
+		line-height: 22px;
+	}
 }
-
-.bienvenidos.pantalla-final .link-square span {
-	top: auto;
-	bottom: 105px;
-}*/

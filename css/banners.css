@@ -159,3 +159,10 @@
 	font-size: 13px;
 	line-height: 16px;
 }
+
+
+@media (max-width: 1024px) {
+	.banner {
+		display: none;
+	}
+}

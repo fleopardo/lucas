@@ -81,3 +81,10 @@ canvas#canvasBogoya {
 	right: 358px;
 	width: 175px;
 }
+
+
+@media (max-width: 1100px) {
+	.somos-salazar-bogoya .container-text {
+		left: -200px;
+	}
+}
