@@ -175,7 +175,7 @@
 									<p>En diciembre de 2012, la Institución se encontraba en una delicada situación de riesgo financiero.</p>
 									<p>Con nuestra metodología identificamos los puntos críticos y generamos un plan estratégico con metas a 3 años cuya efectividad se ve en la recuperación de la viabilidad financiera y la confianza de sus empleados y proveedores.</p>
 									<div class="squares-container">
-										<a href="#" class="link-square openModal">
+										<a href="#" class="link-square openModal" id="HospitalClinica">
 											<div class="square-rotate"></div>
 											<span>Saber <strong>más</strong></span>
 										</a>
@@ -225,6 +225,18 @@
 						</div>
 					</div>
 				</article>
+			</div>
+
+
+			<!-- modals -->
+			<div class="modals modal-practica" id="ModalHospitalClinica">
+				<div class="icon-more white">
+					<span class="square"></span>
+					<span class="text">+</span>
+				</div>
+				<div class="content">
+					<img src="./img/graficoHospitalClinica.jpg" />
+				</div>
 			</div>
 
 		</section>
@@ -330,14 +342,14 @@
 				<canvas height="" width="" id="canvasBogoya">
 					Su navegador no soporta en elemento CANVAS
 				</canvas>
-				<a href="#" title="" class="names alfredo">
+				<a href="#" class="names alfredo openModal" id="Alfredo">
 					Alfredo <strong>Salazar</strong> Ortiz
 					<div class="icon-more">
 						<span class="square"></span>
 						<span class="text">+</span>
 					</div>
 				</a>
-				<a href="#" title="" class="names nubia">
+				<a href="#" title="" class="names nubia openModal" id="Nubia">
 					Nubia <strong>Bogoya</strong> Forero
 					<div class="icon-more">
 						<span class="square"></span>
@@ -360,6 +372,31 @@
 				<div class="two"></div>
 				<div class="three"></div>
 			</a>
+
+			<!-- modals -->
+			<div class="modals modal-somos-salazar" id="ModalAlfredo">
+				<div class="icon-more">
+					<span class="square"></span>
+					<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3><span>ALFREDO <strong>SALAZAR</strong> ORTIZ</span></h3>
+					<img src="./img/modal-alfredo.jpg" />
+					<p>Consultor empresarial con <span>20 años de experiencia</span> en el mejoramiento de los resultados empresariales, mediante el diseño de modelos de negocio a la medida de las necesidades de los clientes en América Latina. Ingeniero especializado en productividad, gerencia de costos, seis sigma y BalancedScorecard. Investigador y catedrático universitario.</p>
+				</div>
+			</div>
+
+			<div class="modals modal-somos-salazar" id="ModalNubia">
+				<div class="icon-more">
+					<span class="square"></span>
+					<span class="text">+</span>
+				</div>
+				<div class="content">
+					<h3><span>NUBIA <strong>BOGOYA</strong> FORERO</span></h3>
+					<img src="./img/modal-nubia.jpg" />
+					<p>Consultora empresarial con <span>20 años de experiencia</span> en el diseño estratégico y gestión del conocimiento para desarrollar competencias organizacionales. Ingeniera especializada en gerencia estratégica. Investigadora y catedrática universitaria.</p>
+				</div>
+			</div>
 
 		</section>
 		<!-- /Somos-salazar-bogoya -->
@@ -590,8 +627,8 @@
 							"js/somos-salazar-bogoya.js"], function() {
 
 								// Arranca siempre en bienvenidos
-								$.scrollTo($("#bienvenidos"), {speed: 0});
-								document.location.hash = "#bienvenidos";
+								// $.scrollTo($("#bienvenidos"), {speed: 0});
+								// document.location.hash = "#bienvenidos";
 
 								setTimeout(function() {
 									// window.loading_screen.finish();
