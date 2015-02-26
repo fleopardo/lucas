@@ -23,9 +23,12 @@
 	
 	/*calcula tamaño pantalla para agregar desktop o no para funcionamiento animaciones*/	
 	var calculateWidth = function(){
-		if( $(window).width() > 768 ) {
+		if( $(window).width() > 768 && !($('body').hasClass('desktop'))  ) {
 			$('body').addClass('desktop');
-		}	
+		}else{
+			$('body').removeClass('desktop');
+
+		}
 	};
 	
 
