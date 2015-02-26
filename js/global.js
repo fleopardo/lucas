@@ -20,6 +20,17 @@
 		$navigationUp = $('.navigation-left .up'),
 		$navigationDown = $('.navigation-left .down');
 
+	
+	/*calcula tamaño pantalla para agregar desktop o no para funcionamiento animaciones*/	
+	var calculateWidth = function(){
+		if( $(window).width() > 768 ) {
+			console.log('entra');
+			$('body').addClass('desktop');
+		}	
+	}
+	
+
+
 	/*
 	 * Funcion para activar color en lista de navegacion
 	*/
@@ -148,6 +159,9 @@
 
 	/* ejecuto activa nav al inicio */
 	scrollSpy();
+	calculateWidth();
+
+	
 
 	/* Chequeo el active on scroll cada 100 ms para no matar al browser */
 	$(window).on("scroll",function(){
