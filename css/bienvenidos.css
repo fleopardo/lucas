@@ -325,6 +325,11 @@ footer a.ver-mas-footer.open::after{
 
 
 @media (max-width: 1100px) {
+
+	.bienvenidos{
+		padding-top: 130px;
+	}
+
     .bienvenidos .logo-bienvenido {
 	    background-size: 70%;
     }
