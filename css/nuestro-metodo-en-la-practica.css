@@ -6,13 +6,14 @@
 .nuestro-metodo-en-la-practica .container-all {
 	position: relative;
 	display: block;
-	top: 150px
+	top: 150px;
 }
 
 .nuestro-metodo-en-la-practica .container-text {
 	position: relative;
 	top: 20px;
 	display: block;
+	margin: 0 auto;
 }
 
 .nuestro-metodo-en-la-practica  .container-text > div{

@@ -10,12 +10,12 @@
 	});
 
 
-	if ($(window).width() > 720) {
+	if ($(window).width() > 768) {
 
 		animationController.addTween(
-			'.nuestro-metodo-en-la-practica',
+			'.desktop .nuestro-metodo-en-la-practica',
 		    TweenMax.to(
-		    	$('.nuestro-metodo-en-la-practica .container-all'),
+		    	$('.desktop .nuestro-metodo-en-la-practica .container-all'),
 		    	.5,
 		    	{css: {opacity:0.5}}, {css: {opacity:1}}
 		    ),
@@ -23,9 +23,9 @@
 		);
 
 		animationController.addTween(
-			'.nuestro-metodo-en-la-practica',
+			'.desktop .nuestro-metodo-en-la-practica',
 		    TweenMax.to(
-		    	$('.nuestro-metodo-en-la-practica .container-all'),
+		    	$('.desktop .nuestro-metodo-en-la-practica .container-all'),
 		    	.5,
 		    	{css: {transform: 'scale(0.9)'}}, {css: {transform: 'scale(1)'}}
 		    ),
@@ -33,9 +33,9 @@
 		);
 
 		animationController.addTween(
-			'.nuestro-metodo-en-la-practica',
+			'.desktop .nuestro-metodo-en-la-practica',
 			TweenMax.fromTo(
-				$('.nuestro-metodo-en-la-practica .container-all'),
+				$('.desktop .nuestro-metodo-en-la-practica .container-all'),
 				3,
 		        {css:{top: 150}}, {css:{top: 250}}
 		    ),

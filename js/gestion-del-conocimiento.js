@@ -1,9 +1,9 @@
 ;(function (win) {
 
-	if ($(window).width() > 720) {
+	if ($(window).width() > 768) {
 
 		animationController.addTween(
-			'.gestion-del-conocimiento',
+			'.desktop .gestion-del-conocimiento',
 		    TweenMax.fromTo(
 		    	$('.gestion-del-conocimiento .peter'),
 		    	.5,
@@ -13,7 +13,7 @@
 		);
 
 		animationController.addTween(
-			'.gestion-del-conocimiento',
+			'.desktop .gestion-del-conocimiento',
 		    TweenMax.fromTo(
 		    	$('.gestion-del-conocimiento .gary'),
 		    	.5,
@@ -23,7 +23,7 @@
 		);
 
 		animationController.addTween(
-			'.gestion-del-conocimiento',
+			'.desktop .gestion-del-conocimiento',
 		    TweenMax.to(
 		    	$('.gestion-del-conocimiento .peter .container'),
 		    	.5,
