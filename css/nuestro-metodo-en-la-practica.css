@@ -12,6 +12,7 @@
 .nuestro-metodo-en-la-practica .container-text {
 	position: relative;
 	top: 20px;
+	display: block;
 }
 
 .nuestro-metodo-en-la-practica  .container-text > div{
@@ -193,5 +194,11 @@
 @media (max-width: 1100px) {
 	.owl-buttons {
 		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.nuestro-metodo-en-la-practica .container-all {
+		top: 30px
 	}
 }

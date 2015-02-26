@@ -87,10 +87,7 @@ canvas#canvasBogoya {
 	.somos-salazar-bogoya .container-text {
 		left: -200px;
 	}
-}
 
-
-@media (max-width: 1100px) {
 	.somos-salazar-bogoya .names,
 	.somos-salazar-bogoya canvas {
 		display: none;
@@ -98,5 +95,11 @@ canvas#canvasBogoya {
 
 	.somos-salazar-bogoya .container-text {
 		left: 0;
+	}
+}
+
+@media (max-width: 720px) {
+	.somos-salazar-bogoya .container-text > div {
+		padding-top: 30px;
 	}
 }

@@ -456,7 +456,12 @@ body {
     }
 
     .container-text > div {
-        padding: 50px 10px;
+        padding: 10px 10px 50px 10px;
+    }
+
+    .container-text h3 {
+        position: static;
+        margin-bottom: 20px;
     }
 
 
@@ -467,6 +472,14 @@ body {
 
 @media (max-width: 768px) {
     .icon-to-top {
+        display: none;
+    }
+
+    .logo-internas {
+        display: none;
+    }
+
+    .squares-container {
         display: none;
     }
 

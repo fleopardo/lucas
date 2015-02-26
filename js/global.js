@@ -181,19 +181,21 @@
 	/*MODALES*/
 	$('.openModal').on('click',function (event) {
 	 	event.preventDefault();
-	 	var modalId = 'Modal' + $(this).attr('id');
-	 	$("#" + modalId).fadeIn();
-	 	$(".modal-overlay").fadeIn();
+	 	if ($(window).width() > 1100) {
+		 	var modalId = 'Modal' + $(this).attr('id');
+		 	$("#" + modalId).fadeIn();
+		 	$(".modal-overlay").fadeIn();
 
-	 	$("#" + modalId).find('.icon-more').one('click', function () {
-	 		$("#" + modalId).fadeOut();
-	 		$(".modal-overlay").fadeOut();
-	 	});
+		 	$("#" + modalId).find('.icon-more').one('click', function () {
+		 		$("#" + modalId).fadeOut();
+		 		$(".modal-overlay").fadeOut();
+		 	});
 
-	 	$(".modal-overlay").one('click', function () {
-	 		$("#" + modalId).fadeOut();
-	 		$(".modal-overlay").fadeOut();
-	 	});
+		 	$(".modal-overlay").one('click', function () {
+		 		$("#" + modalId).fadeOut();
+		 		$(".modal-overlay").fadeOut();
+		 	});
+	 	}
 	});
 
 

@@ -112,6 +112,10 @@
 
 @media (max-width: 720px) {
 
+	.costos-prospecticos .gary .container-all{
+		top: 50px;
+	}
+
 	.costos-prospecticos .gary {
 		width: 100vw;
 	}
