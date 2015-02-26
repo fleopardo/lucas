@@ -17,3 +17,12 @@
 	opacity: 0;
 }
 
+@media (max-width: 1100px) {
+	.pantalla-final .logo-bienvenido {
+	    background-size: 70%;
+    }
+
+    .pantalla-final .logo-bienvenido .slogan{
+	    padding-top: 190px;
+    }
+}

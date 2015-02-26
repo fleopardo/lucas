@@ -18,7 +18,7 @@
 	background-image: url('./assets/gary.jpg');
 }
 
-.costos-prospecticos .gary .container {
+.costos-prospecticos .gary .container-all {
 	display: block;
 	position: relative;
 	z-index: 2;
@@ -102,9 +102,11 @@
 
 
 @media (max-width: 1100px) {
-	.costos-prospecticos .gary .container {
-		width: 95%;
+	.costos-prospecticos .gary .container-all {
+		width: 78%;
 	}
+
+
 }
 
 
@@ -116,4 +118,15 @@
 	.costos-prospecticos .peter {
 		display: none;
 	}
+
+	.costos-prospecticos .container-text > div {
+		text-align: center;
+		padding: 10px;
+	}
+
+	.costos-prospecticos .container-text > div h3{
+		position: static;
+		text-align: center !important;
+	}
+
 }

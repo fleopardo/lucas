@@ -2,8 +2,11 @@
 	background-image: url(./assets/bg-nuestro-metodo-practica.jpg);
 }
 
-.nuestro-metodo-en-la-practica .container {
+
+.nuestro-metodo-en-la-practica .container-all {
 	position: relative;
+	display: block;
+	top: 150px
 }
 
 .nuestro-metodo-en-la-practica .container-text {
@@ -15,7 +18,7 @@
 	padding-bottom: 0;
 }
 
-.nuestro-metodo-en-la-practica .container article {
+.nuestro-metodo-en-la-practica .container-all article {
 	max-width: 626px
 }
 .nuestro-metodo-en-la-practica .container-text p {
@@ -39,8 +42,9 @@
 }
 
 .owl-carousel .item {
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 	height: 220px;
+	text-align: center;
 }
 
 .owl-carousel .item p{
@@ -183,4 +187,11 @@
 .nuestro-metodo-en-la-practica .owl-carousel .owl-wrapper-outer {
 	min-height: 340px;
 	overflow: hidden;
+}
+
+
+@media (max-width: 1100px) {
+	.owl-buttons {
+		display: none;
+	}
 }

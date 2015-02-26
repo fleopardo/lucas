@@ -88,3 +88,15 @@ canvas#canvasBogoya {
 		left: -200px;
 	}
 }
+
+
+@media (max-width: 1100px) {
+	.somos-salazar-bogoya .names,
+	.somos-salazar-bogoya canvas {
+		display: none;
+	}
+
+	.somos-salazar-bogoya .container-text {
+		left: 0;
+	}
+}

@@ -110,6 +110,7 @@ body {
     line-height: 18px;
     color: #838383;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -147,6 +148,8 @@ body {
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+    padding: 0;
+    margin: 0;
 }
 
 .logo-20-years {
@@ -156,17 +159,19 @@ body {
     z-index: 5;
 }
 
-.container {
-	display: table;
-	vertical-align: middle;
-	width: 55%;
-	height: 100%;
+.container-all {
+    display: table;
+    vertical-align: middle;
+    width: 55%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container-text {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .container-text > div {
@@ -444,8 +449,25 @@ body {
 /* END Globals
 -------------------------------------------------- */
 
-@media (max-width: 720px) {
-    .container {
-        width: 100%;
+@media (max-width: 1100px) {
+    .container-all {
+        width: 90%;
     }
+
+    .container-text > div {
+        padding: 50px 10px;
+    }
+
+
+    .logo-20-years {
+        display: none
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-to-top {
+        display: none;
+    }
+
+
 }
