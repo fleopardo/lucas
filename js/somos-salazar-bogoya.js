@@ -17,7 +17,8 @@
 	cxtBogoya.strokeStyle = "#8c8c8c";
 	cxtBogoya.stroke();
 
-	if ($(window).width > 720) {
+	if ($(window).width() > 720) {
+
 		animationController.addTween(
 			'.somos-salazar-bogoya',
 		    TweenMax.to(

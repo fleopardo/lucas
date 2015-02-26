@@ -1,6 +1,6 @@
 ;(function (win) {
 
-	if ($(window).width > 720) {
+	if ($(window).width() > 720) {
 		animationController.addTween(
 			'.costos-prospecticos',
 		    TweenMax.fromTo(
