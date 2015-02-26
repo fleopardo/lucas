@@ -24,10 +24,9 @@
 	/*calcula tamaño pantalla para agregar desktop o no para funcionamiento animaciones*/	
 	var calculateWidth = function(){
 		if( $(window).width() > 768 ) {
-			console.log('entra');
 			$('body').addClass('desktop');
 		}	
-	}
+	};
 	
 
 
@@ -93,6 +92,9 @@
 
 	};
 
+	$(window).on('resize', function(){
+		calculateWidth();
+	});
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	$(".scroll-to").on("click",function(event){
@@ -161,7 +163,7 @@
 	scrollSpy();
 	calculateWidth();
 
-	
+
 
 	/* Chequeo el active on scroll cada 100 ms para no matar al browser */
 	$(window).on("scroll",function(){
