@@ -42,7 +42,7 @@
 	        loadingHtml: "<p class='loading-message'></p><div class='sk-spinner sk-spinner-rotating-plane'><div class='sk-rect1'></div><div class='sk-rect2'></div><div class='sk-rect3'></div><div class='sk-rect4'></div><div class='sk-rect5'></div></div>"
 	     });
 	};
-	// window.showLoading();
+	window.showLoading();
 	</script>
 	<div class="container-fluid">
 		<div class="row inner">
@@ -628,11 +628,11 @@
 							"js/somos-salazar-bogoya.js"], function() {
 
 								// Arranca siempre en bienvenidos
-								// $.scrollTo($("#bienvenidos"), {speed: 0});
-								// document.location.hash = "#bienvenidos";
+								$.scrollTo($("#bienvenidos"), {speed: 0});
+								document.location.hash = "#bienvenidos";
 
 								setTimeout(function() {
-									// window.loading_screen.finish();
+									window.loading_screen.finish();
 
 									setTimeout(function(){
 										var iconFooterTrigger = $('footer a.ver-mas-footer'),
