@@ -220,3 +220,11 @@
 		/*min-height: 34px;*/
 	}
 }
+
+@media (max-width: 720px) {
+	#trigger-overlay,
+	.overlay .overlay-close {
+		top: 20px;
+		right: 20px;
+	}
+}
