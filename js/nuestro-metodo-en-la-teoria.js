@@ -1,7 +1,5 @@
 ;(function (win) {
 
-	if ($(window).width() > 768) {
-
 		animationController.addTween(
 			'.desktop .nuestro-metodo-en-la-teoria',
 		    TweenMax.to(
@@ -31,6 +29,5 @@
 		    ),
 		    500
 		);
-	}
 
 }(window));

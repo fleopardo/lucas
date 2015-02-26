@@ -1,7 +1,7 @@
 ;(function (win) {
 
 
-	if ($(window).width() > 768) {
+
 		animationController.addTween(
 			'.desktop .hasta-donde-lo-podemos-llevar',
 		    TweenMax.to(
@@ -31,5 +31,5 @@
 		    ),
 		    500
 		);
-	}
+
 }(window));
