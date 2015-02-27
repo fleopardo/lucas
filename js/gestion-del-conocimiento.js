@@ -1,6 +1,5 @@
 ;(function (win) {
 
-
 		animationController.addTween(
 			'.desktop .gestion-del-conocimiento',
 		    TweenMax.fromTo(

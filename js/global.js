@@ -20,17 +20,44 @@
 		$navigationUp = $('.navigation-left .up'),
 		$navigationDown = $('.navigation-left .down');
 
-	
-	/*calcula tamaño pantalla para agregar desktop o no para funcionamiento animaciones*/	
+	/* Init animations scrollorama */
+	/* cada modulo va a tener sus animaciones */
+	var animationController = $.superscrollorama({
+		triggerAtCenter: false,
+		playoutAnimations: true
+	});
+	win.animationController = animationController;
+
+	var removeAnimations = function () {
+		$gestionDelConocimiento.find(".peter").attr('style','');
+		$gestionDelConocimiento.find(".gary").attr('style','');
+		$gestionDelConocimiento.find(".peter .container-all").attr('style','');
+
+		$costosProspecticos.find(".gary").attr('style','');
+		$costosProspecticos.find(".peter").attr('style','');
+		$costosProspecticos.find(".peter .container-all").attr('style','');
+
+		$hastaDondeLoPodemosLlevar.find(".container-all").attr('style','');
+		$nuestroMetodoEnLaPractica.find('.container-all').attr('style','');
+		$nuestroMetodoEnLaTeoria.find('.container-all').attr('style','');
+		$somosSalazarBogoya.find('.container-text').attr('style','');
+		$somosSalazarBogoya.find('.names.alfredo').attr('style','');
+		$somosSalazarBogoya.find('.names.nubia').attr('style','');
+
+		// $costosProspecticos
+		// $gestionDelConocimiento
+	};
+
+	/*calcula tamaño pantalla para agregar desktop o no para funcionamiento animaciones*/
 	var calculateWidth = function(){
 		if( $(window).width() > 768 && !($('body').hasClass('desktop'))  ) {
 			$('body').addClass('desktop');
 		}else{
 			$('body').removeClass('desktop');
-
+			removeAnimations();
 		}
 	};
-	
+
 
 
 	/*
@@ -216,15 +243,5 @@
 		 	});
 	 	}
 	});
-
-
-	/* Init animations scrollorama */
-	/* cada modulo va a tener sus animaciones */
-	var animationController = $.superscrollorama({
-		triggerAtCenter: false,
-		playoutAnimations: true
-	});
-	win.animationController = animationController;
-
 
 })(window);
