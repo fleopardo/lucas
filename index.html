@@ -530,7 +530,7 @@
 					<article class="container-text">
 					<div class="logo-bienvenido">
 							<h2>Salazar & Bogoya</h2>
-							<h4 class="slogan">Firma especializada en <a href="#gestion-del-conocimiento" title="gestión del conocimiento" class="scroll-to" data-scroll:anchor="gestion-del-conocimiento">gestión del conocimiento</a> y <a href="#costos-prospecticos" title="costos prospectivos" class="scroll-to" data-scroll:anchor="costos-prospecticos">costos prospectivos</a>.</h4>
+							<h4 class="slogan">Firma especializada en <a href="#gestion-del-conocimiento" title="gestión del conocimiento" class="scroll-to" data-scroll:anchor="gestion-del-conocimiento">gestión del conocimiento</a><br> y <a href="#costos-prospecticos" title="costos prospectivos" class="scroll-to" data-scroll:anchor="costos-prospecticos">costos prospectivos</a>.</h4>
 						</div>
 					</article>
 				</div>
@@ -570,8 +570,8 @@
 				</video>
 				</div>
 
+				<a href="#" title="Ver mas" id="ver-mas-footer" class="open"></a>
 				<footer>
-					<a href="#" title="Ver mas" class="ver-mas-footer open"></a>
 					<div class="clearfix">
 						<p class="address"><!--span>Creado por Estudio NK -</span--> Carrera 50 # 100-62. Oficina 203, Bogotá, Colombia - Teléfonos: +57 321 241 5003</p>
 						<p class="copyrights"><strong>Salazar/Bogoya</strong> &copy; Todos los derechos reservados 2015</p>
@@ -634,12 +634,18 @@
 									window.loading_screen.finish();
 
 									setTimeout(function(){
-										var iconFooterTrigger = $('footer a.ver-mas-footer'),
-											footerContent = $('footer > div');
+										var iconFooterTrigger = $('a#ver-mas-footer'),
+											footerContent = $('footer');
 
 										iconFooterTrigger.removeClass('open');
-										footerContent.fadeOut();
+										footerContent.stop(true,true).animate({
+											left: '-100%',
+											right: '100%'
+										}, 1000, "linear");
+										//footerContent.fadeOut();
 									}, 3000);
+
+
 
 								}, 2000);
 

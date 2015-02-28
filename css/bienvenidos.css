@@ -247,7 +247,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 5;
+	z-index: 3;
 	padding-left: 40px;
 	min-height: 40px;
 }
@@ -279,36 +279,36 @@ footer p.copyrights{
 	background: #fff;
 }
 
-footer a.ver-mas-footer{
+a#ver-mas-footer{
 	display: block;
-	position: absolute;
+	position: fixed;
 	left: 0;
-	top: 0;
 	width: 40px;
 	bottom: 0;
 	background: #bfa966;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
+	z-index: 5;
 }
 
-footer a.ver-mas-footer:hover{
+a#ver-mas-footer:hover{
 	text-decoration: none;
 }
 
-footer a.ver-mas-footer.open::before{
+a#ver-mas-footer.open::before{
 	content: '-';
 	color: #fff;
 	font-size: 16px;
 }
 
-footer a.ver-mas-footer::after{
+a#ver-mas-footer::after{
 	content: '+';
 	color: #fff;
 	font-size: 16px;
 }
 
-footer a.ver-mas-footer.open::after{
+a#ver-mas-footer.open::after{
 	display: none;
 }
 
