@@ -6,8 +6,8 @@
 	position: fixed;
 	top: 40px;
 	right: 40px;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	z-index: 1000;
 }
 
@@ -44,11 +44,11 @@
 #trigger-overlay .icon {
 	position: relative;
 	z-index: 1;
-	background: url('./assets/ic-menu-mobile2.png') no-repeat 0px 0px;
+	background: url('./assets/ic-menu-mobile.png') no-repeat 0px 0px;
 	width: 24px;
 	height: 20px;
-	left: 24px;
-	top: 28px;
+	left: 19px;
+	top: 22px;
 }
 
 #trigger-overlay:hover .icon {
