@@ -17,6 +17,33 @@
 
 .nuestro-metodo-en-la-teoria .container-text p a {
 	color: #fff;
+	display: inline-block;
+}
+
+.nuestro-metodo-en-la-teoria .container-text p sup {
+	content: '+';
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-family: "museo500";
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.nuestro-metodo-en-la-teoria .container-text p sup.active {
+	-moz-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
 }
 
 .nuestro-metodo-en-la-teoria .links-container{
@@ -24,4 +51,9 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+#cont-link-rotate{
+	position: relative;
+	padding-right: 10px;
 }

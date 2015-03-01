@@ -1,5 +1,12 @@
 ;(function (win) {
 
+		$('#CostPerform').mouseover(function(){
+			$('#rotate-link-ext').addClass('active');
+		});
+		$('#CostPerform').mouseout(function(){
+			$('#rotate-link-ext').removeClass('active');
+		});
+
 		animationController.addTween(
 			'.desktop .nuestro-metodo-en-la-teoria',
 		    TweenMax.to(

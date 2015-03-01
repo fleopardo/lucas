@@ -73,8 +73,8 @@
 	position: fixed;
 	top: 40px;
 	right: 40px;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	z-index: 100;
 }
 
@@ -112,8 +112,8 @@
 	background: url('./assets/ic-menu-mobile.png') no-repeat -174px 0px;
 	width: 24px;
 	height: 20px;
-	left: 24px;
-	top: 26px;
+	left: 19px;
+	top: 22px;
 	-webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
