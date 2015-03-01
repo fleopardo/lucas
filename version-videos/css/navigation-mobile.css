@@ -1,0 +1,230 @@
+/*
+	ICONO PARA ABRIR EL MENU
+ */
+#trigger-overlay {
+	cursor: pointer;
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 1000;
+}
+
+#trigger-overlay .square {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	background: #fff;
+	border: 1px solid #fff;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+#trigger-overlay:hover .square {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #c0ab69;
+    border: 1px solid #c0ab69;
+}
+
+#trigger-overlay .icon {
+	position: relative;
+	z-index: 1;
+	background: url('./assets/ic-menu-mobile.png') no-repeat 0px 0px;
+	width: 24px;
+	height: 20px;
+	left: 19px;
+	top: 22px;
+}
+
+#trigger-overlay:hover .icon {
+	background-position: -88px 0px;
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+/* Overlay closing cross */
+
+.overlay .overlay-close {
+	cursor: pointer;
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 100;
+}
+
+.overlay .overlay-close .square {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	background: #fff;
+	border: 1px solid #c0ab69;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.overlay .overlay-close:hover .square {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.overlay .overlay-close .icon {
+	position: relative;
+	z-index: 1;
+	background: url('./assets/ic-menu-mobile.png') no-repeat -174px 0px;
+	width: 24px;
+	height: 20px;
+	left: 19px;
+	top: 22px;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.overlay .overlay-close:hover .icon {
+	-moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	text-align: center;
+}
+
+.overlay ul li a {
+	font-size: 17px;
+	text-transform: uppercase;
+	font-family: 'museo300';
+	color: #c0ab69;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+	position: relative;
+	display: inline-block;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #7f7f7f;
+	text-decoration: none;
+}
+
+.overlay ul li a.active,
+.overlay ul li a.hover {
+	font-family: 'museo700';
+	color: #c0ab69;
+}
+
+.overlay ul li .line {
+	height: 1px;
+	width: 200px;
+	background: #dbdbdb;
+	margin: 22px auto;
+}
+
+/* Effects */
+.container-fluid .row{
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.container-fluid .row.overlay-open {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		/*min-height: 34px;*/
+	}
+}
+
+@media (max-width: 720px) {
+	#trigger-overlay,
+	.overlay .overlay-close {
+		top: 20px;
+		right: 20px;
+	}
+}

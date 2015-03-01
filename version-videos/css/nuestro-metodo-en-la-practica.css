@@ -1,0 +1,205 @@
+.nuestro-metodo-en-la-practica {
+	background-image: url(./assets/bg-nuestro-metodo-practica.jpg);
+}
+
+
+.nuestro-metodo-en-la-practica .container-all {
+	position: relative;
+	display: block;
+	top: 150px;
+}
+
+.nuestro-metodo-en-la-practica .container-text {
+	position: relative;
+	top: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.nuestro-metodo-en-la-practica  .container-text > div{
+	padding-bottom: 0;
+}
+
+.nuestro-metodo-en-la-practica .container-all article {
+	max-width: 626px
+}
+.nuestro-metodo-en-la-practica .container-text p {
+	color: #525252;
+}
+
+.nuestro-metodo-en-la-practica .container-text p a {
+	color: #fff;
+}
+
+.content-nav{
+	padding-top: 30px;
+}
+
+.owl-carousel h2{
+	font-family: "museo700";
+	font-size: 18px;
+	color: #525252;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.owl-carousel .item {
+	/*padding: 0 10px;*/
+	height: 220px;
+	text-align: center;
+}
+
+.owl-carousel .item p{
+	margin-bottom: 15px;
+}
+
+.nuestro-metodo-en-la-practica .squares-container{
+	/*position: static;
+	margin-top: 15px;*/
+	position: absolute;
+	bottom: -104px;
+}
+
+.nuestro-metodo-en-la-practica .links-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+}
+
+.nuestro-metodo-en-la-practica .link-square span{
+	top: 40%;
+}
+
+.nuestro-metodo-en-la-practica .hospital-san-rafael img,
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img,
+.nuestro-metodo-en-la-practica .fundacion-universitaria img,
+.nuestro-metodo-en-la-practica .cruz-roja-colombiana img,
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+}
+
+.nuestro-metodo-en-la-practica .hospital-san-rafael img {
+	margin-top: -26px;
+	margin-left: -48px;
+}
+
+.nuestro-metodo-en-la-practica .fundacion-clinica-shaio img {
+	margin-top: -36px;
+	margin-left: -27px;
+}
+
+.nuestro-metodo-en-la-practica .fundacion-universitaria img {
+	margin-top: -33px;
+	margin-left: -32px;
+}
+
+.nuestro-metodo-en-la-practica .cruz-roja-colombiana img {
+	margin-top: -34px;
+	margin-left: -31px;
+}
+
+
+.owl-theme .owl-pagination,
+.owl-theme .owl-buttons > div {
+	position: absolute;
+}
+
+.owl-theme .owl-pagination{
+	top: -30px;
+	left: 0;
+	right: 0;
+}
+
+.owl-theme .owl-buttons > div {
+	top: 50%;
+	margin-top: -60px;
+	width: 38px;
+	height: 38px;
+	padding: 15px;
+
+}
+
+.owl-theme .owl-buttons .link-square {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.owl-theme .owl-buttons .link-square:hover .square-rotate {
+	background: #545454;
+}
+
+.owl-theme .owl-buttons .square-rotate {
+	width: 100%;
+	height: 100%;
+	background: #545454;
+}
+
+.owl-theme .owl-buttons .link-square span {
+    display: block;
+    text-indent: -9999px;
+    background-image: url('./assets/sp-arrows-sliders.png');
+	background-repeat: no-repeat;
+	height: 18px;
+	top: 12px;
+}
+
+.owl-buttons .owl-prev .link-square span {
+	background-position: 14px -23px;
+}
+
+.owl-buttons .owl-next .link-square span{
+	background-position: 16px -62px;
+}
+
+.owl-buttons .owl-prev:hover .link-square span {
+	background-position: 14px -3px;
+}
+
+.owl-buttons .owl-next:hover .link-square span{
+	background-position: 16px -42px;
+}
+
+.owl-prev{
+	left: -70px;
+}
+
+.owl-next{
+	right: -70px;
+}
+
+
+
+.owl-theme .owl-controls .owl-page span {
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.nuestro-metodo-en-la-practica .owl-carousel .owl-wrapper-outer {
+	min-height: 340px;
+	overflow: hidden;
+}
+
+
+@media (max-width: 1100px) {
+	.owl-buttons {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.nuestro-metodo-en-la-practica .container-all {
+		top: 30px
+	}
+}

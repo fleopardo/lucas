@@ -1,0 +1,30 @@
+.hasta-donde-lo-podemos-llevar {
+	background-image: url('./assets/bg-hasta-donde-los-podemos-llevar.jpg');
+}
+
+.hasta-donde-lo-podemos-llevar .container{
+	position: relative;
+}
+
+.hasta-donde-lo-podemos-llevar .container-text p {
+	color: #fff;
+}
+
+.hasta-donde-lo-podemos-llevar .container-text p a {
+	color: #565656;
+	text-decoration: none;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.hasta-donde-lo-podemos-llevar .container-text p a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hasta-donde-lo-podemos-llevar .container-all {
+	position: relative;
+	z-index: 5;
+}

@@ -1,0 +1,105 @@
+.somos-salazar-bogoya {
+	background-image: url('./assets/bg-somos-salazar-bogoya.jpg');
+	background-position: center right;
+	background-attachment: scroll;
+}
+
+.somos-salazar-bogoya .container-text {
+	position: relative;
+}
+
+.somos-salazar-bogoya .container-text > div {
+	border: none;
+	border-left: 1px solid #a0a0a0;
+	background: none;
+	color: #fff;
+	padding: 130px 0 30px 30px;
+}
+
+.somos-salazar-bogoya .container-text h3 {
+	top: 30px;
+	left: -30px;
+	right: auto;
+}
+
+.somos-salazar-bogoya .names {
+	position: absolute;
+	background: #00ff00;
+	line-height: 40px;
+	display:inline-block;
+	padding: 0 30px;
+	background: #fff;
+	color: #bfa966;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.somos-salazar-bogoya .names:hover {
+	text-decoration: none;
+}
+
+.somos-salazar-bogoya .names .icon-more {
+	top: 27px;
+    right: 15px;
+}
+
+.somos-salazar-bogoya .names strong {
+	font-family: "museo700"
+}
+
+.somos-salazar-bogoya .names.alfredo{
+	right: 340px;
+	top: 168px;
+}
+
+.somos-salazar-bogoya .names.nubia{
+	right: 40px;
+	top: 340px;
+}
+
+.somos-salazar-bogoya .names:hover .icon-more .square{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.somos-salazar-bogoya canvas {
+	position: absolute;
+	z-index: 0;
+	width: 150px;
+}
+
+canvas#canvasSalazar {
+	right: 0;
+	top: 290px;
+}
+
+canvas#canvasBogoya {
+	top: 85px;
+	right: 358px;
+	width: 175px;
+}
+
+
+@media (max-width: 1100px) {
+	.somos-salazar-bogoya .container-text {
+		left: -200px;
+	}
+
+	.somos-salazar-bogoya .names,
+	.somos-salazar-bogoya canvas {
+		display: none;
+	}
+
+	.somos-salazar-bogoya .container-text {
+		left: 0;
+	}
+}
+
+@media (max-width: 720px) {
+	.somos-salazar-bogoya .container-text > div {
+		padding-top: 30px;
+	}
+}

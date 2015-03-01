@@ -1,0 +1,28 @@
+.pantalla-final {
+	background-image: url('./assets/bg-pantalla-final.jpg');
+	display: table;
+}
+
+.pantalla-final .logo {
+	display: table-cell;
+	background: url('./assets/logo-pantalla-final.png') no-repeat center center;
+	width: 466px;
+	height: 210px;
+	position: static;
+	margin-left: 0;
+}
+
+.pantalla-final .logo > *{
+	position: absolute;
+	opacity: 0;
+}
+
+@media (max-width: 1100px) {
+	.pantalla-final .logo-bienvenido {
+	    background-size: 70%;
+    }
+
+    .pantalla-final .logo-bienvenido .slogan{
+	    padding-top: 190px;
+    }
+}

@@ -1,0 +1,342 @@
+.bienvenidos {
+	background-color: #CCC;
+	padding-top: 80px;
+	overflow-y: hidden;
+}
+
+.bienvenidos .slogan {
+	font-size: 25px;
+	line-height: 32px;
+	color: #fff;
+	text-shadow: 0px 0px 15px #000;
+	text-align: center;
+	padding-top: 250px;
+	z-index: 5;
+	position: relative;
+}
+
+.bienvenidos .slogan a {
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+	font-family: 'museo500';
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #b1a06c;
+}
+
+.bienvenidos .slogan a:hover {
+	border-color: #fff;
+	text-decoration: none;
+}
+
+.bienvenidos .container {
+	width: 80%;
+}
+.bienvenidos .logo-bienvenido {
+	background: url('./assets/logo-pantalla-bienvenida.png') no-repeat center top;
+	height: 210px;
+	position: relative;
+	z-index: 5;
+	margin: 0 auto;
+	border: none;
+	padding: 0;
+	min-height: 360px;
+}
+
+.bienvenidos .logo-bienvenido > h2 {
+	position: absolute;
+	opacity: 0;
+}
+
+.bienvenidos .bid {
+	position: absolute;
+	right: 30px;
+	bottom: 70px;
+	width: 50%;
+	z-index: 5;
+}
+
+.bienvenidos .bid a:hover .icon-more .square {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #bfa966;
+}
+
+.bienvenidos .bid a:hover .icon-more .text{
+    color: #fff;
+}
+
+.bienvenidos .bid .bid-image-wrapper {
+	float: right;
+	width: 238px;
+	background: rgba(255,255,255,0.5);
+	height: 90px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #fff;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .bid img {
+	margin-top: 28px;
+}
+
+.bienvenidos .bid a:hover .bid-image-wrapper {
+	background: rgba(255,255,255,0.8);
+}
+
+.bienvenidos .bid .icon-more {
+	position: absolute;
+	bottom: -10px;
+	right: 12px;
+}
+
+.bienvenidos .bid article {
+	position: absolute;
+	top: 0;
+	right: 238px;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	padding: 20px;
+	text-align: right;
+	opacity: 0;
+	z-index: 5;
+	-webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .bid article.open {
+	opacity: 1;
+}
+
+.bienvenidos .bid article p{
+	font-family: 'museo500';
+	color: #b9b9b9;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.bienvenidos .squares-container{
+    top: 0;
+    bottom: auto;
+    right: 0;
+}
+
+.bienvenidos .link-square {
+    color: #fff;
+    font-family: 'museo700';
+    position: absolute;
+    left: 50%;
+    margin-left: -78px;
+    top: -78px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .link-square:hover {
+    text-decoration: none;
+    color: #bfa966;
+    top: -84px;
+    margin-left: -83px;
+}
+
+.bienvenidos .square-rotate {
+    width: 156px;
+    height: 156px;
+    border: 1px solid rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.1);
+}
+
+.bienvenidos .link-square:hover .square-rotate {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 166px;
+    height: 166px;
+    background: rgba(255,255,255, 0.1);
+}
+
+.bienvenidos .square-rotate:before {
+    width: 130px;
+    height: 130px;
+    content: '';
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 13px;
+    left: 13px;
+    background: #bfa966;
+}
+
+.bienvenidos .link-square:hover .square-rotate::before {
+	width: 136px;
+    height: 136px;
+    background: #fff;
+}
+
+.bienvenidos .link-square .icon-to-top {
+    top: 100px;
+}
+
+.bienvenidos .link-square span {
+    position: absolute;
+    top: 110px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.bienvenidos .link-square:hover span {
+    top: 126px;
+}
+
+.bienvenidos .video-container {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.bienvenidos video {
+	min-height: 100%;
+	min-width: 100%;
+	height: auto !important;
+	width: auto !important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	padding-left: 40px;
+	min-height: 40px;
+}
+
+footer > div {
+	background: #fff;
+}
+
+footer p{
+	float: left;
+	max-width: 50%;
+	line-height: 16px;
+	padding: 0 20px;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+footer p.address{
+	background: #454545;
+	color: #e4e4e4;
+}
+
+footer p.address span{
+	background: #454545;
+	color: #888;
+}
+
+footer p.copyrights{
+	background: #fff;
+}
+
+a#ver-mas-footer{
+	display: block;
+	position: fixed;
+	left: 0;
+	width: 40px;
+	bottom: 0;
+	background: #bfa966;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	z-index: 5;
+}
+
+a#ver-mas-footer:hover{
+	text-decoration: none;
+}
+
+a#ver-mas-footer.open::before{
+	content: '-';
+	color: #fff;
+	font-size: 16px;
+}
+
+a#ver-mas-footer::after{
+	content: '+';
+	color: #fff;
+	font-size: 16px;
+}
+
+a#ver-mas-footer.open::after{
+	display: none;
+}
+
+
+@media (max-width: 1100px) {
+	.bid {
+		display: none;
+	}
+
+	footer p{
+		line-height: 22px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+	.bienvenidos{
+		padding-top: 130px;
+	}
+
+    .bienvenidos .logo-bienvenido .slogan{
+	    padding-top: 190px;
+    }
+}
+
+@media (max-width: 450px) {
+	.bienvenidos .logo-bienvenido {
+	    background-size: 70%;
+    }
+
+}
