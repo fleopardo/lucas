@@ -7,11 +7,11 @@
 }
 
 .hasta-donde-lo-podemos-llevar .container-text p {
-	color: #fff;
+	color: #ccc;
 }
 
 .hasta-donde-lo-podemos-llevar .container-text p a {
-	color: #565656;
+	color: #fff;
 	text-decoration: none;
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
