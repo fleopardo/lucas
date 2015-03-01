@@ -1,11 +1,20 @@
 ;(function(win) {
 
 	var iconFooterTrigger = $('a#ver-mas-footer'),
-		footerContent = $('footer');
+		footerContent = $('footer')
+		bidHiddenContent = $('.bienvenidos .bid article'),
+		bienvenidosBidTrigger = $('.bienvenidos .bid a');
 
-	$('.bienvenidos .bid a').on('click', function (event) {
+
+	bienvenidosBidTrigger.on('click', function (event) {
 		event.preventDefault();
-		$('.bienvenidos .bid article').toggleClass('open');
+		bidHiddenContent.toggleClass('open');
+
+		if (bidHiddenContent.hasClass('open')) {
+			$('.bienvenidos .bid .icon-more .text').html('-');
+		}else{
+			$('.bienvenidos .bid .icon-more .text').html('+');
+		}
 	});
 
 	iconFooterTrigger.on('click', function (event) {
