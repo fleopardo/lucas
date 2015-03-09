@@ -130,7 +130,7 @@
 	$(".scroll-to").on("click",function(event){
 		var that = $(this),
 			anchor = '#' + that.attr("data-scroll:anchor") || null,
-			speed = that.attr("data-scroll:speed") || 1500,
+			speed = that.attr("data-scroll:speed") || 3000,
 			sectionName = that.text();
 
 		if( anchor !== null ){
