@@ -151,7 +151,7 @@
 			if( !$navigationLeft.find('a:first-child').hasClass('active') ) {
 				var that = $(this),
 					anchor = '#' + $navigationLeft.find('a.active').prev().attr("data-scroll:anchor") || null,
-					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 1500,
+					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 3000,
 					sectionName = that.text();
 
 				if( anchor !== null ){
@@ -173,7 +173,7 @@
 			}else{
 				var that = $(this),
 					anchor = '#' + $navigationLeft.find('a.active').next().attr("data-scroll:anchor") || null,
-					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 1500,
+					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 3000,
 					sectionName = that.text();
 
 				if( anchor !== null ){
