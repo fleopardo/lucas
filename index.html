@@ -643,6 +643,13 @@
 									window.loading_screen.finish();
 
 									setTimeout(function(){
+										$('.logo-20-years').animate({
+											opacity : 1,
+											left : '+=50'
+										}, 1500);
+									}, 300);
+
+									setTimeout(function(){
 										var iconFooterTrigger = $('a#ver-mas-footer'),
 											footerContent = $('footer');
 

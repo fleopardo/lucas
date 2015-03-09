@@ -154,9 +154,10 @@ body {
 
 .logo-20-years {
     top: 50px;
-    left: 80px;
+    left: 30px;
     position: absolute;
     z-index: 5;
+    opacity: 0;
 }
 
 .container-all {
