@@ -1,12 +1,12 @@
 .modals {
 	position: fixed;
-	z-index: 999;
+	z-index: 998;
 	display: none;
 }
 
 .modal-overlay {
 	background: rgba(0,0,0,0.8);
-	z-index: 998;
+	z-index: 995;
 	position: fixed;
 	top: 0;
 	bottom: 0;

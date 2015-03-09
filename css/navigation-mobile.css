@@ -8,7 +8,7 @@
 	right: 40px;
 	width: 60px;
 	height: 60px;
-	z-index: 1000;
+	z-index: 990;
 }
 
 #trigger-overlay .square {
