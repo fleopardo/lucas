@@ -33,4 +33,36 @@
 		}
 	});
 
+
+	//animacion logo 20 años y bid
+
+	var tid = setInterval(brilloBid, 8000);
+	function brilloBid() {
+	  // do some stuff...
+	  addClassBid();
+	  
+	  setTimeout(removeClassBid, 1000);
+	  
+	  // no need to recall the function (it's an interval, it'll loop forever)
+	}
+
+	function addClassBid() {
+		$('.bienvenidos .bid .conte_imagen .activa_hover').css('display','block');
+	  	setTimeout(addActiveBid, 500);
+	}
+
+	function removeClassBid() {
+		$('.bienvenidos .bid .conte_imagen .activa_hover').css('display','none');
+		setTimeout(removeActiveBid, 500);
+	}
+
+	function addActiveBid(){
+		$('.bienvenidos .bid .conte_imagen .activa_hover').addClass('active');
+	}
+
+	function removeActiveBid(){
+		$('.bienvenidos .bid .conte_imagen .activa_hover').removeClass('active');
+	}
+
+
 }(window));

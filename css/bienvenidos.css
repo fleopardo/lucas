@@ -127,6 +127,40 @@
 	line-height: 18px;
 }
 
+
+.bienvenidos .bid .conte_imagen{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 5;
+    width: 238px;
+    height: 90px;
+}
+
+.bienvenidos .bid .conte_imagen .activa_hover{
+    background-image: url(https://lh3.googleusercontent.com/-vxQwquqFF0w/UXP-87VRPyI/AAAAAAAAFdM/g8PlNuj5oXg/s500/brillo.png);
+    position: absolute;
+    /*posicion de la imagen*/
+    background-position: -265px 0; 
+    left:0px; top:0px; bottom: 0;right: 0;
+    z-index: 10;
+    background-repeat:no-repeat;
+    /*comenzamos transicion*/
+    -webkit-transition: background-position .9s ease;
+       -moz-transition: background-position .9s ease;
+         -o-transition: background-position .9s ease;
+            transition: background-position .9s ease;
+}
+.bienvenidos .bid .conte_imagen .activa_hover.active{
+    /*posicion hover de la imagen*/
+    background-position: 160px 0;
+    cursor: pointer;
+}
+
+
+
+
+
 .bienvenidos .squares-container{
     top: 0;
     bottom: auto;
