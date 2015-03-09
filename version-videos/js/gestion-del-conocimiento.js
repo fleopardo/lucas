@@ -7,7 +7,7 @@
 		    	.5,
 		    	{css: {width: '60vw'}}, {css: {width:'40vw'}}
 		    ),
-		    300
+		    1200
 		);
 
 		animationController.addTween(
@@ -17,17 +17,18 @@
 		    	.5,
 		    	{css: {width: '40vw'}}, {css: {width:'60vw'}}
 		    ),
-		    300
+		    1200
 		);
 
 		animationController.addTween(
 			'.desktop .gestion-del-conocimiento',
 		    TweenMax.to(
-		    	$('.desktop .gestion-del-conocimiento .peter .container'),
-		    	.5,
-		    	{css: {opacity: 0}}, {css: {opacity: 1}}
+		    	$('.desktop .gestion-del-conocimiento .peter .container-all'),
+		    	0.9,
+		    	{css: {opacity: 0}},
+		    	{css: {opacity: 1}}
 		    ),
-		    300
+		    10
 		);
 
 }(window));

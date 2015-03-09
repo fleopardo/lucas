@@ -1,5 +1,5 @@
 .bienvenidos {
-	background-color: #CCC;
+	background-image: url('./assets/bg-pantalla-final.jpg');
 	padding-top: 80px;
 	overflow-y: hidden;
 }
@@ -247,7 +247,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 10;
 	padding-left: 40px;
 	min-height: 40px;
 }
@@ -289,7 +289,7 @@ a#ver-mas-footer{
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
-	z-index: 5;
+	z-index: 11;
 }
 
 a#ver-mas-footer:hover{
@@ -334,9 +334,20 @@ a#ver-mas-footer.open::after{
     }
 }
 
+@media (max-width: 768px) {
+	.bienvenidos .video-container {
+	    display: none;
+    }
+
+    .pantalla-final {
+    	display: none;
+    }
+
+}
+
 @media (max-width: 450px) {
 	.bienvenidos .logo-bienvenido {
-	    background-size: 70%;
+	    background-size: 85%;
     }
 
 }

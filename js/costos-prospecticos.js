@@ -23,11 +23,12 @@
 		animationController.addTween(
 			'.desktop .costos-prospecticos',
 		    TweenMax.to(
-		    	$('.desktop .costos-prospecticos .gary .container'),
-		    	.5,
-		    	{css: {opacity: 0}}, {css: {opacity: 1}}
+		    	$('.desktop .costos-prospecticos .gary .container-all'),
+		    	0.9,
+		    	{css: {opacity: 0}},
+		    	{css: {opacity: 1}}
 		    ),
-		    300
+		    10
 		);
 
 }(window));

@@ -57,3 +57,10 @@
 	position: relative;
 	padding-right: 10px;
 }
+
+
+@media (max-width: 768px) {
+	.nuestro-metodo-en-la-teoria .container-text p sup {
+	    display: none;
+    }
+}
