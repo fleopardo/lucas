@@ -6,7 +6,7 @@
 	    singleItem: true,
 	    navigation: true,
 	    slideSpeed: 500,
-	    navigationText : ['<a href="javascript:void(0);" title="" class="link-square"><div class="square-rotate"></div><span>Prev</span></a>','<a href="javascript:void(0);" title="" class="link-square"><div class="square-rotate"></div><span>Next</span></a>']
+	    navigationText : ['<a href="javascript:void(0);" title="" class="link-square"><div class="square-rotate"></div><span></span></a>','<a href="javascript:void(0);" title="" class="link-square"><div class="square-rotate"></div><span></span></a>']
 	});
 
 

@@ -145,28 +145,47 @@
 
 .owl-theme .owl-buttons .link-square span {
     display: block;
-    text-indent: -9999px;
+    /*text-indent: -9999px;
     background-image: url('./assets/sp-arrows-sliders.png');
-	background-repeat: no-repeat;
-	height: 18px;
-	top: 12px;
+	background-repeat: no-repeat;*/
+	height: 11px;
+	width: 11px;
+	top: 14px;
+	border-top: 1px solid #bfa965;
+    border-right: 1px solid #bfa965;
+    -webkit-animation: pulsate4 2s linear infinite;
+    -moz-animation: pulsate4 2s linear infinite;
+    animation: pulsate4 2s linear infinite;
+    
 }
 
 .owl-buttons .owl-prev .link-square span {
-	background-position: 14px -23px;
+	/*background-position: 14px -23px;*/
+	-moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    left: 15px;
 }
 
 .owl-buttons .owl-next .link-square span{
-	background-position: 16px -62px;
+	/*background-position: 16px -62px;*/
+	-moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 10px;
 }
 
-.owl-buttons .owl-prev:hover .link-square span {
+/*.owl-buttons .owl-prev:hover .link-square span {
 	background-position: 14px -3px;
 }
 
 .owl-buttons .owl-next:hover .link-square span{
 	background-position: 16px -42px;
-}
+}*/
 
 .owl-prev{
 	left: -70px;

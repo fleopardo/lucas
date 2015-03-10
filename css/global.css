@@ -286,10 +286,25 @@ body {
     line-height: 16px;
 }
 
+@-webkit-keyframes pulsate4 {
+    0% {border-color: #bfa965}
+    50% {border-color: #ecddaf}
+    100% {border-color: #fff}
+}
+@-moz-keyframes pulsate4 {
+    0% {border-color: #bfa965}
+    50% {border-color: #ecddaf}
+    100% {border-color: #fff}
+}
+@keyframes pulsate4 {
+    0% {border-color: #bfa965}
+    50% {border-color: #ecddaf}
+    100% {border-color: #fff}
+}
 
-@-webkit-keyframes pulsate3 {
-    0% {border-color: #b3b3b3}
-    50% {border-color: #aaa}
+@-webkit-keyframes pulsate4 {
+    0% {border-color: #bfa965}
+    50% {border-color: #ecddaf}
     100% {border-color: #fff}
 }
 @-moz-keyframes pulsate3 {
