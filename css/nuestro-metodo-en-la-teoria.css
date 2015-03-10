@@ -27,6 +27,7 @@
 	right: 0;
 	color: #fff;
 	font-family: "museo500";
+	display: block;
 	-webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
@@ -53,7 +54,7 @@
 	right: 0;
 }
 
-#cont-link-rotate{
+span.cont-link-rotate{
 	position: relative;
 	padding-right: 10px;
 }

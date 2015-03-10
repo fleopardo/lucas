@@ -1,10 +1,10 @@
 ;(function (win) {
 
-		$('#CostPerform').mouseover(function(){
-			$('#rotate-link-ext').addClass('active');
+		$('a.cost-perform').mouseover(function(){
+			$(this).next('.rotate-link-ext').addClass('active');
 		});
-		$('#CostPerform').mouseout(function(){
-			$('#rotate-link-ext').removeClass('active');
+		$('a.cost-perform').mouseout(function(){
+			$(this).next('.rotate-link-ext').removeClass('active');
 		});
 
 		animationController.addTween(
