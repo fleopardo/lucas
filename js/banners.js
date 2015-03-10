@@ -158,4 +158,27 @@
 	    300
 	);
 
+	/* banner-casos exito */
+
+	animationController.addTween(
+		'.banner-casos',
+	    TweenMax.to(
+	    	$('.banner-casos .a1'),
+	    	.5,
+	    	{css: {left: '-300px'}}, {css: {left:'-200px'}}
+	    ),
+	    300
+	);
+
+	animationController.addTween(
+		'.banner-casos',
+	    TweenMax.to(
+	    	$('.banner-casos .a2'),
+	    	.5,
+	    	{css: {right: '-300px'}}, {css: {right:'-200px'}}
+	    ),
+	    300
+	);
+
+
 }(window));
