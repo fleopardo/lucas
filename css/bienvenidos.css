@@ -237,9 +237,10 @@
     top: 100px;
 }
 
-.bienvenidos.pantalla-final .link-square .icon-to-top{
-    top: 30px;
-
+.bienvenidos.pantalla-final .link-square .icon-to-bottom{
+    top: 60px;
+    border-top: none;
+    padding-top: 0;
 }
 
 .bienvenidos .link-square span {
@@ -252,7 +253,7 @@
 }
 
 .bienvenidos.pantalla-final .link-square span {
-    top: 28px;
+    top: 25px;
 }
 
 .bienvenidos .link-square:hover span {
@@ -260,7 +261,7 @@
 }
 
 .bienvenidos.pantalla-final .link-square:hover span {
-    top: 20px;
+    top: 18px;
 }
 
 .bienvenidos .video-container {

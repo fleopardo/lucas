@@ -366,11 +366,13 @@ body {
 }
 
 .icon-to-top {
-    bottom: 40px;
+    bottom: 60px;
 }
 
 .icon-to-bottom {
-    top: 60px;
+    bottom: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
 }
 
 .icon-to-top > div,
