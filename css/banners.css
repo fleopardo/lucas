@@ -32,7 +32,7 @@
 .banner-experiencia p.a1 {
 	font-size: 56px;
 	font-family: 'museo700';
-	letter-spacing: -3px;
+	letter-spacing: 0W;
 }
 
 .banner-experiencia p.a2 {
@@ -50,13 +50,13 @@
 .banner-experiencia p.a4 {
 	font-family: 'museo300';
 	font-size: 58px;
-	letter-spacing: -3px;
+	letter-spacing: 0;
 }
 
 .banner-experiencia p.a5 {
 	font-family: 'museo300';
 	font-size: 50px;
-	letter-spacing: -3px;
+	letter-spacing: 0;
 }
 
 
@@ -89,7 +89,7 @@
 .banner-ideas-innovadoras p.a2 {
 	font-family: 'museo700';
 	font-size: 56px;
-	letter-spacing: -3px;
+	letter-spacing: 0;
 }
 
 .banner-ideas-innovadoras p.a3 {
@@ -140,7 +140,7 @@
 .banner-futuro p.a2 {
 	font-family: 'museo700';
 	font-size: 60px;
-	letter-spacing: -3px;
+	letter-spacing: 0;
 }
 
 .banner-futuro p.a3 {
@@ -151,13 +151,37 @@
 .banner-futuro p.a4 {
 	font-family: 'museo300';
 	font-size: 58px;
-	letter-spacing: -3px;
+	letter-spacing: 0;
 }
 
 .banner-futuro p.a5 {
 	font-family: 'museo700';
 	font-size: 13px;
 	line-height: 16px;
+}
+
+.banner-casos{
+	background: #bfa966 url('assets/banner-casos.jpg') no-repeat center top;
+}
+
+.banner-casos .content p{
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+}
+
+.banner-casos p.a1{
+	font-family: 'museo500';
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 64px;
+}
+
+.banner-casos p.a2{
+	font-family: 'museo700';
+	font-size: 40px;
+	line-height: 44px;
+	margin-top: 10px;
 }
 
 
