@@ -354,33 +354,54 @@ body {
 
 
 
+.icon-to-bottom,
 .icon-to-top {
     width: 15px;
     height: 25px;
     position: absolute;
-    bottom: 40px;
     left: 50%;
     margin-left: -8px;
     cursor: pointer;
     z-index: 2;
 }
 
-.icon-to-top > div{
+.icon-to-top {
+    bottom: 40px;
+}
+
+.icon-to-bottom {
+    top: 60px;
+}
+
+.icon-to-top > div,
+.icon-to-bottom > div{
     border-top: 1px solid #b3b3b3;
     border-right: 1px solid #b3b3b3;
     width: 11px;
     height: 11px;
     margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-to-top > div{
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.icon-to-top > div.one{
+.icon-to-bottom > div{
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.icon-to-top > div.one,
+.icon-to-bottom > div.one{
     -webkit-animation: pulsate1 1s linear infinite;
     -moz-animation: pulsate1 1s linear infinite;
     animation: pulsate1 1s linear infinite;

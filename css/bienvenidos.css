@@ -157,14 +157,15 @@
     cursor: pointer;
 }
 
-
-
-
-
 .bienvenidos .squares-container{
     top: 0;
     bottom: auto;
     right: 0;
+}
+
+.bienvenidos.pantalla-final .squares-container{
+	top: auto;
+	bottom: 0;
 }
 
 .bienvenidos .link-square {
@@ -236,6 +237,11 @@
     top: 100px;
 }
 
+.bienvenidos.pantalla-final .link-square .icon-to-top{
+    top: 30px;
+
+}
+
 .bienvenidos .link-square span {
     position: absolute;
     top: 110px;
@@ -245,8 +251,16 @@
     transition: 0.3s ease-in-out;
 }
 
+.bienvenidos.pantalla-final .link-square span {
+    top: 28px;
+}
+
 .bienvenidos .link-square:hover span {
     top: 126px;
+}
+
+.bienvenidos.pantalla-final .link-square:hover span {
+    top: 20px;
 }
 
 .bienvenidos .video-container {

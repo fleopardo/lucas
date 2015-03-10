@@ -202,7 +202,7 @@
 		},100);
 	});
 
-	/* Pantalla final links para volver a empezar */
+	/* Pantalla final links para volver a empezar
 	$('.pantalla-final .link-square').on('click', function(event) {
 		event.preventDefault();
 		window.showLoading();
@@ -211,7 +211,7 @@
 			document.location.hash = "#gestion-del-conocimiento";
 			window.loading_screen.finish();
 		}, 2000);
-	});
+	}); 
 
 	$('.pantalla-final .slogan a').on('click', function(event) {
 		event.preventDefault();
@@ -222,7 +222,7 @@
 			document.location.hash = anchor;
 			window.loading_screen.finish();
 		}, 2000);
-	});
+	});*/
 
 	/*MODALES*/
 	$('.openModal').on('click',function (event) {
