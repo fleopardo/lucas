@@ -90,7 +90,7 @@ canvas#canvasBogoya {
 
 	.somos-salazar-bogoya .names,
 	.somos-salazar-bogoya canvas {
-		display: none;
+		display: block;
 	}
 
 	.somos-salazar-bogoya .container-text {

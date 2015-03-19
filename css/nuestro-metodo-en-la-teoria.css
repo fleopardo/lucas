@@ -12,11 +12,11 @@
 }
 
 .nuestro-metodo-en-la-teoria .container-text p {
-	color: #525252;
+	color: #FFF;
 }
 
 .nuestro-metodo-en-la-teoria .container-text p a {
-	color: #fff;
+	color: #bfa966;
 	display: inline-block;
 }
 
@@ -25,7 +25,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: #fff;
+	color: #bfa966;
 	font-family: "museo500";
 	display: block;
 	-webkit-transition: 0.3s ease-in-out;
