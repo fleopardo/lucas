@@ -175,5 +175,8 @@
 
 
 @media (max-width: 900px) {
-	
+	.modal-somos-salazar{
+		width: 95%;
+		height: auto;
+	}
 }
