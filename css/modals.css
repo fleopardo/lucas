@@ -176,7 +176,39 @@
 
 @media (max-width: 900px) {
 	.modal-somos-salazar{
-		width: 95%;
+		width: 90%;
 		height: auto;
+		min-height: 254px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 5%;
+		right: 5%;
+	}
+}
+
+@media (max-width: 720px) {
+
+	.modal-somos-salazar{
+		top: 10%;
+		margin-top: 0;
+	}
+
+	.modal-somos-salazar img{
+		width: 200px;
+	}
+
+	.modal-somos-salazar .content {
+		padding: 25px 38px 0 200px;
+	}
+}
+
+@media (max-width: 520px) {
+	.modal-somos-salazar img{
+		width: 100px;
+		top: 56px;
+	}
+
+	.modal-somos-salazar .content {
+		padding: 25px 38px 0 100px;
 	}
 }
