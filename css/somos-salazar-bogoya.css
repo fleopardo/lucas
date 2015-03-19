@@ -88,18 +88,62 @@ canvas#canvasBogoya {
 		left: -200px;
 	}
 
-	.somos-salazar-bogoya .names,
+	.somos-salazar-bogoya .container-text > div{
+		padding-top: 30px;
+	}
+
+	
 	.somos-salazar-bogoya canvas {
-		display: block;
+		display: none;
+	}
+
+	.somos-salazar-bogoya .names {
+		display: inline-block;
 	}
 
 	.somos-salazar-bogoya .container-text {
 		left: 0;
 	}
+
+	.somos-salazar-bogoya .names {
+		line-height: 35px;
+		padding: 0 25px;
+	}
+
+	.somos-salazar-bogoya .names.alfredo{
+		right: auto;
+		top: auto!important;
+		bottom: 60px;
+		left: 0;
+	}
+
+	.somos-salazar-bogoya .names.nubia{
+		right: auto;
+		top: auto!important;
+		bottom: 125px;
+		left: 0;
+	}
+
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
 	.somos-salazar-bogoya .container-text > div {
 		padding-top: 30px;
 	}
+
+	
+	.somos-salazar-bogoya .names.alfredo{
+		right: auto;
+		top: auto!important;
+		bottom: -70px;
+		left: 0;
+	}
+
+	.somos-salazar-bogoya .names.nubia{
+		right: auto;
+		top: auto!important;
+		bottom: -15px;
+		left: 0;
+	}
+
 }

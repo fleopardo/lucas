@@ -227,7 +227,7 @@
 	/*MODALES*/
 	$('.openModal').on('click',function (event) {
 	 	event.preventDefault();
-	 	if ($(window).width() > 1100) {
+	 	//if ($(window).width() > 1100) {
 		 	var modalId = 'Modal' + $(this).attr('id');
 		 	$("#" + modalId).fadeIn();
 		 	$(".modal-overlay").fadeIn();
@@ -241,7 +241,7 @@
 		 		$("#" + modalId).fadeOut();
 		 		$(".modal-overlay").fadeOut();
 		 	});
-	 	}
+	 	//}
 	});
 
 })(window);

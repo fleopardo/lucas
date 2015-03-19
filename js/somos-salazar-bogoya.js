@@ -46,7 +46,7 @@
 		    ),
 		    500
 		);
-
+		
 		animationController.addTween(
 			'.desktop .somos-salazar-bogoya',
 			TweenMax.fromTo(
