@@ -71,7 +71,7 @@ span.cont-link-rotate{
 	}
 
 	.nuestro-metodo-en-la-teoria  .squares-container {
-	    display: block;
+	    overflow: hidden;
 	}
 
 	.nuestro-metodo-en-la-teoria  .squares-container,
