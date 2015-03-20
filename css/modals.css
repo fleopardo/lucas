@@ -175,6 +175,7 @@
 
 
 @media (max-width: 900px) {
+	/*** modal somos salazar ***/
 	.modal-somos-salazar{
 		width: 90%;
 		height: auto;
@@ -187,7 +188,7 @@
 }
 
 @media (max-width: 720px) {
-
+	/*** modal somos salazar ***/
 	.modal-somos-salazar{
 		top: 10%;
 		margin-top: 0;
@@ -203,6 +204,7 @@
 }
 
 @media (max-width: 520px) {
+	/*** modal somos salazar ***/
 	.modal-somos-salazar img{
 		width: 100px;
 		top: 56px;
@@ -210,5 +212,15 @@
 
 	.modal-somos-salazar .content {
 		padding: 25px 38px 0 100px;
+	}
+
+
+	/*** modal somos salazar ***/
+	.modal-teoria .bg{
+		-moz-transform: rotate(0);
+		-webkit-transform: rotate(0);
+		-o-transform: rotate(0);
+		-ms-transform: rotate(0);
+		transform: rotate(0);
 	}
 }

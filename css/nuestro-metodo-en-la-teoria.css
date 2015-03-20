@@ -59,6 +59,49 @@ span.cont-link-rotate{
 	padding-right: 10px;
 }
 
+.nuestro-metodo-en-la-teoria  .squares-container {
+    display: block;
+}
+
+
+@media (max-width: 520px) {
+
+	.container-text > div{
+		padding-bottom: 30px;
+	}
+
+	.nuestro-metodo-en-la-teoria  .squares-container {
+	    display: block;
+	}
+
+	.nuestro-metodo-en-la-teoria  .squares-container,
+	.nuestro-metodo-en-la-teoria  .squares-container span {
+	    position: static;
+	}
+
+	.nuestro-metodo-en-la-teoria  .squares-container span {
+	    line-height: 28px;
+	}
+
+	.nuestro-metodo-en-la-teoria  .squares-container .square-rotate {
+	    display: none;
+	}
+
+	.nuestro-metodo-en-la-teoria  .squares-container .link-square {
+	    background: #fff;
+	    padding:0 10px;
+	    clear: left;
+	    float: left;
+	    margin-bottom: 10px;
+	}
+	.nuestro-metodo-en-la-teoria  .squares-container .link-square:hover {
+	    color: #bfa966;
+	}
+	.nuestro-metodo-en-la-teoria  .squares-container .link-square:last-child {
+	    margin-bottom: 0;
+	}
+}
+
 
 @media (max-width: 768px) {
 	.nuestro-metodo-en-la-teoria .container-text p sup {
