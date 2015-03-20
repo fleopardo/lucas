@@ -224,10 +224,11 @@
 		}, 2000);
 	});*/
 
+
 	/*MODALES*/
 	$('.openModal').on('click',function (event) {
 	 	event.preventDefault();
-	 	//if ($(window).width() > 1100) {
+	 	if ( !($(this).attr('id') === 'HospitalClinica') ) {
 		 	var modalId = 'Modal' + $(this).attr('id');
 		 	$("#" + modalId).fadeIn();
 		 	$(".modal-overlay").fadeIn();
@@ -241,7 +242,27 @@
 		 		$("#" + modalId).fadeOut();
 		 		$(".modal-overlay").fadeOut();
 		 	});
-	 	//}
+	 	}else{
+
+	 		if ($(window).width() < 980) {
+				window.open('http://www.procesosinteligentes.com/img/graficoHospitalClinica.jpg', '_blank');
+	 		}else{
+	 			var modalId = 'Modal' + $(this).attr('id');
+			 	$("#" + modalId).fadeIn();
+			 	$(".modal-overlay").fadeIn();
+
+			 	$("#" + modalId).find('.icon-more').one('click', function () {
+			 		$("#" + modalId).fadeOut();
+			 		$(".modal-overlay").fadeOut();
+			 	});
+
+			 	$(".modal-overlay").one('click', function () {
+			 		$("#" + modalId).fadeOut();
+			 		$(".modal-overlay").fadeOut();
+			 	});
+	 		}
+
+	 	} 
 	});
 
 })(window);
