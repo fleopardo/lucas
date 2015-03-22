@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Salazar & Bogoya</title>
-    
+
     <meta property="og:title" content="Salazar & Bogoya"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.procesosinteligentes.com/"/>
@@ -60,6 +60,7 @@
 					<span>Subir</span>
 				</a>
 				<div>
+					<a href="#pantalla-final" class="scroll-to DN" data-scroll:anchor="pantalla-final">Pantalla final</a>
 					<a href="#nuestro-metodo-en-la-practica" class="scroll-to" data-scroll:anchor="nuestro-metodo-en-la-practica">Nuestro método en la práctica</a>
 					<a href="#nuestro-metodo-en-la-teoria" class="scroll-to" data-scroll:anchor="nuestro-metodo-en-la-teoria">Nuestro método en la teoría</a>
 					<a href="#somos-salazar-bogoya" class="scroll-to" data-scroll:anchor="somos-salazar-bogoya">Somos Salazar & Bogoya</a>
@@ -91,6 +92,7 @@
 
 				<nav>
 					<ul>
+						<li><a href="#pantalla-final" class="scroll-to DN" data-scroll:anchor="pantalla-final">Pantalla final</a></li>
 						<li><a href="#nuestro-metodo-en-la-practica" class="scroll-to" data-scroll:anchor="nuestro-metodo-en-la-practica">Nuestro método en la práctica</a><div class="line"><div></li>
 						<li><a href="#nuestro-metodo-en-la-teoria" class="scroll-to" data-scroll:anchor="nuestro-metodo-en-la-teoria">Nuestro método en la teoría</a><div class="line"><div></li>
 						<li><a href="#somos-salazar-bogoya" class="scroll-to" data-scroll:anchor="somos-salazar-bogoya">Somos Salazar & Bogoya</a><div class="line"><div></li>
@@ -683,11 +685,13 @@
 							"js/costos-prospecticos.js",
 							"js/somos-salazar-bogoya.js"], function() {
 
-								// Arranca siempre en bienvenidos
-								$.scrollTo($("#bienvenidos"), {speed: 0});
-								document.location.hash = "#bienvenidos";
 
 								setTimeout(function() {
+
+									// Arranca siempre en bienvenidos
+									$.scrollTo($("#bienvenidos"), {speed: 0});
+									document.location.hash = "#bienvenidos";
+
 									window.loading_screen.finish();
 
 									setTimeout(function(){
@@ -708,8 +712,6 @@
 										}, 1000, "linear");
 										//footerContent.fadeOut();
 									}, 10000);
-
-
 
 								}, 2000);
 

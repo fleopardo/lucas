@@ -14,11 +14,14 @@
 		$somosSalazarBogoya = $('.somos-salazar-bogoya'),
 		$nuestroMetodoEnLaTeoria = $('.nuestro-metodo-en-la-teoria'),
 		$nuestroMetodoEnLaPractica = $('.nuestro-metodo-en-la-practica'),
+		$pantallaFinal = $('.pantalla-final'),
 		$navigationLeft = $('.navigation-left > div'),
 		$navigationMobile = $('.navigation-mobile > nav'),
 		$navigationArrows = $('.navigation-left > .link-square'),
 		$navigationUp = $('.navigation-left .up'),
-		$navigationDown = $('.navigation-left .down');
+		$navigationDown = $('.navigation-left .down'),
+		flag_scrollwheel = true;
+
 
 	/* Init animations scrollorama */
 	/* cada modulo va a tener sus animaciones */
@@ -58,18 +61,14 @@
 		}
 	};
 
-
-
 	/*
 	 * Funcion para activar color en lista de navegacion
 	*/
 	var activeLinks = function (anchor){
 		$navigationLeft.find('a').removeClass('active');
 		$navigationMobile.find('a').removeClass('active');
-
 		$navigationLeft.find('[href="#' + anchor + '"]').addClass('active');
 		$navigationLeft.find('[href="#' + anchor + '"]').nextAll().addClass('active');
-
 		$navigationMobile.find('[href="#' + anchor + '"]').addClass('active');
 	};
 
@@ -80,7 +79,7 @@
 		var scrolled = $(window).scrollTop();
 
 		if ( scrolled >= 0 && scrolled < $nuestroMetodoEnLaPractica.offset().top) {
-			activeLinks($nuestroMetodoEnLaPractica.attr("id"));
+			activeLinks($pantallaFinal.attr("id"));
 			$navigationLeft.removeClass();
 			$navigationLeft.addClass('nav-' + $nuestroMetodoEnLaPractica.attr("id"));
 
@@ -119,21 +118,15 @@
 			$navigationLeft.removeClass();
 			$navigationLeft.addClass('nav-' + $bienvenidos.attr("id"));
 		}
-
 	};
 
-	$(window).on('resize', function(){
-		calculateWidth();
-	});
 
-	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
-	$(".scroll-to").on("click",function(event){
-		var that = $(this),
-			anchor = '#' + that.attr("data-scroll:anchor") || null,
-			speed = that.attr("data-scroll:speed") || 3000,
-			sectionName = that.text();
+	var scrollTo = function(asideActiveLink, anchor) {
+		var	anchor = "#"+ anchor || null,
+			speed = asideActiveLink.attr("data-scroll:speed") || 3000,
+			sectionName = asideActiveLink.text();
 
-		if( anchor !== null ){
+		if (anchor !== null) {
 			event.preventDefault();
 			$.scrollTo.window().queue([]).stop();
 			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
@@ -142,6 +135,14 @@
 				window.history.pushState(null, sectionName, anchor);
 			}
 		}
+	};
+
+
+	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
+	$(".scroll-to").on("click",function(event){
+		var activeLink = $(this),
+			anchor = activeLink.attr("data-scroll:anchor");
+		scrollTo(activeLink, anchor);
 	});
 
 	/* Funcionalidad de link subir y bajar de navigation */
@@ -149,42 +150,17 @@
 		event.preventDefault();
 		if ( $(this).hasClass('up') ) {
 			if( !$navigationLeft.find('a:first-child').hasClass('active') ) {
-				var that = $(this),
-					anchor = '#' + $navigationLeft.find('a.active').prev().attr("data-scroll:anchor") || null,
-					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 3000,
-					sectionName = that.text();
-
-				if( anchor !== null ){
-					event.preventDefault();
-					$.scrollTo.window().queue([]).stop();
-					$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
-
-					if (window.history.pushState){
-						window.history.pushState(null, sectionName, anchor);
-					}
-				}
-
+				var activeLink = $navigationLeft.find('a.active'),
+					anchor = activeLink.prev().attr("data-scroll:anchor");
+				scrollTo(activeLink, anchor);
 			}
-
 		} else {
-
 			if( !$navigationLeft.find('a:last-child').prev().hasClass('active')  ) {
 				return;
 			}else{
-				var that = $(this),
-					anchor = '#' + $navigationLeft.find('a.active').next().attr("data-scroll:anchor") || null,
-					speed = $navigationLeft.find('a.active').attr("data-scroll:speed") || 3000,
-					sectionName = that.text();
-
-				if( anchor !== null ){
-					event.preventDefault();
-					$.scrollTo.window().queue([]).stop();
-					$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
-
-					if (window.history.pushState){
-						window.history.pushState(null, sectionName, anchor);
-					}
-				}
+				var activeLink = $navigationLeft.find('a.active'),
+					anchor = activeLink.next().attr("data-scroll:anchor");
+				scrollTo(activeLink, anchor);
 			}
 		}
 	});
@@ -192,37 +168,6 @@
 	/* ejecuto activa nav al inicio */
 	scrollSpy();
 	calculateWidth();
-
-
-
-	/* Chequeo el active on scroll cada 100 ms para no matar al browser */
-	$(window).on("scroll",function(){
-		setTimeout(function(){
-			scrollSpy();
-		},100);
-	});
-
-	/* Pantalla final links para volver a empezar
-	$('.pantalla-final .link-square').on('click', function(event) {
-		event.preventDefault();
-		window.showLoading();
-		setTimeout(function(){
-			$.scrollTo($("#gestion-del-conocimiento"), {speed: 0});
-			document.location.hash = "#gestion-del-conocimiento";
-			window.loading_screen.finish();
-		}, 2000);
-	}); 
-
-	$('.pantalla-final .slogan a').on('click', function(event) {
-		event.preventDefault();
-		var anchor = $(this).attr('href');
-		window.showLoading();
-		setTimeout(function(){
-			$.scrollTo($(anchor), {speed: 0});
-			document.location.hash = anchor;
-			window.loading_screen.finish();
-		}, 2000);
-	});*/
 
 
 	/*MODALES*/
@@ -262,7 +207,71 @@
 			 	});
 	 		}
 
-	 	} 
+	 	}
+	});
+
+	/* Chequeo el active on scroll cada 100 ms para no matar al browser */
+	$(window).on("scroll",function(){
+		setTimeout(function(){
+			scrollSpy();
+		},100);
+	});
+
+	$(window).on('resize', function(){
+		calculateWidth();
+	});
+
+	// Navegacion mediante la rueda del mouse
+	$(window).on('mousewheel', function(event) {
+
+		event.preventDefault();
+		var delta = event.originalEvent.wheelDelta;
+
+		if (flag_scrollwheel) {
+			flag_scrollwheel = false;
+
+			if (delta > 0) {
+				if($navigationLeft.find('a.active').prev().length > 0){
+					var activeLink = $navigationLeft.find('a.active'),
+						anchor = activeLink.prev().attr("data-scroll:anchor");
+					scrollTo(activeLink, anchor);
+				}
+			} else {
+				if ($navigationLeft.find('a.active').next().length > 0) {
+					var activeLink = $navigationLeft.find('a.active'),
+						anchor = activeLink.next().attr("data-scroll:anchor");
+					scrollTo(activeLink, anchor);
+				}
+			}
+
+			setTimeout(function(){
+				flag_scrollwheel = true;
+			},3000);
+		}
+	});
+
+	$(document).on("keyup", function(e){
+
+		// next
+		if( e.keyCode == 38 || e.keyCode == 37 ){
+			if($navigationLeft.find('a.active').prev().length > 0){
+				if($navigationLeft.find('a.active').prev().length > 0){
+					var activeLink = $navigationLeft.find('a.active'),
+						anchor = activeLink.prev().attr("data-scroll:anchor");
+					scrollTo(activeLink, anchor);
+				}
+			}
+		}
+
+		// prev
+		if(e.keyCode == 40 || e.keyCode == 39){
+			if ($navigationLeft.find('a.active').next().length > 0) {
+				var activeLink = $navigationLeft.find('a.active'),
+					anchor = activeLink.next().attr("data-scroll:anchor");
+				scrollTo(activeLink, anchor);
+			}
+		}
+
 	});
 
 })(window);
