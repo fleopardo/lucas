@@ -931,7 +931,7 @@ Spinners
 
 @media (max-width: 768px) {
   .pg-loading-screen .pg-loading-logo-header img {
-    width: 90%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto; 
