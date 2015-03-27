@@ -127,7 +127,6 @@
 			sectionName = asideActiveLink.text();
 
 		if (anchor !== null) {
-			event.preventDefault();
 			$.scrollTo.window().queue([]).stop();
 			$.scrollTo(anchor, {speed: speed, easing:'easeOutExpo'});
 
@@ -140,6 +139,8 @@
 
 	/** Bindeo a todos los links que necesitan moverse con scrollTo **/
 	$(".scroll-to").on("click",function(event){
+		event.preventDefault();
+
 		var activeLink = $(this),
 			anchor = activeLink.attr("data-scroll:anchor");
 		scrollTo(activeLink, anchor);
@@ -221,26 +222,37 @@
 		calculateWidth();
 	});
 
+
 	// Navegacion mediante la rueda del mouse
-	$(window).on('mousewheel', function(event) {
+	$(window).on('mousewheel DOMMouseScroll', function(event) {
 
 		event.preventDefault();
-		var delta = event.originalEvent.wheelDelta;
+
+		var delta = event.originalEvent.wheelDelta || event.originalEvent.detail;
+
+		// si es firefox devuelve al reves el delta
+		if (event.originalEvent.detail) {
+			delta = -delta;
+		}
 
 		if (flag_scrollwheel) {
 			flag_scrollwheel = false;
 
 			if (delta > 0) {
+
 				if($navigationLeft.find('a.active').prev().length > 0){
 					var activeLink = $navigationLeft.find('a.active'),
 						anchor = activeLink.prev().attr("data-scroll:anchor");
 					scrollTo(activeLink, anchor);
+					
 				}
 			} else {
+
 				if ($navigationLeft.find('a.active').next().length > 0) {
 					var activeLink = $navigationLeft.find('a.active'),
 						anchor = activeLink.next().attr("data-scroll:anchor");
 					scrollTo(activeLink, anchor);
+
 				}
 			}
 
@@ -249,6 +261,7 @@
 			},3000);
 		}
 	});
+
 
 	$(document).on("keyup", function(e){
 

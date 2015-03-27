@@ -11,7 +11,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -21,7 +21,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -31,7 +31,7 @@
 		    	.5,
 		    	{css: {top: '-100px'}}, {css: {top:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -41,7 +41,7 @@
 		    	.5,
 		    	{css: {right: '-100px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 
@@ -54,7 +54,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -64,7 +64,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -74,7 +74,7 @@
 		    	.5,
 		    	{css: {top: '-100px'}}, {css: {top:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -84,7 +84,7 @@
 		    	.5,
 		    	{css: {right: '-100px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -94,7 +94,7 @@
 		    	.5,
 		    	{css: {right: '-100px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 
@@ -107,7 +107,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -117,7 +117,7 @@
 		    	.5,
 		    	{css: {left: '-100px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -127,7 +127,7 @@
 		    	.5,
 		    	{css: {top: '-100px'}}, {css: {top:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -137,7 +137,7 @@
 		    	.5,
 		    	{css: {right: '-100px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -147,7 +147,7 @@
 		    	.5,
 		    	{css: {right: '-100px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -157,7 +157,7 @@
 		    	.5,
 		    	{css: {top: '-100px'}}, {css: {top:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		/* banner-casos exito */
@@ -169,7 +169,7 @@
 		    	.5,
 		    	{css: {left: '-300px'}}, {css: {left:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 
 		animationController.addTween(
@@ -179,7 +179,7 @@
 		    	.5,
 		    	{css: {right: '-300px'}}, {css: {right:'-200px'}}
 		    ),
-		    300
+		    -100
 		);
 	}
 
