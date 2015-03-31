@@ -187,8 +187,8 @@
 
 
 
-@media (max-width: 514px) {
-	/*.banner-casos p.a1 {
+/*@media (max-width: 514px) {
+	.banner-casos p.a1 {
 		padding-top: 20px;
 	}
 
@@ -198,11 +198,11 @@
 
 	.banner-experiencia .content p{
 		line-height: 45px;
-	}*/
+	}
 }
 
 @media (min-width: 515px) and (max-width: 896px) {
-	/*.banner-casos p.a1 {
+	.banner-casos p.a1 {
 		padding-top: 40px;
 	}
 
@@ -212,21 +212,21 @@
 
 	.banner-experiencia .content p{
 		line-height: 45px;
-	}*/
+	}
 }
 
 @media (min-width: 897px) and (max-width: 1023px) {
 	/*.banner-casos p.a1 {
 		padding-top: 72px;
-	}*/
+	}
 }
 
 @media (min-width: 648px) and (max-width: 1023px) {
 
-	/*.banner-experiencia .content{
+	.banner-experiencia .content{
 		padding-top: 76px;
-	}*/
-}
+	}
+}*/
 
 
 
